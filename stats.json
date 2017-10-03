@@ -1,0 +1,68 @@
+{
+  "assetsByChunkName": {
+    "component---src-layouts-index-tsx": [
+      "component---src-layouts-index-tsx-41c3c28058d637986e81.js",
+      "component---src-layouts-index-tsx-41c3c28058d637986e81.js.map"
+    ],
+    "path---can-be-folder": [
+      "path---can-be-folder-a0e39f21c11f6a62c5ab.js",
+      "path---can-be-folder-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---about-css-modules": [
+      "path---about-css-modules-a0e39f21c11f6a62c5ab.js",
+      "path---about-css-modules-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---page-2": [
+      "path---page-2-a0e39f21c11f6a62c5ab.js",
+      "path---page-2-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-page-2-tsx": [
+      "component---src-pages-page-2-tsx-14ce20a007f681668a55.js",
+      "component---src-pages-page-2-tsx-14ce20a007f681668a55.js.map"
+    ],
+    "commons": [
+      "commons-8b2c3a1725cd0baa14f1.js",
+      "build-js-styles.css",
+      "commons-8b2c3a1725cd0baa14f1.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-404-tsx": [
+      "component---src-pages-404-tsx-90a04ce7bd4d55a03791.js",
+      "component---src-pages-404-tsx-90a04ce7bd4d55a03791.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-about-css-modules-tsx": [
+      "component---src-pages-about-css-modules-tsx-40fdc651a550f3d54e59.js",
+      "component---src-pages-about-css-modules-tsx-40fdc651a550f3d54e59.js.map"
+    ],
+    "component---src-pages-index-tsx": [
+      "component---src-pages-index-tsx-072400c6eeb93ef7e9b3.js",
+      "component---src-pages-index-tsx-072400c6eeb93ef7e9b3.js.map"
+    ],
+    "app": [
+      "app-5d04e34ae665f67480e1.js",
+      "build-js-styles.css",
+      "app-5d04e34ae665f67480e1.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-can-be-folder-index-tsx": [
+      "component---src-pages-can-be-folder-index-tsx-3786757cc0db0ec99626.js",
+      "component---src-pages-can-be-folder-index-tsx-3786757cc0db0ec99626.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
