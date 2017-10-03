@@ -1,7 +1,3 @@
----
-imgUrl: "https://cmeimg-a.akamaihd.net/640/clsd/getty/c64f76dc20c246ca88ee180fe4b4b781"
----
-
 ##Vi hjelper deg med IT
 
 Hallingdata hjelper næringslivet i Hallingdal og resten av landet med å ta i bruk IT på en god måte.

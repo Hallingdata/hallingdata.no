@@ -1,12 +1,15 @@
-import * as React from 'react'
-import Link from 'gatsby-link'
+import * as React from "react"
+import Link from "gatsby-link"
 
-const HtmlRenderComponent = (props: any) => {
-    return (
-        < div >
-            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: props.content }} />
-        </div >
-    )
+type Props = {
+  content: string
 }
+
+const HtmlRenderComponent = ({ content }: Props) => (
+  <div
+    className="blog-post-content"
+    dangerouslySetInnerHTML={{ __html: content }}
+  />
+)
 
 export default HtmlRenderComponent
