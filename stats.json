@@ -21,8 +21,8 @@
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-a0e39f21c11f6a62c5ab.js",
-      "path---index-a0e39f21c11f6a62c5ab.js.map"
+      "path---index-bd1998b691c6163f37b4.js",
+      "path---index-bd1998b691c6163f37b4.js.map"
     ],
     "component---src-pages-page-2-tsx": [
       "component---src-pages-page-2-tsx-14ce20a007f681668a55.js",
@@ -47,13 +47,13 @@
       "component---src-pages-about-css-modules-tsx-40fdc651a550f3d54e59.js.map"
     ],
     "component---src-pages-index-tsx": [
-      "component---src-pages-index-tsx-072400c6eeb93ef7e9b3.js",
-      "component---src-pages-index-tsx-072400c6eeb93ef7e9b3.js.map"
+      "component---src-pages-index-tsx-ce8a73b78f9837e2408c.js",
+      "component---src-pages-index-tsx-ce8a73b78f9837e2408c.js.map"
     ],
     "app": [
-      "app-5d04e34ae665f67480e1.js",
+      "app-16843bc12be735523e68.js",
       "build-js-styles.css",
-      "app-5d04e34ae665f67480e1.js.map",
+      "app-16843bc12be735523e68.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-can-be-folder-index-tsx": [
