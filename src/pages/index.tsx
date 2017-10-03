@@ -1,26 +1,31 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
 import PromoComponent from "../components/promo"
+import PageRowComponent from "../components/page-row"
+import ImageComponent from "../components/image"
+import HtmlRenderComponent from "../components/html-render"
 
-const IndexPage = (props: any) => {
-  const data = props.data
-  const timeToRead = props.data.file.childMarkdownRemark.timeToRead
-  console.log(props)
-  return (
-    <div>
-      <PromoComponent content={props.data.file.childMarkdownRemark.html}></PromoComponent>
-    </div>
-  )
-}
+const IndexPage = ({ data }) => {
+  console.log(JSON.stringify(data, null, "  "))
+  return (<div>
+    <PageRowComponent>
+      <ImageComponent url={data.row1.childMarkdownRemark.frontmatter.imgUrl}></ImageComponent>
+      <HtmlRenderComponent content={data.row1.childMarkdownRemark.html}></HtmlRenderComponent>
+    </PageRowComponent>
+  </div>
+)}
 
 export default IndexPage
 
 export const pageQuery = graphql`
 query PromoContent{
-    file(relativePath: {eq: "components/promo/promo.md"}) {
+    row1: file(relativePath: {eq: "content/index/row1.md"}) {
       childMarkdownRemark {
         html
         timeToRead
+        frontmatter {
+          imgUrl
+        }
       }
     }
   }

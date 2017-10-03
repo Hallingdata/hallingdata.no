@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/node": "^8.0.31",
     "@types/react": "^16.0.7",
     "@types/react-dom": "^15.5.5",
     "@types/react-helmet": "^5.0.3",
@@ -23,12 +24,15 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "serve": "gatsby serve",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "@types/jest": "^21.1.1",
+    "gh-pages": "^1.0.0",
     "jest": "^21.2.1"
   }
 }
