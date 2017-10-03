@@ -1,59 +1,47 @@
-import * as React from 'react'
-import Link from 'gatsby-link'
-import { Helmet } from 'react-helmet'
+import * as React from "react"
+import Link from "gatsby-link"
+import { Helmet } from "react-helmet"
 
-import './index.css'
+import AppBar from "material-ui/AppBar"
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
+import "./index.css"
+
+const styles = {
+  root: {
+    marginTop: 1 * 3,
+    width: "100%"
+  },
+  flex: {
+    flex: 1
+  },
+  menuButton: {
+    marginLeft: -12,
+    marginRight: 20
+  }
+}
+
+const ButtonAppBar = (props: any) => (
+  <AppBar
+    title="Hallingdata"
+    iconClassNameRight="muidocs-icon-navigation-expand-more"
+  />
 )
 
 const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
+  <MuiThemeProvider>
+    <div>
+      <Helmet
+        title="Hallingdata"
+        meta={[
+          { name: "description", content: "Sample" },
+          { name: "keywords", content: "sample, something" }
+        ]}
+      />
+      <ButtonAppBar />
+      <div>{children()}</div>
     </div>
-  </div>
+  </MuiThemeProvider>
 )
 
 export default TemplateWrapper
