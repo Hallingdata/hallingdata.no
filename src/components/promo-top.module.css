@@ -1,0 +1,25 @@
+.outer {
+  background-color: #5f00be;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.hero {
+  text-align: center;
+  color: #ffffff;
+}
+
+.heroHeader {
+  font-size: 3em;
+  opacity: 0.85;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.image {
+  height: 600px;
+  background-image: url(http://placehold.it/600x800);
+  background-size: cover;
+}

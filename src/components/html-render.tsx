@@ -7,7 +7,6 @@ type Props = {
 
 const HtmlRenderComponent = ({ content }: Props) => (
   <div
-    className="blog-post-content"
     dangerouslySetInnerHTML={{ __html: content }}
   />
 )

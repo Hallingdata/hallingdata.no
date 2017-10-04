@@ -30,7 +30,7 @@ module.exports = (data: any) => {
     ) : null
 
   return (
-    <html lang="en">
+    <html lang="en" style={{ "font-family": "'Roboto', 'sans-serif'" }}>
       <head>
         {data.headComponents}
         <title>My website</title>

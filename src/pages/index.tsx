@@ -5,15 +5,21 @@ import Link from "gatsby-link"
 import { Grid, Row, Col } from "react-flexbox-grid"
 
 import HtmlRenderComponent from "../components/html-render"
+import PromoTopComponent from "../components/promo-top"
+import * as styles from "./index.module.css"
 
 const IndexPage = ({ data }: { data: any }) => (
-  <Grid fluid>
-    <Row>
-      <Col xs={12} >
-        <HtmlRenderComponent content={data.row1.childMarkdownRemark.html} />
-      </Col>
-    </Row>
-  </Grid>
+  <div>
+    <PromoTopComponent />
+    <Grid fluid>
+      <Row />
+      <Row>
+        <Col xs={12}>
+          <HtmlRenderComponent content={data.row1.childMarkdownRemark.html} />
+        </Col>
+      </Row>
+    </Grid>
+  </div>
 )
 
 export default IndexPage
