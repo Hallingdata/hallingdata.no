@@ -15,7 +15,7 @@ const renderServices = (services: Array<Service>) =>
     (service: Service) => (
       <Grid item xs={12} md={Math.floor(12 / services.length) as any} key={service.header+service.icon}>
         <div className={styles.list}>
-          <Icon style={{ fontSize: 80 }}>{service.icon}</Icon>
+          <Icon color="primary" style={{ fontSize: 80 }}>{service.icon}</Icon>
           <Typography type="headline" gutterBottom align="center">
             {service.header}
           </Typography>

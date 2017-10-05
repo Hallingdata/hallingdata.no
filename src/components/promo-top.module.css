@@ -1,24 +1,26 @@
 .outer {
   height: 700px;
-  background-image: url(./img/1.jpeg);
+  background-image: url(./img/1-2.jpeg);
   background-size: cover;
 }
 
 .inner {
-  background-color: black;
-  max-width: 499px;
+  max-width: 600px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .fullHeight {
   height: 100%;
 }
 
-.hero {
-  text-align: center;
+.heroText {
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .image {

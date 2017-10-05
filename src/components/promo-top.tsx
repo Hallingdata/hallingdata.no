@@ -11,9 +11,9 @@ type Props = {}
 
 const PromoTopComponent = (props: Props) => (
   <Grid container align="center" className={styles.outer}>
-    <Grid item xs={12} className={styles.hero}>
+    <Grid item xs={12}>
       <div className={styles.inner}>
-        <Typography type="display3" gutterBottom style={{ color: "#fff" }}>
+        <Typography type="display3" gutterBottom style={{"color": "#fff"}} className={styles.heroText}>
           Web og app utvikling
         </Typography>
         <Button color="accent" raised>Kontakt oss</Button>
