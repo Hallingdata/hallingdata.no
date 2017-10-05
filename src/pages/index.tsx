@@ -6,11 +6,13 @@ import { Grid, Row, Col } from "react-flexbox-grid"
 
 import HtmlRenderComponent from "../components/html-render"
 import PromoTopComponent from "../components/promo-top"
+import ServicesComponent from "../components/services"
 import * as styles from "./index.module.css"
 
 const IndexPage = ({ data }: { data: any }) => (
   <div>
     <PromoTopComponent />
+    <ServicesComponent />
     <Grid fluid>
       <Row />
       <Row>

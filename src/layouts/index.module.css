@@ -2,7 +2,8 @@
     background-color: #5f00be !important;
 }
 
-.noVerticalMargin {
+.navButton {
     margin-left: 0px !important;
     margin-right: 0px !important;
+    color: white !important;
 }

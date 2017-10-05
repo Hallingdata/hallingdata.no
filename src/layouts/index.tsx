@@ -3,6 +3,7 @@ import Link from "gatsby-link"
 import { Helmet } from "react-helmet"
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
 import getMuiTheme from "material-ui/styles/getMuiTheme"
+import {darkBlack} from 'material-ui/styles/colors';
 import {
   Toolbar,
   ToolbarGroup,
@@ -42,10 +43,14 @@ const AppBar = () => (
       <img src={logo} alt="Hallingdata logo" height="60px" />
     </ToolbarGroup>
     <ToolbarGroup>
-      <FlatButton label="Hjem" className={styles.noVerticalMargin} />
-      <FlatButton label="Tjenester" className={styles.noVerticalMargin} />
-      <FlatButton label="Om oss" className={styles.noVerticalMargin} />
-      <RaisedButton label="Kontakt" secondary={true} className={styles.noVerticalMargin} />
+      <FlatButton label="Hjem" className={styles.navButton} />
+      <FlatButton label="Tjenester" className={styles.navButton} />
+      <FlatButton label="Om oss" className={styles.navButton} />
+      <RaisedButton
+        label="Kontakt"
+        secondary={true}
+        className={styles.navButton}
+      />
     </ToolbarGroup>
   </Toolbar>
 )
@@ -55,7 +60,12 @@ const muiTheme = getMuiTheme({
     primary1Color: "#5f00be",
     primary2Color: "#20008c",
     accent1Color: "#ffca28",
-    textColor: "#ffffff",
-    alternateTextColor: "#000000"
+    alternateTextColor: darkBlack
+  },
+  button: {
+    
+  },
+  toolbar: {
+    color: "#000"
   }
 })
