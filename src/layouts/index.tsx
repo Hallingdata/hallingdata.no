@@ -1,26 +1,23 @@
+import AppBar from "material-ui/AppBar"
+import Button from "material-ui/Button"
+import amber from "material-ui/colors/amber"
+import purple from "material-ui/colors/purple"
+import deepPurple from "material-ui/colors/deepPurple"
+import { createMuiTheme, MuiThemeProvider } from "material-ui/styles"
+import Toolbar from "material-ui/Toolbar"
 import * as React from "react"
-import Link from "gatsby-link"
 import { Helmet } from "react-helmet"
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
-import getMuiTheme from "material-ui/styles/getMuiTheme"
-import {darkBlack} from 'material-ui/styles/colors';
-import {
-  Toolbar,
-  ToolbarGroup,
-  ToolbarSeparator,
-  ToolbarTitle
-} from "material-ui/Toolbar"
-import FlatButton from "material-ui/FlatButton"
-import RaisedButton from "material-ui/RaisedButton"
+
 import * as styles from "./index.module.css"
 import * as logo from "./logo-white-transparent.png"
+import { Grid } from "material-ui"
 
 type Props = {
   children: () => React.ReactNode
 }
 
 const TemplateWrapper = ({ children }: Props) => (
-  <MuiThemeProvider muiTheme={muiTheme}>
+  <MuiThemeProvider theme={myTheme}>
     <div>
       <Helmet
         title="Hallingdata"
@@ -29,43 +26,31 @@ const TemplateWrapper = ({ children }: Props) => (
           { name: "keywords", content: "sample, something" }
         ]}
       />
-      <AppBar />
-      <div>{children()}</div>
+      <MyAppBar />
+      <Grid container xs={12}>{children()}</Grid>
     </div>
   </MuiThemeProvider>
 )
 
 export default TemplateWrapper
 
-const AppBar = () => (
-  <Toolbar className={styles.toolbar}>
-    <ToolbarGroup>
+const MyAppBar = () => (
+  <AppBar>
+    <Toolbar>
       <img src={logo} alt="Hallingdata logo" height="60px" />
-    </ToolbarGroup>
-    <ToolbarGroup>
-      <FlatButton label="Hjem" className={styles.navButton} />
-      <FlatButton label="Tjenester" className={styles.navButton} />
-      <FlatButton label="Om oss" className={styles.navButton} />
-      <RaisedButton
-        label="Kontakt"
-        secondary={true}
-        className={styles.navButton}
-      />
-    </ToolbarGroup>
-  </Toolbar>
+      <span style={{ flex: 1 }} />
+      <Button color="contrast">Login</Button>
+      <Button className={styles.navButton}>Hjem</Button>
+      <Button className={styles.navButton}>Tjenester</Button>
+      <Button className={styles.navButton}>Om oss</Button>
+      <Button className={styles.navButton}>Kontakt</Button>
+    </Toolbar>
+  </AppBar>
 )
 
-const muiTheme = getMuiTheme({
+const myTheme = createMuiTheme({
   palette: {
-    primary1Color: "#5f00be",
-    primary2Color: "#20008c",
-    accent1Color: "#ffca28",
-    alternateTextColor: darkBlack
-  },
-  button: {
-    
-  },
-  toolbar: {
-    color: "#000"
+    primary: deepPurple,
+    secondary: amber
   }
 })

@@ -4,4 +4,11 @@
 
 .listItem {
     padding-top: 0 !important;
-  }
+}
+
+.list {
+    text-align: center;
+    padding: 2em;
+    max-width: 300px;
+    margin: auto;
+}
