@@ -1,2 +1,0 @@
-webpackJsonp([22875289383239],{"./node_modules/json-loader/index.js!./.cache/json/can-be-folder.json":function(o,e){o.exports={pathContext:{}}}});
-//# sourceMappingURL=path---can-be-folder-a0e39f21c11f6a62c5ab.js.map
