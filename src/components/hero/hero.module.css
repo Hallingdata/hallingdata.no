@@ -6,26 +6,14 @@
 
 .inner {
   max-width: 600px;
-  margin: auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
   text-align: center;
 }
 
-.fullHeight {
-  height: 100%;
-}
-
-.heroText {
+.header {
   background-color: black;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.image {
-  height: 600px;
-  background-image: url(http://placehold.it/600x800);
-  background-size: cover;
-  overflow: hidden;
 }

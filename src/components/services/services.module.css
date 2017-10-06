@@ -2,11 +2,7 @@
     background-color: #FAFAFA;
 }
 
-.listItem {
-    padding-top: 0 !important;
-}
-
-.list {
+.item {
     text-align: center;
     padding: 2em;
     max-width: 300px;

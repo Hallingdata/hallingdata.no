@@ -1,13 +1,13 @@
+import TeamComponent from "../components/team/team.component"
 import * as image from "../content/index/row1.jpg"
 
 import * as React from "react"
 import Link from "gatsby-link"
 import Grid from "material-ui/Grid"
 
-import HtmlRenderComponent from "../components/html-render"
-import PromoTopComponent from "../components/promo-top"
-import ServicesComponent from "../components/services"
-import * as styles from "./index.module.css"
+import HeroComponent from "../components/hero/hero.component"
+import ServicesComponent from "../components/services/services.component"
+import * as style from "./index.module.css"
 import { Typography } from "material-ui"
 
 type Props = {
@@ -17,15 +17,26 @@ type Props = {
   }
 }
 
+// https://github.com/callemall/material-ui/issues/7466
+const gridFix = {
+  "width": "100%",
+  "overflow-x": "hidden"
+}
 const IndexPage = ({ data }: Props) => (
-  <div>
-    <PromoTopComponent />
+  <div style={gridFix}>
+    <HeroComponent />
     <ServicesComponent
       services={data.services.childMarkdownRemark.frontmatter.services}
     />
-    <Typography type="display2" style={{"text-align": "center", padding: "50px"}}>
-      Hallingdata hjelper deg å ta i bruk IT på en god måte.
-    </Typography>
+    <div>
+      <Typography
+        type="display2"
+        style={{ "text-align": "center", padding: "50px" }}
+      >
+        Hallingdata hjelper deg å ta i bruk IT på en god måte.
+      </Typography>
+    </div>
+    <TeamComponent />
   </div>
 )
 

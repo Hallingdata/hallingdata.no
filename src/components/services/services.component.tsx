@@ -13,8 +13,8 @@ type Props = {
 const renderServices = (services: Array<Service>) =>
   map(
     (service: Service) => (
-      <Grid item xs={12} md={Math.floor(12 / services.length) as any} key={service.header+service.icon}>
-        <div className={styles.list}>
+      <Grid item xs={12} md={4} key={service.header+service.icon}>
+        <div className={styles.item}>
           <Icon color="primary" style={{ fontSize: 80 }}>{service.icon}</Icon>
           <Typography type="headline" gutterBottom align="center">
             {service.header}
