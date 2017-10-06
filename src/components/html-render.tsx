@@ -7,9 +7,7 @@ type Props = {
 }
 
 const HtmlRenderComponent = ({ content }: Props) => (
-  <Grid item xs={12}>
-    <div dangerouslySetInnerHTML={{ __html: content }} />
-  </Grid>
+  <div dangerouslySetInnerHTML={{ __html: content }} />
 )
 
 export default HtmlRenderComponent
