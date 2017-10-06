@@ -8,10 +8,11 @@ import HtmlRenderComponent from "../components/html-render"
 import PromoTopComponent from "../components/promo-top"
 import ServicesComponent from "../components/services"
 import * as styles from "./index.module.css"
+import { Typography } from "material-ui"
 
 type Props = {
   data: {
-    row1: any,
+    row1: any
     services: any
   }
 }
@@ -19,8 +20,12 @@ type Props = {
 const IndexPage = ({ data }: Props) => (
   <div>
     <PromoTopComponent />
-    <ServicesComponent services={data.services.childMarkdownRemark.frontmatter.services}/>
-    <HtmlRenderComponent content={data.row1.childMarkdownRemark.html} />
+    <ServicesComponent
+      services={data.services.childMarkdownRemark.frontmatter.services}
+    />
+    <Typography type="display2" style={{"text-align": "center", padding: "50px"}}>
+      Hallingdata hjelper deg å ta i bruk IT på en god måte.
+    </Typography>
   </div>
 )
 
