@@ -44,6 +44,10 @@ module.exports = (data: any) => {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <link
+          href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+          rel="stylesheet"
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"

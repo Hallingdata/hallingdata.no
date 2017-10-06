@@ -33,7 +33,7 @@ const IndexPage = ({ data }: Props) => (
         type="display2"
         style={{ "text-align": "center", padding: "50px" }}
       >
-        Hallingdata hjelper deg å ta i bruk IT på en god måte.
+        Vi er teknologiske eksperter
       </Typography>
     </div>
     <TeamComponent />
