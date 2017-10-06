@@ -13,8 +13,9 @@ const NavBarComponent = (props: Props) => (
     <Toolbar>
       <img src={logo} alt="Hallingdata logo" height="60px" />
       <span style={{ flex: 1 }} />
-      <Button color="contrast">Login</Button>
       <Button className={style.navButton}>Hjem</Button>
+      <Button className={style.navButton}>Nettsider</Button>
+      <Button className={style.navButton}>Apper</Button>
       <Button className={style.navButton}>Tjenester</Button>
       <Button className={style.navButton}>Om oss</Button>
       <Button className={style.navButton}>Kontakt</Button>
