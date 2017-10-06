@@ -24,3 +24,10 @@
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.item {
+    text-align: center;
+    padding: 2em;
+    max-width: 250px;
+    margin: auto;
+}

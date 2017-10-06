@@ -12,32 +12,40 @@ type Props = {}
 
 const TeamComponent = (props: Props) => (
   <div className={style.outer}>
-    <Typography type="display1" color="inherit" className={style.header} gutterBottom>
+    <Typography
+      type="display1"
+      color="inherit"
+      className={style.header}
+      gutterBottom
+    >
       Team
     </Typography>
 
-    <Grid container justify="space-around">
+    <Grid container justify="center">
       {map(
         (person: Person) => (
           <Grid
             item
             xs={12}
+            md={3}
             sm={4}
             key={person.name}
             className={style.personOuter}
           >
-            <img src={person.img} alt="Ansatt" className={style.img} />
-            <Typography type="headline" color="inherit" gutterBottom>
-              {person.name}
-            </Typography>
-            <Typography
-              type="body1"
-              color="inherit"
-              gutterBottom
-              align="center"
-            >
-              {person.description}
-            </Typography>
+            <div className={style.item}>
+              <img src={person.img} alt="Ansatt" className={style.img} />
+              <Typography type="headline" color="inherit" gutterBottom>
+                {person.name}
+              </Typography>
+              <Typography
+                type="body1"
+                color="inherit"
+                gutterBottom
+                align="center"
+              >
+                {person.description}
+              </Typography>
+            </div>
           </Grid>
         ),
         people
@@ -58,16 +66,16 @@ const people: Array<Person> = [
   {
     name: "Inger Vik",
     img: ingerImg,
-    description: "Prosjektleder Administrator"
+    description: "Inger er prosjektleder og administrator."
   },
   {
     name: "Eilev Halbjørhus",
     img: eilevImg,
-    description: " Databaseutvikler Oracle-ekspert Daglig leder "
+    description: "Eilev er databaseutvikler, Oracle-ekspert og vår daglig leder."
   },
   {
     name: "Asgeir Sognefest",
     img: asgeirImg,
-    description: "Full-stack utvikler Blockchain-entusiast Konsulent"
+    description: "Asgeir er full-stack utvikler, blockchain-entusiast og har mastergrad i programutvikling."
   }
 ]

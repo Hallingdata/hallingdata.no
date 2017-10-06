@@ -13,7 +13,7 @@ type Props = {
 const renderServices = (services: Array<Service>) =>
   map(
     (service: Service) => (
-      <Grid item xs={12} md={4} key={service.header+service.icon}>
+      <Grid item xs={12} md={3} sm={4} key={service.header+service.icon}>
         <div className={styles.item}>
           <Icon color="primary" style={{ fontSize: 80 }}>{service.icon}</Icon>
           <Typography type="headline" gutterBottom align="center">
@@ -29,7 +29,7 @@ const renderServices = (services: Array<Service>) =>
   )
 
 const ServicesComponent = ({ services }: Props) => (
-  <Grid container justify="space-around" className={styles.outer}>
+  <Grid container justify="center" className={styles.outer}>
     {renderServices(services)}
   </Grid>
 )
