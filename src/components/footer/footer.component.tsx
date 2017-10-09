@@ -22,8 +22,11 @@ const FooterComponent = (props: any) => (
         gutterBottom
         style={{ "padding-top": "9px" }}
       >
-        Kontakt
+        Skal vi ta en prat?
       </Typography>
+      <Typography type="body1" gutterBottom color="inherit">
+       Ring oss for en uforpliktende telefomnsamtale.
+      </Typography> 
       <Button
         href="tel:+4732178032"
         color="inherit"
@@ -50,21 +53,6 @@ const FooterComponent = (props: any) => (
         TLF: 32 17 80 32<br />
         E-post: post@hallingdata.no<br />
       </Typography>
-      <Typography type="body2" color="inherit">
-        Kontoradresse (Gol):
-      </Typography>
-      <Typography type="body1" gutterBottom color="inherit">
-        Hallingdal Næringshage<br />
-        Gamlevegen 6 <br />
-        3550 GOL<br />
-      </Typography>
-      <Typography type="body2" color="inherit">
-        Forretningsadresse (Hemsedal):
-      </Typography>
-      <Typography type="body1" gutterBottom color="inherit">
-        Furuhaugvegen 10 <br />
-        3560 HEMSEDAL <br />
-      </Typography>
     </Grid>
     <Grid item xs={10} md={3} sm={5}>
       <img
@@ -73,11 +61,19 @@ const FooterComponent = (props: any) => (
         height="60px"
         className={style.logo}
       />
-      <Typography type="body1" gutterBottom color="inherit">
+      <Typography type="body1" gutterBottom color="inherit" className={style.vision}>
         Hallingdata hjelper bedrifter og organisasjoner med fornuftig bruk av
         informasjonsteknologi (IT). Vi er IT-eksperter som skjønner
         forretningsdrift. Ta kontakt for å finne ut hvordan vi kan hjelpe deg og
         din organisasjon.
+      </Typography>
+      <Typography type="body2" color="inherit">
+        Besøksadresse (Gol):
+      </Typography>
+      <Typography type="body1" gutterBottom color="inherit">
+        Hallingdal Næringshage<br />
+        Gamlevegen 6 <br />
+        3550 GOL<br />
       </Typography>
     </Grid>
     <Grid item md={3} xs={10} style={{ "text-align": "center" }}>
