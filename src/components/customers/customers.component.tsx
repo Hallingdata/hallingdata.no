@@ -42,7 +42,7 @@ const logos = [
 const CustomersComponent = (prose: Props) => (
   <div className={style.outer}>
     <Typography type="display1" gutterBottom>
-      Noen av kundene våre medarbeidere har bistått
+      Kundene våre medarbeidere har bistått
     </Typography>
     {map(logo => (
       <img src={logo} alt="firma logo" className={style.logo} key={logo} height="100px" />
