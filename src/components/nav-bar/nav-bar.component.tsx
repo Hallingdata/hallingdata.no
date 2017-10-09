@@ -11,7 +11,7 @@ type Props = {}
 const NavBarComponent = (props: Props) => (
   <AppBar>
     <Toolbar>
-      <img src={logo} alt="Hallingdata logo" height="60px" />
+      <img src={logo} alt="Hallingdata logo" height="60px" className={style.logo} />
       <span style={{ flex: 1 }} />
       <Button className={style.navButton}>Hjem</Button>
       <Button className={style.navButton}>Nettsider</Button>
