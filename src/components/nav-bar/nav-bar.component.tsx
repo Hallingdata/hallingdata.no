@@ -17,8 +17,9 @@ const NavBarComponent = (props: Props) => (
       <Button className={style.navButton}>Nettsider</Button>
       <Button className={style.navButton}>Apper</Button>
       <Button className={style.navButton}>Tjenester</Button>
+      <Button className={style.navButton}>Tidligere arbeid</Button>
       <Button className={style.navButton}>Om oss</Button>
-      <Button className={style.navButton}>Kontakt</Button>
+      <Button className={style.contactButton} color="accent" raised>Kontakt</Button>
     </Toolbar>
   </AppBar>
 )

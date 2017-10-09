@@ -1,13 +1,17 @@
 .toolbar {
-    background-color: #5f00be !important;
+  background-color: #5f00be !important;
 }
 
 .navButton {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    color: white !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  color: white !important;
 }
 
 .logo {
-    height: 36px;
+  height: 36px;
+}
+
+.contactButton {
+  margin-left: 15px;
 }
