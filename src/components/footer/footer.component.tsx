@@ -1,6 +1,6 @@
 import * as React from "react"
 import Link from "gatsby-link"
-import { Grid, Typography, Button } from "material-ui"
+import { Grid, Typography, Button, Icon } from "material-ui"
 
 import * as logo from "./logo-white-transparent.png"
 import * as style from "./footer.module.css"
@@ -16,8 +16,39 @@ const FooterComponent = (props: any) => (
     justify="space-around"
   >
     <Grid item md={2} xs={10} sm={3}>
-      <Typography type="title" color="inherit" gutterBottom style={{"padding-top": "8px"}}>
+      <Typography
+        type="title"
+        color="inherit"
+        gutterBottom
+        style={{ "padding-top": "9px" }}
+      >
         Kontakt
+      </Typography>
+      <Button
+        href="tel:+4732178032"
+        color="inherit"
+        raised
+        className={style.contactButton}
+      >
+        <Icon color="inherit" className={style.icon}>
+          phone
+        </Icon>
+        Ring oss
+      </Button>
+      <Button
+        href="mailto:post@hallingdata.no"
+        color="inherit"
+        raised
+        className={style.contactButton}
+      >
+        <Icon color="inherit" className={style.icon}>
+          email
+        </Icon>
+        Send epost
+      </Button>
+      <Typography type="body1" gutterBottom color="inherit">
+        TLF: 32 17 80 32<br />
+        E-post: post@hallingdata.no<br />
       </Typography>
       <Typography type="body2" color="inherit">
         Kontoradresse (Gol):
@@ -33,8 +64,6 @@ const FooterComponent = (props: any) => (
       <Typography type="body1" gutterBottom color="inherit">
         Furuhaugvegen 10 <br />
         3560 HEMSEDAL <br />
-        <a href="tel:+4732178032" className={style.link} >32 17 80 32</a> <br/>
-        <a href="post@hallingdata.no" className={style.link}>post@hallingdata.no</a> 
       </Typography>
     </Grid>
     <Grid item xs={10} md={3} sm={5}>
