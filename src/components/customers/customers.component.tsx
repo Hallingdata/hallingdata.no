@@ -44,9 +44,9 @@ const CustomersComponent = (prose: Props) => (
     <Typography type="display1" gutterBottom>
       Noen av kundene våre medarbeidere har bistått
     </Typography>
-    {logos.map(logo => (
-      <img src={logo} alt="firma logo" className={style.logo} height="100px" />
-    ))}
+    {map(logo => (
+      <img src={logo} alt="firma logo" className={style.logo} key={logo} height="100px" />
+    ), logos)}
   </div>
 )
 
