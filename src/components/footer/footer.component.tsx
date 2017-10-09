@@ -68,7 +68,7 @@ const FooterComponent = (props: any) => (
         din organisasjon.
       </Typography>
       <Typography type="body2" color="inherit">
-        Besøksadresse (Gol):
+        Besøksadresse:
       </Typography>
       <Typography type="body1" gutterBottom color="inherit">
         Hallingdal Næringshage<br />
