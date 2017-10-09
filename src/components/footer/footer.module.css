@@ -1,0 +1,17 @@
+.outer {
+    background-color: #363839;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.logo {
+    height: 36px;
+    margin-bottom: 6px;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
