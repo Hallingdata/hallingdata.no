@@ -15,7 +15,7 @@ const FooterComponent = (props: any) => (
     spacing={0}
     justify="space-around"
   >
-    <Grid item md={2} xs={10} sm={3}>
+    <Grid item md={2} xs={10} sm={5} className={style.gridItem}>
       <Typography
         type="title"
         color="inherit"
@@ -25,8 +25,8 @@ const FooterComponent = (props: any) => (
         Skal vi ta en prat?
       </Typography>
       <Typography type="body1" gutterBottom color="inherit">
-       Ring oss for en uforpliktende telefomnsamtale.
-      </Typography> 
+        Ring oss for en uforpliktende telefomnsamtale.
+      </Typography>
       <Button
         href="tel:+4732178032"
         color="inherit"
@@ -54,14 +54,19 @@ const FooterComponent = (props: any) => (
         E-post: post@hallingdata.no<br />
       </Typography>
     </Grid>
-    <Grid item xs={10} md={3} sm={5}>
+    <Grid item xs={10} md={3} sm={5} className={style.gridItem}>
       <img
         src={logo}
         alt="Hallingdata logo"
         height="60px"
         className={style.logo}
       />
-      <Typography type="body1" gutterBottom color="inherit" className={style.vision}>
+      <Typography
+        type="body1"
+        gutterBottom
+        color="inherit"
+        className={style.vision}
+      >
         Hallingdata hjelper bedrifter og organisasjoner med fornuftig bruk av
         informasjonsteknologi (IT). Vi er IT-eksperter som skjønner
         forretningsdrift. Ta kontakt for å finne ut hvordan vi kan hjelpe deg og
@@ -76,7 +81,7 @@ const FooterComponent = (props: any) => (
         3550 GOL<br />
       </Typography>
     </Grid>
-    <Grid item md={3} xs={10} style={{ "text-align": "center" }}>
+    <Grid item md={3} xs={10} className={style.gridItem}>
       <div
         dangerouslySetInnerHTML={{
           __html:
