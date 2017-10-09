@@ -10,14 +10,7 @@ import Typography from "material-ui/typography"
 type Props = {}
 
 const HeroComponent = (props: Props) => (
-  <Grid
-    container
-    xs={12}
-    spacing={0}
-    className={style.outer}
-    align="center"
-    justify="center"
-  >
+  <Grid container className={style.outer} align="center" justify="center">
     <Grid item>
       <div className={style.inner}>
         <Typography

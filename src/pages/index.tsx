@@ -20,26 +20,34 @@ type Props = {
 
 // https://github.com/callemall/material-ui/issues/7466
 const gridFix = {
-  "width": "100%",
+  width: "100%",
   "overflow-x": "hidden"
 }
 const IndexPage = ({ data }: Props) => (
-  <div style={gridFix}>
-    <HeroComponent />
-    <ServicesComponent
-      services={data.services.childMarkdownRemark.frontmatter.services}
-    />
-    <div>
+  <Grid container direction="column" spacing={0} style={gridFix}>
+    <Grid item>
+      <HeroComponent />
+    </Grid>
+    <Grid item>
+      <ServicesComponent
+        services={data.services.childMarkdownRemark.frontmatter.services}
+      />
+    </Grid>
+    <Grid item>
       <Typography
         type="display2"
-        style={{ "text-align": "center", padding: "50px" }}
+        style={{ "textAlign": "center", padding: "50px" }}
       >
         Vi er teknologiske eksperter
       </Typography>
-    </div>
-    <TeamComponent />
-    <CustomersComponents/>
-  </div>
+    </Grid>
+    <Grid item>
+      <TeamComponent />
+    </Grid>
+    <Grid item>
+      <CustomersComponents />
+    </Grid>
+  </Grid>
 )
 
 export default IndexPage

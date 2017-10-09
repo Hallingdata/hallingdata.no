@@ -21,7 +21,7 @@ const TeamComponent = (props: Props) => (
       Team
     </Typography>
 
-    <Grid container justify="center">
+    <Grid container direction="row" justify="center">
       {map(
         (person: Person) => (
           <Grid
@@ -69,14 +69,14 @@ const renderIcons = (person: Person) => {
   const icons = []
   if (person.githubUrl) {
     icons.push(
-      <a href={person.githubUrl} target="_blank">
+      <a href={person.githubUrl} target="_blank" key={person.githubUrl}>
         <i className="ion-social-github" style={{ margin: "5px", color: "#fff" }}/>
       </a>
     )
   }
   if (person.linkedinUrl) {
     icons.push(
-      <a href={person.linkedinUrl} target="_blank">
+      <a href={person.linkedinUrl} target="_blank" key={person.linkedinUrl}>
         <i className="ion-social-linkedin" style={{ margin: "5px", color: "#fff" }} />
       </a>
     )
