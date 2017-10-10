@@ -1,6 +1,6 @@
-import * as logo from "./logo-white-transparent.png"
-import * as style from "./nav-bar.module.css"
 import * as React from "react"
+
+import * as logo from "./logo-white-transparent.png"
 
 type props = {
   height: string

@@ -1,11 +1,9 @@
-import { Hidden, Toolbar } from "material-ui"
-import AppBar from "material-ui/AppBar"
-import Button from "material-ui/Button"
+import { AppBar, Button, Hidden, Toolbar } from "material-ui"
 import { map } from "ramda"
 import * as React from "react"
 
-import { NavDrawer } from "../nav-drawer/nav-drawer.component"
 import { Logo } from "../logo/logo.component"
+import { NavDrawer } from "../nav-drawer/nav-drawer.component"
 import * as style from "./nav-bar.module.css"
 
 type Props = {}
@@ -19,13 +17,22 @@ export const NavBar = (props: Props) => (
         {map(page => {
           if (page.name == "Kontakt") {
             return (
-              <Button className={style.contactButton} color="accent" raised>
+              <Button
+                className={style.contactButton}
+                color="accent"
+                raised
+                key={page.name + "-navBarButton"}
+              >
                 Kontakt
               </Button>
             )
           } else {
             return (
-              <Button key="{page.name}" className={style.navButton}>
+              <Button
+                key={page.name}
+                className={style.navButton}
+                key={page.name + "-navBarButton"}
+              >
                 {page.name}
               </Button>
             )

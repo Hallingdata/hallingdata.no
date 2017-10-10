@@ -31,7 +31,7 @@ const contactColumn = (
       type="title"
       color="inherit"
       gutterBottom
-      style={{ "padding-top": "9px" }}
+      style={{ paddingTop: "9px" }}
     >
       Skal vi ta en prat?
     </Typography>
@@ -69,11 +69,7 @@ const contactColumn = (
 
 const aboutColumn = (
   <Grid item xs={10} md={3} sm={5} className={style.gridItem}>
-    <Logo
-      height="45px"
-      color="white-transparent"
-      className={style.logo}
-    />
+    <Logo height="45px" color="white-transparent" className={style.logo} />
     <Typography
       type="body1"
       gutterBottom

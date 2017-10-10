@@ -1,8 +1,7 @@
-import * as React from "react"
-import Link from "gatsby-link"
-import Grid from "material-ui/grid"
+import { Grid, Typography } from "material-ui"
 import { map } from "ramda"
-import { Typography, Paper, Icon } from "material-ui"
+import * as React from "react"
+
 import * as asgeirImg from "./asgeir.jpg"
 import * as eilevImg from "./eilev.jpg"
 import * as ingerImg from "./inger.jpg"
@@ -68,14 +67,20 @@ const renderIcons = (person: Person) => {
   if (person.githubUrl) {
     icons.push(
       <a href={person.githubUrl} target="_blank" key={person.githubUrl}>
-        <i className="ion-social-github" style={{ margin: "5px", color: "#fff" }}/>
+        <i
+          className="ion-social-github"
+          style={{ margin: "5px", color: "#fff" }}
+        />
       </a>
     )
   }
   if (person.linkedinUrl) {
     icons.push(
       <a href={person.linkedinUrl} target="_blank" key={person.linkedinUrl}>
-        <i className="ion-social-linkedin" style={{ margin: "5px", color: "#fff" }} />
+        <i
+          className="ion-social-linkedin"
+          style={{ margin: "5px", color: "#fff" }}
+        />
       </a>
     )
   }

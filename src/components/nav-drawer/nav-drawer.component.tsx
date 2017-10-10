@@ -1,8 +1,11 @@
-import { ListItem, ListItemText } from "material-ui"
-import { IconButton } from "material-ui"
-import MenuIcon from "material-ui-icons/Menu"
-import Drawer from "material-ui/Drawer"
-import List from "material-ui/List"
+import {
+  Drawer,
+  Icon,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText
+} from "material-ui"
 import { map } from "ramda"
 import * as React from "react"
 
@@ -40,7 +43,7 @@ export class NavDrawer extends React.Component<Props, State> {
       <List>
         {map(
           link => (
-            <ListItem button>
+            <ListItem button key={link.name + "-drawer"}>
               <ListItemText primary={link.name} />
             </ListItem>
           ),
@@ -56,7 +59,7 @@ export class NavDrawer extends React.Component<Props, State> {
           aria-label="Menu"
           onClick={this.openDrawer(true)}
         >
-          <MenuIcon />
+          <Icon>menu</Icon>
         </IconButton>
         <Drawer
           anchor="right"

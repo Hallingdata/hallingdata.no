@@ -1,11 +1,7 @@
+import { Button, Grid, Typography } from "material-ui"
 import * as React from "react"
-import Link from "gatsby-link"
-import Grid from "material-ui/Grid"
-import * as phoneImage from "./phone2@2x.png"
 
 import * as style from "./hero.module.css"
-import Button from "material-ui/button"
-import Typography from "material-ui/typography"
 
 type Props = {}
 
