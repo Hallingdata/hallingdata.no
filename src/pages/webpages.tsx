@@ -7,6 +7,7 @@ import { Hero } from "../components/hero/hero.component"
 import { OurServices } from "../components/our-services/our-services.component"
 import { Team } from "../components/team/team.component"
 import * as style from "./index.module.css"
+import * as heroImg from "./img/hero/code18-light.jpg"
 
 type Props = {
 }
@@ -25,7 +26,7 @@ const WebpagesPage = (props: Props) => {
   return (
     <Grid container direction="column" spacing={0} style={gridFix}>
       <Grid item>
-        <Hero header="webpages!!" />
+        <Hero header="webpages!!" type="small" img={heroImg} />
       </Grid>
     </Grid>
   )

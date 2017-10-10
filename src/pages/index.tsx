@@ -7,6 +7,7 @@ import { Hero } from "../components/hero/hero.component"
 import { OurServices } from "../components/our-services/our-services.component"
 import { Team } from "../components/team/team.component"
 import * as style from "./index.module.css"
+import * as heroImg from "./img/hero/desk1-light.jpeg"
 
 type Props = {
   data: {
@@ -19,7 +20,7 @@ type Props = {
 }
 
 type Frontmatter = {
-  hero: string
+  header: string
   ourServices: Array<{
     header: string
     icon: string
@@ -43,7 +44,7 @@ const IndexPage = ({ data }: Props) => {
   return (
     <Grid container direction="column" spacing={0} style={gridFix}>
       <Grid item>
-        <Hero header={frontmatter.hero} />
+        <Hero header={frontmatter.header} type="big" img={heroImg} />
       </Grid>
       <Grid item>
         <OurServices services={frontmatter.ourServices} />
@@ -75,7 +76,7 @@ export const pageQuery = graphql`
         html
         timeToRead
         frontmatter {
-          hero
+          header
           ourServices {
             header
             icon

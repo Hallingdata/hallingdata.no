@@ -1,5 +1,5 @@
 ---
-hero: "Web og app utvikling"
+header: "Web og app utvikling"
 ourServices:
   - header: "Web"
     icon: "important_devices"

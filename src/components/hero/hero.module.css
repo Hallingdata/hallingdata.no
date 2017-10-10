@@ -1,7 +1,9 @@
-.outer {
+.big {
   height: 700px;
-  background-image: url(./img/1-2.jpeg);
-  background-size: cover;
+}
+
+.small {
+  height: 400px;
 }
 
 .inner {

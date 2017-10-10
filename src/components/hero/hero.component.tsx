@@ -5,10 +5,25 @@ import * as style from "./hero.module.css"
 
 type Props = {
   header: string
+  type: "small" | "big",
+  img: string
+}
+
+const backgroundStyle = (image: any) => {
+  return {
+    backgroundImage: `url(${image})`,
+    backgroundSize: "cover"
+  }
 }
 
 export const Hero = (props: Props) => (
-  <Grid container className={style.outer} align="center" justify="center">
+  <Grid
+    container
+    className={style[props.type]}
+    align="center"
+    justify="center"
+    style={backgroundStyle(props.img)}
+  >
     <Grid item>
       <div className={style.inner}>
         <Typography

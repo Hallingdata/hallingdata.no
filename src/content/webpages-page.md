@@ -1,3 +1,3 @@
 ---
-hero: "Web og app utvikling"
+header: "Nettsider"
 ---
