@@ -1,14 +1,14 @@
-import TeamComponent from "../components/team/team.component"
+import { Team } from "../components/team/team.component"
 import * as image from "../content/index/row1.jpg"
 
 import * as React from "react"
 import Link from "gatsby-link"
 import Grid from "material-ui/Grid"
 
-import HeroComponent from "../components/hero/hero.component"
-import ServicesComponent from "../components/services/services.component"
-import CustomersComponent from "../components/customers/customers.component"
-import FooterComponent from "../components/footer/footer.component"
+import { Hero } from "../components/hero/hero.component"
+import { OurServices } from "../components/our-services/our-services.component"
+import { CustomerLogos } from "../components/customer-logos/customer-logos.component"
+import { Footer } from "../components/footer/footer.component"
 import * as style from "./index.module.css"
 import { Typography } from "material-ui"
 
@@ -27,10 +27,10 @@ const gridFix = {
 const IndexPage = ({ data }: Props) => (
   <Grid container direction="column" spacing={0} style={gridFix}>
     <Grid item>
-      <HeroComponent />
+      <Hero />
     </Grid>
     <Grid item>
-      <ServicesComponent
+      <OurServices
         services={data.services.childMarkdownRemark.frontmatter.services}
       />
     </Grid>
@@ -43,13 +43,13 @@ const IndexPage = ({ data }: Props) => (
       </Typography>
     </Grid>
     <Grid item>
-      <TeamComponent />
+      <Team />
     </Grid>
     <Grid item>
-      <CustomersComponent />
+      <CustomerLogos />
     </Grid>
     <Grid item>
-      <FooterComponent />
+      <Footer />
     </Grid>
   </Grid>
 )

@@ -6,8 +6,6 @@ type Props = {
   content: string
 }
 
-const HtmlRenderComponent = ({ content }: Props) => (
+export const HtmlRender = ({ content }: Props) => (
   <div dangerouslySetInnerHTML={{ __html: content }} />
 )
-
-export default HtmlRenderComponent

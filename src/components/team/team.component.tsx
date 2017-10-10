@@ -10,7 +10,7 @@ import * as style from "./team.module.css"
 
 type Props = {}
 
-const TeamComponent = (props: Props) => (
+export const Team = (props: Props) => (
   <div className={style.outer}>
     <Typography
       type="display1"
@@ -54,8 +54,6 @@ const TeamComponent = (props: Props) => (
     </Grid>
   </div>
 )
-
-export default TeamComponent
 
 type Person = {
   name: string

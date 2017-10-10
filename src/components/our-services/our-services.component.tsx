@@ -4,7 +4,7 @@ import * as React from "react"
 import Icon from "material-ui/Icon"
 import { map } from "ramda"
 
-import * as styles from "./services.module.css"
+import * as styles from "./our-services.module.css"
 
 type Props = {
   services: Array<Service>
@@ -28,13 +28,11 @@ const renderServices = (services: Array<Service>) =>
     services
   )
 
-const ServicesComponent = ({ services }: Props) => (
+export const OurServices = ({ services }: Props) => (
   <Grid container justify="center" className={styles.outer}>
     {renderServices(services)}
   </Grid>
 )
-
-export default ServicesComponent
 
 type Service = {
   header: string

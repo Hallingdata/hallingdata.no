@@ -9,7 +9,7 @@ import Typography from "material-ui/typography"
 
 type Props = {}
 
-const HeroComponent = (props: Props) => (
+export const Hero = (props: Props) => (
   <Grid container className={style.outer} align="center" justify="center">
     <Grid item>
       <div className={style.inner}>
@@ -28,5 +28,3 @@ const HeroComponent = (props: Props) => (
     </Grid>
   </Grid>
 )
-
-export default HeroComponent

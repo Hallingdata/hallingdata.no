@@ -19,7 +19,7 @@ import * as telenorLogo from "./img/telenor_logo_v2.png"
 import * as tvNorgeLogo from "./img/tvnorge_logo.png"
 import * as vgLogo from "./img/vg_logo.png"
 
-import * as style from "./customers.module.css"
+import * as style from "./customer-logos.module.css"
 
 type Props = {}
 
@@ -39,7 +39,7 @@ const logos = [
   vgLogo
 ]
 
-const CustomersComponent = (prose: Props) => (
+export const CustomerLogos = (prose: Props) => (
   <div className={style.outer}>
     <Typography type="display1" gutterBottom>
       Kundene våre medarbeidere har bistått
@@ -49,5 +49,3 @@ const CustomersComponent = (prose: Props) => (
     ), logos)}
   </div>
 )
-
-export default CustomersComponent
