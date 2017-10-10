@@ -1,28 +1,26 @@
-import { Team } from "../components/team/team.component"
-import * as image from "../content/index/row1.jpg"
-
-import * as React from "react"
-import Link from "gatsby-link"
+import { Typography } from "material-ui"
 import Grid from "material-ui/Grid"
+import * as React from "react"
 
+import { CustomerLogos } from "../components/customer-logos/customer-logos.component"
 import { Hero } from "../components/hero/hero.component"
 import { OurServices } from "../components/our-services/our-services.component"
-import { CustomerLogos } from "../components/customer-logos/customer-logos.component"
+import { Team } from "../components/team/team.component"
 import * as style from "./index.module.css"
-import { Typography } from "material-ui"
 
 type Props = {
   data: {
     row1: any
-    services: any
+    landingPage: any
   }
 }
 
 // https://github.com/callemall/material-ui/issues/7466
 const gridFix = {
   width: "100%",
-  "overflow-x": "hidden"
+  overflowX: "hidden" as any
 }
+
 const IndexPage = ({ data }: Props) => (
   <Grid container direction="column" spacing={0} style={gridFix}>
     <Grid item>
@@ -30,13 +28,13 @@ const IndexPage = ({ data }: Props) => (
     </Grid>
     <Grid item>
       <OurServices
-        services={data.services.childMarkdownRemark.frontmatter.services}
+        services={data.landingPage.childMarkdownRemark.frontmatter.ourServices}
       />
     </Grid>
     <Grid item>
       <Typography
         type="display2"
-        style={{ "textAlign": "center", padding: "50px" }}
+        style={{ textAlign: "center", padding: "50px" }}
       >
         Vi er teknologiske eksperter
       </Typography>
@@ -60,12 +58,12 @@ export const pageQuery = graphql`
         timeToRead
       }
     }
-    services: file(relativePath: { eq: "content/index/services.md" }) {
+    landingPage: file(relativePath: { eq: "content/landing-page.md" }) {
       childMarkdownRemark {
         html
         timeToRead
         frontmatter {
-          services {
+          ourServices {
             header
             icon
             description
