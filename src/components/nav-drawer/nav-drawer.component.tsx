@@ -1,31 +1,32 @@
-import * as React from "react"
-import { withStyles } from "material-ui/styles"
-import Drawer from "material-ui/Drawer"
-import Button from "material-ui/Button"
-import List from "material-ui/List"
-import Divider from "material-ui/Divider"
-import { ListItem, ListItemIcon, ListItemText } from "material-ui"
-import InboxIcon from "material-ui-icons/Inbox"
-import { Toolbar, IconButton, Hidden } from "material-ui"
+import { ListItem, ListItemText } from "material-ui"
+import { IconButton } from "material-ui"
 import MenuIcon from "material-ui-icons/Menu"
+import Drawer from "material-ui/Drawer"
+import List from "material-ui/List"
+import { map } from "ramda"
+import * as React from "react"
 
-const styles = {
-  list: {
-    width: 250
-  },
-  listFull: {
-    width: "auto"
-  }
+type Link = {
+  name: string
+  link: string
 }
 
-class NavDrawerNoStyle extends React.Component {
+type Props = {
+  links: Array<Link>
+}
+
+type State = {
+  open: boolean
+  links: Array<Link>
+}
+
+export class NavDrawer extends React.Component<Props, State> {
   constructor(props: any) {
     super(props)
-    this.state = { open: false }
-  }
-
-  state: {
-    open: false
+    this.state = {
+      open: false,
+      links: props.links
+    }
   }
 
   openDrawer = (open: boolean) => () => {
@@ -35,19 +36,17 @@ class NavDrawerNoStyle extends React.Component {
   }
 
   public render() {
-    const { classes }: any = this.props
-
-    const fullList = (
-      <div className={classes.listFull}>
-        <List>
-          <ListItem button>
-            <ListItemText primary="Trash" />
-          </ListItem>
-          <ListItem button component="a" href="#simple-list">
-            <ListItemText primary="Spam" />
-          </ListItem>
-        </List>
-      </div>
+    const linksList = (
+      <List>
+        {map(
+          link => (
+            <ListItem button>
+              <ListItemText primary={link.name} />
+            </ListItem>
+          ),
+          this.state.links
+        )}
+      </List>
     )
 
     return (
@@ -70,12 +69,10 @@ class NavDrawerNoStyle extends React.Component {
             onClick={this.openDrawer(false)}
             onKeyDown={this.openDrawer(false)}
           >
-            {fullList}
+            {linksList}
           </div>
         </Drawer>
       </div>
     )
   }
 }
-
-export const NavDrawer = withStyles(styles)(NavDrawerNoStyle)
