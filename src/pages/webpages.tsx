@@ -7,7 +7,7 @@ import { Hero } from "../components/hero/hero.component"
 import { OurServices } from "../components/our-services/our-services.component"
 import { Team } from "../components/team/team.component"
 import * as style from "./index.module.css"
-import * as heroImg from "./img/hero/code18-light.jpg"
+import * as heroImg from "./img/hero/code1.jpeg"
 
 type Props = {
   data: {
