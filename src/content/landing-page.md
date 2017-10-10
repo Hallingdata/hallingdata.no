@@ -22,5 +22,5 @@ team:
     description: "Asgeir er full-stack utvikler, blockchain-entusiast og har mastergrad i programutvikling."
     linkedinUrl: "https://www.linkedin.com/in/sogasg"
     githubUrl: "https://github.com/sogasg"
-customerLogoHeader: "Kundene våre medarbeidere har bistått"
+customerLogoHeader: "Kunder våre medarbeidere har bistått"
 ---
