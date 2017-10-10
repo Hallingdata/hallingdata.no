@@ -39,7 +39,6 @@ const gridFix = {
 
 const IndexPage = ({ data }: Props) => {
   const frontmatter = data.landingPage.childMarkdownRemark.frontmatter
-  console.log(frontmatter)
 
   return (
     <Grid container direction="column" spacing={0} style={gridFix}>
@@ -70,7 +69,7 @@ const IndexPage = ({ data }: Props) => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query PromoContent {
+  query LandingContent {
     landingPage: file(relativePath: { eq: "content/landing-page.md" }) {
       childMarkdownRemark {
         html
