@@ -8,7 +8,6 @@ import Grid from "material-ui/Grid"
 import { Hero } from "../components/hero/hero.component"
 import { OurServices } from "../components/our-services/our-services.component"
 import { CustomerLogos } from "../components/customer-logos/customer-logos.component"
-import { Footer } from "../components/footer/footer.component"
 import * as style from "./index.module.css"
 import { Typography } from "material-ui"
 
@@ -47,9 +46,6 @@ const IndexPage = ({ data }: Props) => (
     </Grid>
     <Grid item>
       <CustomerLogos />
-    </Grid>
-    <Grid item>
-      <Footer />
     </Grid>
   </Grid>
 )

@@ -6,6 +6,7 @@ import * as React from "react"
 import { Helmet } from "react-helmet"
 
 import { NavBar } from "../components/nav-bar/nav-bar.component"
+import { Footer } from "../components/footer/footer.component"
 
 type Props = {
   children: () => React.ReactNode
@@ -23,6 +24,7 @@ const TemplateWrapper = ({ children }: Props) => (
       />
       <NavBar />
       {children()}
+      <Footer />
     </div>
   </MuiThemeProvider>
 )
