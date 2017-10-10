@@ -11,4 +11,16 @@ ourServices:
     icon: "settings_applications"
     description: "Utvikling av nye IT-løsninger."
 promoText: "Vi er teknologiske eksperter"
+team:
+  - name: "Inger Vik"
+    description: "Inger er prosjektleder og administrator."
+    linkedinUrl: "https://www.linkedin.com/in/inger-vik-halbj%C3%B8rhus-99713939/?ppe=1"
+  - name: "Eilev Halbjørhus"
+    description: "Eilev er databaseutvikler, Oracle-ekspert og vår daglig leder."
+    linkedinUrl: "https://www.linkedin.com/in/eilevhalbjorhus/"
+  - name: "Asgeir Sognefest"
+    description: "Asgeir er full-stack utvikler, blockchain-entusiast og har mastergrad i programutvikling."
+    linkedinUrl: "https://www.linkedin.com/in/sogasg"
+    githubUrl: "https://github.com/sogasg"
+customerLogoHeader: "Kundene våre medarbeidere har bistått"
 ---

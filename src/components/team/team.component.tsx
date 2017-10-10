@@ -1,5 +1,5 @@
 import { Grid, Typography } from "material-ui"
-import { map } from "ramda"
+import { map, test } from "ramda"
 import * as React from "react"
 
 import * as asgeirImg from "./asgeir.jpg"
@@ -7,7 +7,9 @@ import * as eilevImg from "./eilev.jpg"
 import * as ingerImg from "./inger.jpg"
 import * as style from "./team.module.css"
 
-type Props = {}
+type Props = {
+  people: Array<Person>
+}
 
 export const Team = (props: Props) => (
   <div className={style.outer}>
@@ -32,7 +34,7 @@ export const Team = (props: Props) => (
             className={style.personOuter}
           >
             <div className={style.item}>
-              <img src={person.img} alt="Ansatt" className={style.img} />
+              {personPhoto(person.name)}
               <Typography type="headline" color="inherit" gutterBottom>
                 {person.name}
               </Typography>
@@ -48,11 +50,26 @@ export const Team = (props: Props) => (
             </div>
           </Grid>
         ),
-        people
+        props.people
       )}
     </Grid>
   </div>
 )
+
+const personPhoto = (name: string) => {
+  if (test(/^Asgeir/, name)) {
+    return <img src={asgeirImg} alt="Ansatt" className={style.img} />
+  }
+  else if (test(/^Inger/, name)) {
+    return <img src={ingerImg} alt="Ansatt" className={style.img} />
+  }
+  else if (test(/^Eilev/, name)) {
+    return <img src={eilevImg} alt="Ansatt" className={style.img} />
+  }
+  else {
+    return <img src="https://www.sideshowtoy.com/photo_902662_thumb.jpg" alt="Ansatt" className={style.img} />
+  }
+}
 
 type Person = {
   name: string
@@ -86,28 +103,3 @@ const renderIcons = (person: Person) => {
   }
   return icons
 }
-
-const people: Array<Person> = [
-  {
-    name: "Inger Vik",
-    img: ingerImg,
-    description: "Inger er prosjektleder og administrator.",
-    linkedinUrl:
-      "https://www.linkedin.com/in/inger-vik-halbj%C3%B8rhus-99713939/?ppe=1"
-  },
-  {
-    name: "Eilev Halbjørhus",
-    img: eilevImg,
-    description:
-      "Eilev er databaseutvikler, Oracle-ekspert og vår daglig leder.",
-    linkedinUrl: "https://www.linkedin.com/in/eilevhalbjorhus/"
-  },
-  {
-    name: "Asgeir Sognefest",
-    img: asgeirImg,
-    description:
-      "Asgeir er full-stack utvikler, blockchain-entusiast og har mastergrad i programutvikling.",
-    linkedinUrl: "https://www.linkedin.com/in/sogasg",
-    githubUrl: "https://github.com/sogasg"
-  }
-]

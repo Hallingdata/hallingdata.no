@@ -17,7 +17,9 @@ import * as statnettLogo from "./img/statnett_logo_m_tekst.png"
 import * as telenorLogo from "./img/telenor_logo_v2.png"
 import * as vgLogo from "./img/vg_logo.png"
 
-type Props = {}
+type Props = {
+  header: string
+}
 
 const logos = [
   basefarmLogo,
@@ -35,10 +37,10 @@ const logos = [
   vgLogo
 ]
 
-export const CustomerLogos = (prose: Props) => (
+export const CustomerLogos = (props: Props) => (
   <div className={style.outer}>
     <Typography type="display1" gutterBottom>
-      Kundene våre medarbeidere har bistått
+      {props.header}
     </Typography>
     {map(
       logo => (
