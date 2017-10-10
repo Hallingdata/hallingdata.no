@@ -1,6 +1,7 @@
 import { AppBar, Button, Hidden, Toolbar } from "material-ui"
 import { map } from "ramda"
 import * as React from "react"
+import { navigateTo } from "gatsby-link"
 
 import { Logo } from "../logo/logo.component"
 import { NavDrawer } from "../nav-drawer/nav-drawer.component"
@@ -29,9 +30,9 @@ export const NavBar = (props: Props) => (
           } else {
             return (
               <Button
-                key={page.name}
                 className={style.navButton}
                 key={page.name + "-navBarButton"}
+                onClick={() => navigateTo("/" + page.link)}
               >
                 {page.name}
               </Button>
@@ -53,7 +54,7 @@ const pages = [
   },
   {
     name: "Nettsider",
-    link: ""
+    link: "webpages"
   },
   {
     name: "Apper",

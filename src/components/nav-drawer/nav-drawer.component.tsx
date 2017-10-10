@@ -8,6 +8,7 @@ import {
 } from "material-ui"
 import { map } from "ramda"
 import * as React from "react"
+import { navigateTo } from "gatsby-link"
 
 type Link = {
   name: string
@@ -43,7 +44,11 @@ export class NavDrawer extends React.Component<Props, State> {
       <List>
         {map(
           link => (
-            <ListItem button key={link.name + "-drawer"}>
+            <ListItem
+              button
+              key={link.name + "-drawer"}
+              onClick={() => navigateTo("/" + link.link)}
+            >
               <ListItemText primary={link.name} />
             </ListItem>
           ),
