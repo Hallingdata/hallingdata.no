@@ -1,7 +1,3 @@
-.toolbar {
-  background-color: #5f00be !important;
-}
-
 .navButton {
   margin-left: 0px !important;
   margin-right: 0px !important;
@@ -14,4 +10,9 @@
 
 .contactButton {
   margin-left: 15px;
+}
+
+.appBar {
+  background-color: transparent !important;
+  box-shadow: unset !important;
 }

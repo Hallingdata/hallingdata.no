@@ -1,4 +1,4 @@
-import { AppBar, Button, Hidden, Toolbar } from "material-ui"
+import { AppBar, Button, Hidden, Toolbar, withStyles } from "material-ui"
 import { map } from "ramda"
 import * as React from "react"
 import { navigateTo } from "gatsby-link"
@@ -10,9 +10,9 @@ import * as style from "./nav-bar.module.css"
 type Props = {}
 
 export const NavBar = (props: Props) => (
-  <AppBar>
+  <AppBar position="absolute" className={style.appBar}>
     <Toolbar>
-      <Logo height="35px" color="white-transparent" />
+      <Logo height="40px" color="white-transparent" />
       <span style={{ flex: 1 }} />
       <Hidden smDown>
         {map(page => {
