@@ -1,8 +1,8 @@
 import { Typography } from "material-ui"
 import { map } from "ramda"
 import * as React from "react"
+import { StyleRulesCallback, withStyles } from "material-ui/styles"
 
-import * as style from "./customer-logos.module.css"
 import * as basefarmLogo from "./img/basefarm_logo_v1.png"
 import * as eikaLogo from "./img/eika_logo.png"
 import * as felleskjopetLogo from "./img/felleskjoepet_logo_v1.png"
@@ -37,17 +37,20 @@ const logos = [
   vgLogo
 ]
 
-export const CustomerLogos = (props: Props) => (
-  <div className={style.outer}>
+const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
+  header,
+  classes
+}) => (
+  <div className={classes.outer}>
     <Typography type="display1" gutterBottom>
-      {props.header}
+      {header}
     </Typography>
     {map(
       logo => (
         <img
           src={logo}
           alt="firma logo"
-          className={style.logo}
+          className={classes.logo}
           key={logo}
           height="100px"
         />
@@ -56,3 +59,21 @@ export const CustomerLogos = (props: Props) => (
     )}
   </div>
 )
+
+type StyleClassNames = {
+  logo: string
+  outer: string
+}
+
+const styles: StyleRulesCallback = theme => ({
+  logo: {
+    padding: "40px"
+  },
+  outer: {
+    textAlign: "center",
+    paddingTop: "100px",
+    paddingBottom: "100px"
+  }
+})
+
+export const CustomerLogos = withStyles(styles)<Props>(customerLogos)
