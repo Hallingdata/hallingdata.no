@@ -1,4 +1,3 @@
-import { HtmlRender } from "../components/html-render/html-render.component"
 import { ChecklistCard } from "../components/checklist-card/checklist-card.component"
 import { Typography } from "material-ui"
 import Grid from "material-ui/Grid"
