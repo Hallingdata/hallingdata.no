@@ -9,6 +9,9 @@
 
     npm run develop
 
+## Commit messages
+
+[gitmoji](https://gitmoji.carloscuesta.me/)
 
 ## Stack
 * [GatsbyJS](https://www.gatsbyjs.org/)
