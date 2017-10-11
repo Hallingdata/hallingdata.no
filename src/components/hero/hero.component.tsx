@@ -1,38 +1,35 @@
 import { Button, Grid, Typography } from "material-ui"
+import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
-
-import * as style from "./hero.module.css"
 
 type Props = {
   header: string
-  type: "small" | "big",
+  type: "small" | "big"
   img: string
 }
 
-const backgroundStyle = (image: any) => {
-  return {
-    backgroundImage: `url(${image})`,
-    backgroundSize: "cover"
-  }
-}
-
-export const Hero = (props: Props) => (
+const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
+  header,
+  type,
+  img,
+  classes
+}) => (
   <Grid
     container
-    className={style[props.type]}
+    className={classes[type]}
     align="center"
     justify="center"
-    style={backgroundStyle(props.img)}
+    style={backgroundStyle(img)}
   >
     <Grid item>
-      <div className={style.inner}>
+      <div className={classes.inner}>
         <Typography
           type="display3"
           gutterBottom
           style={{ color: "#fff" }}
-          className={style.header}
+          className={classes.header}
         >
-          {props.header}
+          {header}
         </Typography>
         <Button color="accent" raised>
           Kontakt oss
@@ -41,3 +38,39 @@ export const Hero = (props: Props) => (
     </Grid>
   </Grid>
 )
+
+const backgroundStyle = (image: any) => {
+  return {
+    backgroundImage: `url(${image})`,
+    backgroundSize: "cover"
+  }
+}
+
+type StyleClassNames = {
+  big: string
+  small: string
+  inner: string
+  header: string
+}
+
+const styles: StyleRulesCallback = theme => ({
+  big: {
+    height: 700
+  },
+  small: {
+    height: 400
+  },
+  inner: {
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingBottom: 10,
+    textAlign: "center"
+  },
+  header: {
+    backgroundColor: "black",
+    paddingLeft: 20,
+    paddingRight: 20
+  }
+})
+
+export const Hero = withStyles(styles)<Props>(hero)
