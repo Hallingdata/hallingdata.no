@@ -10,7 +10,7 @@ import { NavDrawer } from "../nav-drawer/nav-drawer.component"
 type Props = {}
 
 const navBar: React.SFC<Props & { classes: StyleClassNames }> = ({
-  classes
+  classes,
 }) => (
   <AppBar position="absolute" className={classes.appBar}>
     <Toolbar>
@@ -60,18 +60,18 @@ const styles: StyleRulesCallback = theme => ({
   navButton: {
     marginLeft: "0px !important",
     marginRight: "0px !important",
-    color: "white !important"
+    color: "white !important",
   },
   logo: {
-    height: 37
+    height: 37,
   },
   contactButton: {
-    marginLeft: 15
+    marginLeft: 15,
   },
   appBar: {
     backgroundColor: "transparent !important",
-    boxShadow: "unset !important"
-  }
+    boxShadow: "unset !important",
+  },
 })
 
 export const NavBar = withStyles(styles)<Props>(navBar)
@@ -79,30 +79,30 @@ export const NavBar = withStyles(styles)<Props>(navBar)
 const pages = [
   {
     name: "Hjem",
-    link: ""
+    link: "",
   },
   {
     name: "Nettsider",
-    link: "webpages"
+    link: "webpages",
   },
   {
     name: "Apper",
-    link: ""
+    link: "",
   },
   {
     name: "Tjenester",
-    link: ""
+    link: "",
   },
   {
     name: "Tidligere arbeid",
-    link: ""
+    link: "",
   },
   {
     name: "Om oss",
-    link: ""
+    link: "",
   },
   {
     name: "Kontakt",
-    link: ""
-  }
+    link: "",
+  },
 ]

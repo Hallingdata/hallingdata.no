@@ -6,7 +6,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Typography
+  Typography,
 } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import { map } from "ramda"
@@ -18,7 +18,7 @@ type Props = {
 
 const checklistCard: React.SFC<Props & { classes: StyleClassNames }> = ({
   list,
-  classes
+  classes,
 }) => {
   return (
     <Card className={classes.card}>
@@ -54,14 +54,14 @@ const styles: StyleRulesCallback = theme => ({
     width: 300,
     margin: "auto",
     [theme.breakpoints.up("sm")]: {
-      marginTop: "-100px"
-    }
+      marginTop: "-100px",
+    },
   },
   title: {
     marginBottom: 16,
     fontSize: 14,
-    color: theme.palette.text.secondary
-  }
+    color: theme.palette.text.secondary,
+  },
 })
 
 export const ChecklistCard = withStyles(styles)<Props>(checklistCard)

@@ -8,9 +8,5 @@ type Props = {
 }
 
 export const Logo: React.SFC<Props> = props => (
-  <img
-    src={logo}
-    alt="Hallingdata logo"
-    className={props.className}
-  />
+  <img src={logo} alt="Hallingdata logo" className={props.className} />
 )

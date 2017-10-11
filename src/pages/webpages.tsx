@@ -30,7 +30,7 @@ type Frontmatter = {
 const gridFix = {
   width: "100%",
   overflow: "hidden" as any,
-  margin: 0
+  margin: 0,
 }
 
 const WebpagesPage: React.SFC<Props> = ({ data }) => {

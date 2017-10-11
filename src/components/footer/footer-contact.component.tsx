@@ -8,7 +8,7 @@ import { Logo } from "../logo/logo.component"
 type Props = {}
 
 const footerContact: React.SFC<Props & { classes: StyleClassNames }> = ({
-  classes
+  classes,
 }) => (
   <Grid item md={2} xs={10} sm={5} className={classes.gridItem}>
     <Typography
@@ -59,15 +59,15 @@ type StyleClassNames = {
 
 const styles: StyleRulesCallback = theme => ({
   icon: {
-    paddingRight: 5
+    paddingRight: 5,
   },
   contactButton: {
     marginBottom: 10,
-    width: "100%"
+    width: "100%",
   },
   gridItem: {
-    marginBottom: 30
-  }
+    marginBottom: 30,
+  },
 })
 
 export const FooterContact = withStyles(styles)<Props>(footerContact)

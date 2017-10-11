@@ -34,7 +34,7 @@ type Frontmatter = {
 // https://github.com/callemall/material-ui/issues/7466
 const gridFix = {
   width: "100%",
-  overflowX: "hidden" as any
+  overflowX: "hidden" as any,
 }
 
 const IndexPage: React.SFC<Props> = ({ data }) => {

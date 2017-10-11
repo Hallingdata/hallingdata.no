@@ -12,7 +12,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
   header,
   type,
   img,
-  classes
+  classes,
 }) => (
   <Grid
     container
@@ -42,7 +42,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
 const backgroundStyle = (image: any) => {
   return {
     backgroundImage: `url(${image})`,
-    backgroundSize: "cover"
+    backgroundSize: "cover",
   }
 }
 
@@ -55,22 +55,22 @@ type StyleClassNames = {
 
 const styles: StyleRulesCallback = theme => ({
   big: {
-    height: 700
+    height: 700,
   },
   small: {
-    height: 400
+    height: 400,
   },
   inner: {
     paddingLeft: 20,
     paddingRight: 20,
     paddingBottom: 10,
-    textAlign: "center"
+    textAlign: "center",
   },
   header: {
     backgroundColor: "black",
     paddingLeft: 20,
-    paddingRight: 20
-  }
+    paddingRight: 20,
+  },
 })
 
 export const Hero = withStyles(styles)<Props>(hero)

@@ -13,7 +13,7 @@ type Props = {
 
 const team: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
-  people
+  people,
 }) => (
   <div className={classes.outer}>
     <Typography
@@ -70,31 +70,31 @@ type StyleClassNames = {
 
 const styles: StyleRulesCallback = theme => ({
   personOuter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   img: {
     borderRadius: "100%",
     width: 150,
-    height: 150
+    height: 150,
   },
   header: {
-    textAlign: "center"
+    textAlign: "center",
   },
   outer: {
     backgroundColor: "#673ab7",
     color: "#fff",
     paddingTop: 100,
-    paddingBottom: 100
+    paddingBottom: 100,
   },
   item: {
     textAlign: "center",
     padding: "2em",
     maxWidth: 250,
-    margin: "auto"
+    margin: "auto",
   },
   icons: {
-    fontSize: 20
-  }
+    fontSize: 20,
+  },
 })
 
 export const Team = withStyles(styles)<Props>(team)

@@ -9,7 +9,7 @@ type Props = {
 
 const ourServices: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
-  services
+  services,
 }) => (
   <Grid container justify="center" className={classes.outer}>
     {map(
@@ -40,14 +40,14 @@ type StyleClassNames = {
 
 const styles: StyleRulesCallback = theme => ({
   outer: {
-    backgroundColor: "#FAFAFA"
+    backgroundColor: "#FAFAFA",
   },
   item: {
     textAlign: "center",
     padding: "2em",
     maxWidth: 250,
-    margin: "auto"
-  }
+    margin: "auto",
+  },
 })
 
 export const OurServices = withStyles(styles)<Props>(ourServices)

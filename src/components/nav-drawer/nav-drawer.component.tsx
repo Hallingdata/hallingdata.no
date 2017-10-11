@@ -4,7 +4,7 @@ import {
   IconButton,
   List,
   ListItem,
-  ListItemText
+  ListItemText,
 } from "material-ui"
 import { map } from "ramda"
 import * as React from "react"
@@ -29,13 +29,13 @@ export class NavDrawer extends React.Component<Props, State> {
     super(props)
     this.state = {
       open: false,
-      links: props.links
+      links: props.links,
     }
   }
 
   openDrawer = (open: boolean) => () => {
     this.setState({
-      open
+      open,
     })
   }
 

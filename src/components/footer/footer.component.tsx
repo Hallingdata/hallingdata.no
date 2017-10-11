@@ -1,6 +1,6 @@
-import { FooterAbout } from './footer-about.component';
+import { FooterAbout } from "./footer-about.component"
 import { Button, Grid, Icon, Typography } from "material-ui"
-import * as React from 'react';
+import * as React from "react"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 
 import { FacebookBadge } from "../facebook-badge/facebook-badge.component"
@@ -10,9 +10,8 @@ import { FooterContact } from "./footer-contact.component"
 type Props = {}
 
 const footer: React.SFC<Props & { classes: StyleClassNames }> = ({
-  classes
+  classes,
 }) => {
-
   return (
     <Grid
       container
@@ -46,11 +45,11 @@ const styles: StyleRulesCallback = theme => ({
     backgroundColor: "#363839",
     color: "#fff",
     paddingTop: 50,
-    paddingBottom: 100
+    paddingBottom: 100,
   },
   gridItem: {
-    marginBottom: 30
-  }
+    marginBottom: 30,
+  },
 })
 
 export const Footer = withStyles(styles)<Props>(footer)

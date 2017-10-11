@@ -18,7 +18,7 @@ const TemplateWrapper: React.SFC<Props> = ({ children }) => (
         title="Hallingdata"
         meta={[
           { name: "description", content: "Sample" },
-          { name: "keywords", content: "sample, something" }
+          { name: "keywords", content: "sample, something" },
         ]}
       />
       <NavBar />
@@ -33,6 +33,6 @@ export default TemplateWrapper
 const theme = createMuiTheme({
   palette: {
     primary: deepPurple,
-    secondary: amber
-  }
+    secondary: amber,
+  },
 })

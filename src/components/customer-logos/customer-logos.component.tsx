@@ -34,12 +34,12 @@ const logos = [
   statnettLogo,
   statsKraftLogo,
   telenorLogo,
-  vgLogo
+  vgLogo,
 ]
 
 const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
   header,
-  classes
+  classes,
 }) => (
   <div className={classes.outer}>
     <Typography type="display1" gutterBottom>
@@ -67,13 +67,13 @@ type StyleClassNames = {
 
 const styles: StyleRulesCallback = theme => ({
   logo: {
-    padding: "40px"
+    padding: "40px",
   },
   outer: {
     textAlign: "center",
     paddingTop: "100px",
-    paddingBottom: "100px"
-  }
+    paddingBottom: "100px",
+  },
 })
 
 export const CustomerLogos = withStyles(styles)<Props>(customerLogos)

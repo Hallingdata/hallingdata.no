@@ -54,7 +54,7 @@ module.exports = (data: any) => {
         />
         {css}
       </head>
-      <body style={{margin: 0}}>
+      <body style={{ margin: 0 }}>
         <div id="___gatsby" dangerouslySetInnerHTML={{ __html: data.body }} />
         {data.postBodyComponents}
       </body>
