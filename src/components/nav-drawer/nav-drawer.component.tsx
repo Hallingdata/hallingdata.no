@@ -25,7 +25,7 @@ type State = {
 }
 
 export class NavDrawer extends React.Component<Props, State> {
-  constructor(props: any) {
+  constructor(props: Props) {
     super(props)
     this.state = {
       open: false,
@@ -46,7 +46,7 @@ export class NavDrawer extends React.Component<Props, State> {
           link => (
             <ListItem
               button
-              key={link.name + "-drawer"}
+              key={link.name + "-drawer-link"}
               onClick={() => navigateTo("/" + link.link)}
             >
               <ListItemText primary={link.name} />
