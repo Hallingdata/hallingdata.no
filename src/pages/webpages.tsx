@@ -1,3 +1,5 @@
+import { HtmlRender } from "../components/html-render/html-render.component"
+import { ChecklistCard } from "../components/checklist-card/checklist-card.component"
 import { Typography } from "material-ui"
 import Grid from "material-ui/Grid"
 import * as React from "react"
@@ -14,6 +16,7 @@ type Props = {
     webpagesPage: {
       childMarkdownRemark: {
         frontmatter: Frontmatter
+        html: any
       }
     }
   }
@@ -21,20 +24,36 @@ type Props = {
 
 type Frontmatter = {
   header: string
+  checklist: Array<string>
 }
 
 // https://github.com/callemall/material-ui/issues/7466
 const gridFix = {
   width: "100%",
-  overflowX: "hidden" as any
+  overflow: "hidden" as any,
+  margin: 0
 }
 
 const WebpagesPage = ({ data }: Props) => {
   const frontmatter = data.webpagesPage.childMarkdownRemark.frontmatter
+  const html = data.webpagesPage.childMarkdownRemark.html
+  console.log("frontmatter: " + JSON.stringify(frontmatter, null, "  "))
   return (
-    <Grid container direction="column" spacing={0} style={gridFix}>
-      <Grid item>
+    <Grid container direction="row" style={gridFix} justify="space-around">
+      <Grid item xs={12}>
         <Hero header={frontmatter.header} type="small" img={heroImg} />
+      </Grid>
+      <Grid item sm={6} md={5} xs={10}>
+        <Typography
+          type="body1"
+          gutterBottom
+          align="justify"
+          style={{ fontSize: "16px" }}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </Grid>
+      <Grid item sm={5} md={4} xs={10}>
+        <ChecklistCard list={frontmatter.checklist} />
       </Grid>
     </Grid>
   )
@@ -50,7 +69,9 @@ export const pageQuery = graphql`
         timeToRead
         frontmatter {
           header
+          checklist
         }
+        html
       }
     }
   }
