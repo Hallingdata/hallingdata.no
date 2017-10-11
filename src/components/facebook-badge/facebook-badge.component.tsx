@@ -2,7 +2,7 @@ import * as React from "react"
 
 type Props = {}
 
-export const FacebookBadge = (props: Props) => (
+export const FacebookBadge: React.SFC<Props> = (props: Props) => (
   <div
     dangerouslySetInnerHTML={{
       __html:
