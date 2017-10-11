@@ -18,7 +18,7 @@ export const Footer = (props: Props) => {
     >
       {contactColumn}
       {aboutColumn}
-      <Grid item md={3} xs={10} className={style.gridItem}>
+      <Grid item md={3} xs={10} className={style.gridItem} style={{overflow: "hidden"}}>
         <FacebookBadge />
       </Grid>
     </Grid>
