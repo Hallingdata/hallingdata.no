@@ -33,7 +33,7 @@ const gridFix = {
   margin: 0
 }
 
-const WebpagesPage = ({ data }: Props) => {
+const WebpagesPage: React.SFC<Props> = ({ data }) => {
   const frontmatter = data.webpagesPage.childMarkdownRemark.frontmatter
   const html = data.webpagesPage.childMarkdownRemark.html
   console.log("frontmatter: " + JSON.stringify(frontmatter, null, "  "))

@@ -37,7 +37,7 @@ const gridFix = {
   overflowX: "hidden" as any
 }
 
-const IndexPage = ({ data }: Props) => {
+const IndexPage: React.SFC<Props> = ({ data }) => {
   const frontmatter = data.landingPage.childMarkdownRemark.frontmatter
 
   return (
@@ -57,7 +57,7 @@ const IndexPage = ({ data }: Props) => {
         </Typography>
       </Grid>
       <Grid item>
-        <Team people={frontmatter.team}/>
+        <Team people={frontmatter.team} />
       </Grid>
       <Grid item>
         <CustomerLogos header={frontmatter.customerLogoHeader} />
