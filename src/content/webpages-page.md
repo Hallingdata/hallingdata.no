@@ -2,8 +2,9 @@
 header: "Vi utvikler profesjonelle nettsider"
 checklist:
 - "Responsivt design"
+- "Mobil tilpassing"
 - "Rask webhosting"
-- "SEO-vennlig"
+- "SEO-vennlighet"
 - "Mulighet for endring av innhold selv"
 ---
 Vi hjelper deg med din tilstedeværelse på nett. Vi lager dine nye websiders, med det innholdet du ønsker.
