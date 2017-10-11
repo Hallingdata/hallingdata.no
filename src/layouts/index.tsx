@@ -11,7 +11,7 @@ type Props = {
   children: () => React.ReactNode
 }
 
-const TemplateWrapper = ({ children }: Props) => (
+const TemplateWrapper: React.SFC<Props> = ({ children }) => (
   <MuiThemeProvider theme={theme}>
     <div>
       <Helmet
