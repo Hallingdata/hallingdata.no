@@ -1,22 +1,25 @@
 import { Grid, Typography } from "material-ui"
 import { map, test } from "ramda"
 import * as React from "react"
+import { StyleRulesCallback, withStyles } from "material-ui/styles"
 
 import * as asgeirImg from "./asgeir.jpg"
 import * as eilevImg from "./eilev.jpg"
 import * as ingerImg from "./inger.jpg"
-import * as style from "./team.module.css"
 
 type Props = {
   people: Array<Person>
 }
 
-export const Team = (props: Props) => (
-  <div className={style.outer}>
+const team: React.SFC<Props & { classes: StyleClassNames }> = ({
+  classes,
+  people
+}) => (
+  <div className={classes.outer}>
     <Typography
       type="display1"
       color="inherit"
-      className={style.header}
+      className={classes.header}
       gutterBottom
     >
       Team
@@ -31,10 +34,10 @@ export const Team = (props: Props) => (
             md={3}
             sm={4}
             key={person.name}
-            className={style.personOuter}
+            className={classes.personOuter}
           >
-            <div className={style.item}>
-              {personPhoto(person.name)}
+            <div className={classes.item}>
+              {personPhoto(person.name, classes.img)}
               <Typography type="headline" color="inherit" gutterBottom>
                 {person.name}
               </Typography>
@@ -46,28 +49,71 @@ export const Team = (props: Props) => (
               >
                 {person.description}
               </Typography>
-              <div className={style.icons}>{renderIcons(person)}</div>
+              <div className={classes.icons}>{renderIcons(person)}</div>
             </div>
           </Grid>
         ),
-        props.people
+        people
       )}
     </Grid>
   </div>
 )
 
-const personPhoto = (name: string) => {
+type StyleClassNames = {
+  personOuter: string
+  img: string
+  header: string
+  outer: string
+  item: string
+  icons: string
+}
+
+const styles: StyleRulesCallback = theme => ({
+  personOuter: {
+    textAlign: "center"
+  },
+  img: {
+    borderRadius: "100%",
+    width: 150,
+    height: 150
+  },
+  header: {
+    textAlign: "center"
+  },
+  outer: {
+    backgroundColor: "#673ab7",
+    color: "#fff",
+    paddingTop: 100,
+    paddingBottom: 100
+  },
+  item: {
+    textAlign: "center",
+    padding: "2em",
+    maxWidth: 250,
+    margin: "auto"
+  },
+  icons: {
+    fontSize: 20
+  }
+})
+
+export const Team = withStyles(styles)<Props>(team)
+
+const personPhoto = (name: string, imgClassName: string) => {
   if (test(/^Asgeir/, name)) {
-    return <img src={asgeirImg} alt="Ansatt" className={style.img} />
-  }
-  else if (test(/^Inger/, name)) {
-    return <img src={ingerImg} alt="Ansatt" className={style.img} />
-  }
-  else if (test(/^Eilev/, name)) {
-    return <img src={eilevImg} alt="Ansatt" className={style.img} />
-  }
-  else {
-    return <img src="https://www.sideshowtoy.com/photo_902662_thumb.jpg" alt="Ansatt" className={style.img} />
+    return <img src={asgeirImg} alt="Ansatt" className={imgClassName} />
+  } else if (test(/^Inger/, name)) {
+    return <img src={ingerImg} alt="Ansatt" className={imgClassName} />
+  } else if (test(/^Eilev/, name)) {
+    return <img src={eilevImg} alt="Ansatt" className={imgClassName} />
+  } else {
+    return (
+      <img
+        src="https://www.sideshowtoy.com/photo_902662_thumb.jpg"
+        alt="Ansatt"
+        className={imgClassName}
+      />
+    )
   }
 }
 
