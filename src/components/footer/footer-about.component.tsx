@@ -11,7 +11,7 @@ const footerAbout: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes
 }) => (
     <Grid item xs={10} md={3} sm={5} className={classes.gridItem}>
-      <Logo height="45px" color="white-transparent" className={classes.logo} />
+      <Logo color="white-transparent" className={classes.logo} />
       <Typography
         type="body1"
         gutterBottom
@@ -41,7 +41,7 @@ type StyleClassNames = {
   
   const styles: StyleRulesCallback = theme => ({
     logo: {
-      height: 36,
+      height: 38,
       marginBottom: 6
     },
     vision: {
