@@ -2,13 +2,13 @@ import * as React from "react"
 
 import * as logo from "./logo-white-transparent.png"
 
-type props = {
+type Props = {
   height: string
   color: "white-transparent"
   className?: string
 }
 
-export const Logo = (props: props) => (
+export const Logo: React.SFC<Props> = props => (
   <img
     src={logo}
     alt="Hallingdata logo"
