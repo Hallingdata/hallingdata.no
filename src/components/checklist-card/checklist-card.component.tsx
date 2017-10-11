@@ -45,9 +45,9 @@ const checklistCard: React.SFC<Props & { classes: StyleClassNames }> = ({
 }
 
 type StyleClassNames = {
-    card: string
-    title: string
-  }
+  card: string
+  title: string
+}
 
 const styles: StyleRulesCallback = theme => ({
   card: {
