@@ -1,3 +1,7 @@
+import {
+  Portfolio,
+  PortfolioItem,
+} from "../components/portfolio/portfolio.component"
 import { ChecklistCard } from "../components/checklist-card/checklist-card.component"
 import { Typography } from "material-ui"
 import Grid from "material-ui/Grid"
@@ -24,6 +28,8 @@ type Props = {
 type Frontmatter = {
   header: string
   checklist: Array<string>
+  portfolioHeader: string
+  portfolio: Array<PortfolioItem>
 }
 
 // https://github.com/callemall/material-ui/issues/7466
@@ -42,17 +48,28 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
       <Grid item xs={12}>
         <Hero header={frontmatter.header} type="small" img={heroImg} />
       </Grid>
-      <Grid item sm={6} md={5} xs={10}>
-        <Typography
-          type="body1"
-          gutterBottom
-          align="justify"
-          style={{ fontSize: "16px" }}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+      <Grid item xs={12}>
+        <Grid
+          container
+          justify="space-around"
+          style={{ maxWidth: 1200, margin: "auto" }}
+        >
+          <Grid item sm={6} md={5} xs={10}>
+            <Typography
+              type="body1"
+              gutterBottom
+              align="justify"
+              style={{ fontSize: "16px" }}
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </Grid>
+          <Grid item sm={5} md={4} xs={10}>
+            <ChecklistCard list={frontmatter.checklist} />
+          </Grid>
+        </Grid>
       </Grid>
-      <Grid item sm={5} md={4} xs={10}>
-        <ChecklistCard list={frontmatter.checklist} />
+      <Grid item xs={12}>
+        <Portfolio portfolioItems={frontmatter.portfolio} header={frontmatter.portfolioHeader} />
       </Grid>
     </Grid>
   )
@@ -69,6 +86,13 @@ export const pageQuery = graphql`
         frontmatter {
           header
           checklist
+          portfolioHeader
+          portfolio {
+            title
+            img
+            description
+            url
+          }
         }
         html
       }
