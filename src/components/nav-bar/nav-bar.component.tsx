@@ -90,11 +90,7 @@ const pages = [
     link: "",
   },
   {
-    name: "Tjenester",
-    link: "",
-  },
-  {
-    name: "Tidligere arbeid",
+    name: "Systemutvikling",
     link: "",
   },
   {
