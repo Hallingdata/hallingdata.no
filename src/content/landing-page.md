@@ -11,6 +11,7 @@ ourServices:
     icon: "settings_applications"
     description: "Utvikling av nye IT-løsninger."
 promoText: "Vi er teknologiske eksperter"
+teamHeader: "Team"
 team:
   - name: "Inger Vik"
     description: "Inger er prosjektleder og administrator."

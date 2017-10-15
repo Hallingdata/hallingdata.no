@@ -8,10 +8,12 @@ import * as eilevImg from "./eilev.jpg"
 import * as ingerImg from "./inger.jpg"
 
 type Props = {
+  header: string
   people: Array<Person>
 }
 
 const team: React.SFC<Props & { classes: StyleClassNames }> = ({
+  header,
   classes,
   people,
 }) => (
@@ -22,7 +24,7 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
       className={classes.header}
       gutterBottom
     >
-      Team
+      {header}
     </Typography>
 
     <Grid container direction="row" justify="center">

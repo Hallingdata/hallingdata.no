@@ -27,6 +27,7 @@ type Frontmatter = {
     description: strin
   }>
   promoText: string
+  teamHeader: string
   team: any
   customerLogoHeader: string
 }
@@ -57,7 +58,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => {
         </Typography>
       </Grid>
       <Grid item>
-        <Team people={frontmatter.team} />
+        <Team header={frontmatter.teamHeader} people={frontmatter.team} />
       </Grid>
       <Grid item>
         <CustomerLogos header={frontmatter.customerLogoHeader} />
@@ -82,6 +83,7 @@ export const pageQuery = graphql`
             description
           }
           promoText
+          teamHeader
           team {
             name
             description
