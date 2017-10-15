@@ -52,9 +52,13 @@ type StyleClassNames = {
 const styles: StyleRulesCallback = theme => ({
   card: {
     width: 300,
-    margin: "auto",
+    float: "right",
     [theme.breakpoints.up("sm")]: {
       marginTop: "-100px",
+    },
+    [theme.breakpoints.only("xs")]: {
+      margin: "auto",
+      float: "initial"
     },
   },
   title: {
