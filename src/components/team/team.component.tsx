@@ -15,7 +15,7 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
   people,
 }) => (
-  <div className={classes.outer}>
+  <section className={classes.outer}>
     <Typography
       type="display1"
       color="inherit"
@@ -56,7 +56,7 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
         people
       )}
     </Grid>
-  </div>
+  </section>
 )
 
 type StyleClassNames = {

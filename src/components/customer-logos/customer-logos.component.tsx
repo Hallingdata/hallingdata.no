@@ -41,7 +41,7 @@ const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
   header,
   classes,
 }) => (
-  <div className={classes.outer}>
+  <section className={classes.outer}>
     <Typography type="display1" gutterBottom>
       {header}
     </Typography>
@@ -57,7 +57,7 @@ const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
       ),
       logos
     )}
-  </div>
+  </section>
 )
 
 type StyleClassNames = {
