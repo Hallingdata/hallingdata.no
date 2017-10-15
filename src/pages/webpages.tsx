@@ -42,7 +42,6 @@ const gridFix = {
 const WebpagesPage: React.SFC<Props> = ({ data }) => {
   const frontmatter = data.webpagesPage.childMarkdownRemark.frontmatter
   const html = data.webpagesPage.childMarkdownRemark.html
-  console.log("frontmatter: " + JSON.stringify(frontmatter, null, "  "))
   return (
     <Grid container direction="row" style={gridFix} justify="space-around">
       <Grid item xs={12}>
