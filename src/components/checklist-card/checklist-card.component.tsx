@@ -13,13 +13,15 @@ import { map } from "ramda"
 import * as React from "react"
 
 type Props = {
-  header: string
+  header?: string
   list: Array<string>
+  icon?: string
 }
 
 const checklistCard: React.SFC<Props & { classes: StyleClassNames }> = ({
-  header,
+  header = "",
   list,
+  icon = "check_circle",
   classes,
 }) => {
   return (
@@ -33,7 +35,7 @@ const checklistCard: React.SFC<Props & { classes: StyleClassNames }> = ({
             item => (
               <ListItem key={item}>
                 <ListItemIcon>
-                  <Icon>check_circle</Icon>
+                  <Icon>{icon}</Icon>
                 </ListItemIcon>
                 <ListItemText primary={item} />
               </ListItem>

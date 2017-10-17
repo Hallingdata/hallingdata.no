@@ -1,18 +1,14 @@
+import Grid from "material-ui/Grid"
+import * as React from "react"
+
+import { Hero } from "../components/hero/hero.component"
+import { InfoWithCard } from "../components/InfoWithCard"
 import {
   Portfolio,
   PortfolioItem,
 } from "../components/portfolio/portfolio.component"
-import { ChecklistCard } from "../components/checklist-card/checklist-card.component"
-import { Typography } from "material-ui"
-import Grid from "material-ui/Grid"
-import * as React from "react"
-
-import { CustomerLogos } from "../components/customer-logos/customer-logos.component"
-import { Hero } from "../components/hero/hero.component"
-import { OurServices } from "../components/our-services/our-services.component"
-import { Team } from "../components/team/team.component"
-import * as style from "./index.module.css"
 import * as heroImg from "./img/hero/code1.jpeg"
+import * as style from "./index.module.css"
 
 type Props = {
   data: {
@@ -37,45 +33,37 @@ type Frontmatter = {
 const gridFix = {
   width: "100%",
   overflow: "hidden" as any,
-  margin: 0,
 }
 
 const WebpagesPage: React.SFC<Props> = ({ data }) => {
-  const frontmatter = data.webpagesPage.childMarkdownRemark.frontmatter
+  const {
+    header,
+    checklist,
+    checklistHeader,
+    portfolio,
+    portfolioHeader,
+  } = data.webpagesPage.childMarkdownRemark.frontmatter
   const html = data.webpagesPage.childMarkdownRemark.html
   return (
-    <Grid container direction="row" style={gridFix} justify="space-around">
+    <Grid
+      container
+      direction="row"
+      style={gridFix}
+      justify="space-around"
+      spacing={0}
+    >
       <Grid item xs={12}>
-        <Hero header={frontmatter.header} type="small" img={heroImg} />
+        <Hero header={header} type="small" img={heroImg} />
       </Grid>
       <Grid item xs={12}>
-        <Grid
-          container
-          justify="space-around"
-          style={{ maxWidth: 1200, margin: "auto" }}
-        >
-          <Grid item sm={6} md={5} xs={10}>
-            <Typography
-              type="body1"
-              gutterBottom
-              align="justify"
-              style={{ fontSize: "16px" }}
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-          </Grid>
-          <Grid item sm={5} md={4} xs={10}>
-            <ChecklistCard
-              header={frontmatter.checklistHeader}
-              list={frontmatter.checklist}
-            />
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid item xs={12} style={{padding: 0}}>
-        <Portfolio
-          portfolioItems={frontmatter.portfolio}
-          header={frontmatter.portfolioHeader}
+        <InfoWithCard
+          htmlContent={html}
+          checklistHeader={checklistHeader}
+          checklistItems={checklist}
         />
+      </Grid>
+      <Grid item xs={12} style={{ padding: 0 }}>
+        <Portfolio portfolioItems={portfolio} header={portfolioHeader} />
       </Grid>
     </Grid>
   )
@@ -88,7 +76,6 @@ export const pageQuery = graphql`
     webpagesPage: file(relativePath: { eq: "content/webpages-page.md" }) {
       childMarkdownRemark {
         html
-        timeToRead
         frontmatter {
           header
           checklistHeader
@@ -101,7 +88,6 @@ export const pageQuery = graphql`
             url
           }
         }
-        html
       }
     }
   }

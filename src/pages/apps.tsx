@@ -1,21 +1,15 @@
-import {
-  Portfolio,
-  PortfolioItem,
-} from "../components/portfolio/portfolio.component"
-import { ChecklistCard } from "../components/checklist-card/checklist-card.component"
-import { Typography } from "material-ui"
-import Grid from "material-ui/Grid"
+import { Grid } from "material-ui"
+import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
-import { CustomerLogos } from "../components/customer-logos/customer-logos.component"
+import { BigImg } from "../components/BigImg"
 import { Hero } from "../components/hero/hero.component"
+import { InfoWithCard } from "../components/InfoWithCard"
+import { MobileLogoRow } from "../components/MobileLogoRow"
 import { OurServices } from "../components/our-services/our-services.component"
-import { Team } from "../components/team/team.component"
-import * as style from "./index.module.css"
 import * as heroImg from "./img/hero/phone3.jpeg"
 import * as bottomImg from "./img/hero/phone8.jpeg"
-import * as androidLogo from "./img/android-logo.png"
-import * as appleLogo from "./img/apple-logo.png"
+import * as style from "./index.module.css"
 
 type Props = {
   data: {
@@ -42,75 +36,52 @@ type Frontmatter = {
 // https://github.com/callemall/material-ui/issues/7466
 const gridFix = {
   width: "100%",
-  overflow: "hidden" as any,
-  margin: 0,
+  overflowX: "hidden" as any,
 }
 
-const WebpagesPage: React.SFC<Props> = ({ data }) => {
-  const frontmatter = data.appsPage.childMarkdownRemark.frontmatter
+const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
+  data,
+  classes,
+}) => {
+  const {
+    checklist,
+    header,
+    ourServices,
+    checklistHeader,
+  } = data.appsPage.childMarkdownRemark.frontmatter
   const html = data.appsPage.childMarkdownRemark.html
   return (
-    <Grid container direction="row" style={gridFix} justify="space-around">
+    <Grid
+      container
+      direction="row"
+      style={gridFix}
+      justify="space-around"
+      spacing={0}
+    >
       <Grid item xs={12}>
-        <Hero header={frontmatter.header} type="small" img={heroImg} />
+        <Hero header={header} type="small" img={heroImg} />
       </Grid>
       <Grid item xs={12}>
-        <Grid
-          container
-          justify="space-around"
-          style={{ maxWidth: 1200, margin: "auto" }}
-        >
-          <Grid item sm={6} md={5} xs={10}>
-            <Typography
-              type="body1"
-              gutterBottom
-              align="justify"
-              style={{ fontSize: "16px" }}
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-          </Grid>
-          <Grid item sm={5} md={4} xs={10}>
-            <ChecklistCard
-              header={frontmatter.checklistHeader}
-              list={frontmatter.checklist}
-            />
-          </Grid>
-        </Grid>
+        <InfoWithCard htmlContent={html} checklistItems={checklist} />
       </Grid>
-
       <Grid item xs={12}>
-        <OurServices services={frontmatter.ourServices} />
+        <OurServices services={ourServices} />
       </Grid>
-      <Grid item xs={6} style={{textAlign: "center", backgroundColor: "#6d6e71", padding: 30}} justify="center">
-        <img
-          src={androidLogo}
-          alt="Android logo"
-          height="100"
-          style={{ padding: 15 }}
-        />
+      <Grid item xs={12}>
+        <MobileLogoRow />
       </Grid>
-      <Grid item xs={6} style={{textAlign: "center", backgroundColor: "#a4c439", padding: 20}} alignItems="center">
-        <img
-          src={appleLogo}
-          alt="Apple logo"
-          height="100"
-          style={{ padding: 15 }}
-        />
+      <Grid item xs={12} style={{ padding: 0 }}>
+        <BigImg img={bottomImg} />
       </Grid>
-      <Grid item xs={12} style={backgroundStyle(bottomImg)} />
     </Grid>
   )
 }
 
-const backgroundStyle = (image: any) => {
-  return {
-    backgroundImage: `url(${image})`,
-    backgroundSize: "cover",
-    height: 600,
-  }
-}
+type StyleClassNames = {}
 
-export default WebpagesPage
+const styles: StyleRulesCallback = theme => ({})
+
+export default withStyles(styles)<Props>(webpagesPage)
 
 export const pageQuery = graphql`
   query AppsContent {
