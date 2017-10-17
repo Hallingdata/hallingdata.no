@@ -14,7 +14,7 @@
     "gatsby-plugin-typescript": "^1.4.8",
     "gatsby-source-filesystem": "^1.5.1",
     "gatsby-transformer-remark": "^1.7.15",
-    "material-ui": "^1.0.0-beta.16",
+    "material-ui": "^1.0.0-beta.17",
     "material-ui-icons": "^1.0.0-beta.15",
     "ramda": "^0.24.1",
     "react": "^16.0.0",
