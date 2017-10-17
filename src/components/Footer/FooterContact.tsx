@@ -1,9 +1,6 @@
 import { Button, Grid, Icon, Typography } from "material-ui"
-import * as React from "react"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
-
-import { FacebookBadge } from "../facebook-badge/facebook-badge.component"
-import { Logo } from "../logo/logo.component"
+import * as React from "react"
 
 type Props = {}
 

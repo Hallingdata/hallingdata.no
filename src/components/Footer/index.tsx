@@ -1,11 +1,10 @@
-import { FooterAbout } from "./footer-about.component"
-import { Button, Grid, Icon, Typography } from "material-ui"
-import * as React from "react"
+import { Grid } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
+import * as React from "react"
 
-import { FacebookBadge } from "../facebook-badge/facebook-badge.component"
-import { Logo } from "../logo/logo.component"
-import { FooterContact } from "./footer-contact.component"
+import { FacebookBadge } from "../FacebookBadge"
+import { FooterAbout } from "./FooterAbout"
+import { FooterContact } from "./FooterContact"
 
 type Props = {}
 

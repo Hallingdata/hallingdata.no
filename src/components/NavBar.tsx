@@ -4,8 +4,8 @@ import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import { map } from "ramda"
 import * as React from "react"
 
-import { Logo } from "../logo/logo.component"
-import { NavDrawer } from "../nav-drawer/nav-drawer.component"
+import { Logo } from "./Logo"
+import { NavDrawer } from "./NavDrawer"
 
 type Props = {}
 

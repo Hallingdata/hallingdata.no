@@ -1,12 +1,12 @@
 import Grid from "material-ui/Grid"
 import * as React from "react"
 
-import { Hero } from "../components/hero/hero.component"
+import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
 import {
   Portfolio,
   PortfolioItem,
-} from "../components/portfolio/portfolio.component"
+} from "../components/Portfolio"
 import * as heroImg from "./img/hero/code1.jpeg"
 import * as style from "./index.module.css"
 

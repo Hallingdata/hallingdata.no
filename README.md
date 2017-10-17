@@ -9,6 +9,9 @@
 
     npm run develop
 
+## Style guide
+Based on [aribnb](https://github.com/airbnb/javascript/tree/master/react)
+
 ## Commit messages
 
 [gitmoji](https://gitmoji.carloscuesta.me/)

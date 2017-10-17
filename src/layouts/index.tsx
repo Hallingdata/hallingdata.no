@@ -4,8 +4,8 @@ import { createMuiTheme, MuiThemeProvider } from "material-ui/styles"
 import * as React from "react"
 import { Helmet } from "react-helmet"
 
-import { Footer } from "../components/footer/footer.component"
-import { NavBar } from "../components/nav-bar/nav-bar.component"
+import { Footer } from "../components/Footer"
+import { NavBar } from "../components/NavBar"
 
 type Props = {
   children: () => React.ReactNode

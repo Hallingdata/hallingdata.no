@@ -1,4 +1,4 @@
-import { ChecklistCard } from './checklist-card/checklist-card.component';
+import { ChecklistCard } from './ChecklistCard';
 import * as React from 'react';
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import { Grid, Typography } from "material-ui"

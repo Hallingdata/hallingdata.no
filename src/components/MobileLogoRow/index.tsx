@@ -1,10 +1,9 @@
-import { ChecklistCard } from "./checklist-card/checklist-card.component"
 import * as React from "react"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import { Grid, Typography } from "material-ui"
 
-import * as appleLogo from "../img/apple-logo.png"
-import * as androidLogo from "../img/android-logo.png"
+import * as appleLogo from "./img/apple-logo.png"
+import * as androidLogo from "./img/android-logo.png"
 
 type Props = {}
 
