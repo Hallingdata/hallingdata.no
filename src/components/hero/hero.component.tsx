@@ -17,7 +17,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
   <Grid
     container
     className={classes[type]}
-    align="center"
+    alignItems="center"
     justify="center"
     style={backgroundStyle(img)}
   >
@@ -43,6 +43,7 @@ const backgroundStyle = (image: any) => {
   return {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
+    backgroundPosition: "bottom",
   }
 }
 

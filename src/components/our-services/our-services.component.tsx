@@ -40,7 +40,7 @@ type StyleClassNames = {
 
 const styles: StyleRulesCallback = theme => ({
   outer: {
-    backgroundColor: "#FAFAFA",
+    backgroundColor: "#F9F7F3",
   },
   item: {
     textAlign: "center",

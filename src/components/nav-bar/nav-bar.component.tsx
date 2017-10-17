@@ -87,7 +87,7 @@ const pages = [
   },
   {
     name: "Apper",
-    link: "",
+    link: "apps",
   },
   {
     name: "Systemutvikling",

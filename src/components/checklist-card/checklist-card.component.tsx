@@ -13,10 +13,12 @@ import { map } from "ramda"
 import * as React from "react"
 
 type Props = {
+  header: string
   list: Array<string>
 }
 
 const checklistCard: React.SFC<Props & { classes: StyleClassNames }> = ({
+  header,
   list,
   classes,
 }) => {
@@ -24,7 +26,7 @@ const checklistCard: React.SFC<Props & { classes: StyleClassNames }> = ({
     <Card className={classes.card}>
       <CardContent>
         <Typography type="body1" className={classes.title}>
-          Våre nettsider leveres alltid med
+          {header}
         </Typography>
         <List>
           {map(

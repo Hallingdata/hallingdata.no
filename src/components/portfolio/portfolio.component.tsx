@@ -28,7 +28,7 @@ const portfolio: React.SFC<Props & { classes: StyleClassNames }> = ({
     <Grid
       container
       direction="row"
-      align="stretch"
+      alignItems="stretch"
       justify="center"
       className={classes.grid}
     >
@@ -86,7 +86,8 @@ const styles: StyleRulesCallback = theme => ({
     marginBottom: 40,
   },
   outer: {
-    backgroundColor: "#FAFAFA",
+    backgroundColor: "#F9F7F3",
+    width: "100%",
     paddingTop: 100,
     paddingBottom: 100,
   },
