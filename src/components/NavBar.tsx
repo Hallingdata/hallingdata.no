@@ -95,7 +95,7 @@ const pages = [
   },
   {
     name: "Om oss",
-    link: "",
+    link: "about",
   },
   {
     name: "Kontakt",
