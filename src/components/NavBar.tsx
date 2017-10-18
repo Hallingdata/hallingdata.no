@@ -14,7 +14,7 @@ const navBar: React.SFC<Props & { classes: StyleClassNames }> = ({
 }) => (
   <AppBar position="absolute" className={classes.appBar}>
     <Toolbar>
-      <Logo className={classes.logo} color="white-transparent" />
+      <Logo className={classes.logo} />
       <span style={{ flex: 1 }} />
       <Hidden smDown>
         {map(page => {
@@ -91,7 +91,7 @@ const pages = [
   },
   {
     name: "Systemutvikling",
-    link: "",
+    link: "development",
   },
   {
     name: "Om oss",

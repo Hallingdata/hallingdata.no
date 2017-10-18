@@ -1,18 +1,19 @@
-import Grid from "material-ui/Grid"
+import { Grid } from "material-ui"
+import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
+import { BigImg } from "../components/BigImg"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
-import {
-  Portfolio,
-  PortfolioItem,
-} from "../components/Portfolio"
-import * as heroImg from "./img/hero/code15.jpeg"
+import { MobileLogoRow } from "../components/MobileLogoRow"
+import { OurServices } from "../components/OurServices"
+import * as heroImg from "./img/hero/code1.jpeg"
+import * as bottomImg from "./img/hero/phone8.jpeg"
 import * as style from "./index.module.css"
 
 type Props = {
   data: {
-    webpagesPage: {
+    developmentPage: {
       childMarkdownRemark: {
         frontmatter: Frontmatter
         html: any
@@ -25,25 +26,26 @@ type Frontmatter = {
   header: string
   checklistHeader: string
   checklist: Array<string>
-  portfolioHeader: string
-  portfolio: Array<PortfolioItem>
+  technologies: Array<string>
 }
 
 // https://github.com/callemall/material-ui/issues/7466
 const gridFix = {
   width: "100%",
-  overflow: "hidden" as any,
+  overflowX: "hidden" as any,
 }
 
-const WebpagesPage: React.SFC<Props> = ({ data }) => {
+const developmentPage: React.SFC<Props & { classes: StyleClassNames }> = ({
+  data,
+  classes,
+}) => {
   const {
-    header,
     checklist,
+    header,
     checklistHeader,
-    portfolio,
-    portfolioHeader,
-  } = data.webpagesPage.childMarkdownRemark.frontmatter
-  const html = data.webpagesPage.childMarkdownRemark.html
+    technologies,
+  } = data.developmentPage.childMarkdownRemark.frontmatter
+  const html = data.developmentPage.childMarkdownRemark.html
   return (
     <Grid
       container
@@ -56,37 +58,31 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
         <Hero header={header} type="small" img={heroImg} />
       </Grid>
       <Grid item xs={12}>
-        <InfoWithCard
-          htmlContent={html}
-          checklistHeader={checklistHeader}
-          checklistItems={checklist}
-        />
+        <InfoWithCard htmlContent={html} checklistItems={checklist} />
       </Grid>
       <Grid item xs={12} style={{ padding: 0 }}>
-        <Portfolio portfolioItems={portfolio} header={portfolioHeader} />
+        <BigImg img={bottomImg} />
       </Grid>
     </Grid>
   )
 }
 
-export default WebpagesPage
+type StyleClassNames = {}
+
+const styles: StyleRulesCallback = theme => ({})
+
+export default withStyles(styles)<Props>(developmentPage)
 
 export const pageQuery = graphql`
-  query WebpagesContent {
-    webpagesPage: file(relativePath: { eq: "content/webpages-page.md" }) {
+  query DevelopmentAppsContent {
+    developmentPage: file(relativePath: { eq: "content/development-page.md" }) {
       childMarkdownRemark {
         html
         frontmatter {
           header
           checklistHeader
           checklist
-          portfolioHeader
-          portfolio {
-            title
-            img
-            description
-            url
-          }
+          technologies
         }
       }
     }
