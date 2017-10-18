@@ -1,3 +1,4 @@
+import { navigateTo } from "gatsby-link"
 import { Button, Grid, Typography } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
@@ -7,6 +8,7 @@ type Props = {
   type: "small" | "big"
   img: string
   imgPosition?: "top" | "bottom" | "center"
+  hideButton?: boolean
 }
 
 const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
@@ -14,6 +16,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
   type,
   img,
   classes,
+  hideButton = false,
   imgPosition = "top",
 }) => (
   <Grid
@@ -33,9 +36,17 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
         >
           {header}
         </Typography>
-        <Button color="accent" raised>
-          Kontakt oss
-        </Button>
+        {hideButton ? (
+          undefined
+        ) : (
+          <Button
+            color="accent"
+            raised
+            onClick={() => navigateTo("/contact")}
+          >
+            Kontakt oss
+          </Button>
+        )}
       </div>
     </Grid>
   </Grid>
@@ -45,7 +56,7 @@ const backgroundStyle = (image: any, backgroundPosition: string) => {
   return {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
-    backgroundPosition
+    backgroundPosition,
   }
 }
 
