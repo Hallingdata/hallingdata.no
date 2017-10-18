@@ -25,6 +25,7 @@ const navBar: React.SFC<Props & { classes: StyleClassNames }> = ({
                 color="accent"
                 raised
                 key={page.name + "-navBarButton"}
+                onClick={() => navigateTo("/" + page.link)}
               >
                 Kontakt
               </Button>
@@ -99,6 +100,6 @@ const pages = [
   },
   {
     name: "Kontakt",
-    link: "",
+    link: "contact",
   },
 ]
