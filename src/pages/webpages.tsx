@@ -3,10 +3,7 @@ import * as React from "react"
 
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
-import {
-  Portfolio,
-  PortfolioItem,
-} from "../components/Portfolio"
+import { Portfolio, PortfolioItem } from "../components/Portfolio"
 import * as heroImg from "./img/hero/code15.jpeg"
 import * as style from "./index.module.css"
 
@@ -45,27 +42,15 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
   } = data.webpagesPage.childMarkdownRemark.frontmatter
   const html = data.webpagesPage.childMarkdownRemark.html
   return (
-    <Grid
-      container
-      direction="row"
-      style={gridFix}
-      justify="space-around"
-      spacing={0}
-    >
-      <Grid item xs={12}>
-        <Hero header={header} type="small" img={heroImg} />
-      </Grid>
-      <Grid item xs={12}>
-        <InfoWithCard
-          htmlContent={html}
-          checklistHeader={checklistHeader}
-          checklistItems={checklist}
-        />
-      </Grid>
-      <Grid item xs={12} style={{ padding: 0 }}>
-        <Portfolio portfolioItems={portfolio} header={portfolioHeader} />
-      </Grid>
-    </Grid>
+    <div style={gridFix}>
+      <Hero header={header} type="small" img={heroImg} />
+      <InfoWithCard
+        htmlContent={html}
+        checklistHeader={checklistHeader}
+        checklistItems={checklist}
+      />
+      <Portfolio portfolioItems={portfolio} header={portfolioHeader} />
+    </div>
   )
 }
 

@@ -42,28 +42,18 @@ const IndexPage: React.SFC<Props> = ({ data }) => {
   const frontmatter = data.landingPage.childMarkdownRemark.frontmatter
 
   return (
-    <Grid container direction="column" spacing={0} style={gridFix}>
-      <Grid item>
-        <Hero header={frontmatter.header} type="big" img={heroImg} />
-      </Grid>
-      <Grid item>
-        <OurServices services={frontmatter.ourServices} />
-      </Grid>
-      <Grid item>
-        <Typography
-          type="display2"
-          style={{ textAlign: "center", padding: "50px" }}
-        >
-          {frontmatter.promoText}
-        </Typography>
-      </Grid>
-      <Grid item>
-        <Team header={frontmatter.teamHeader} people={frontmatter.team} />
-      </Grid>
-      <Grid item>
-        <CustomerLogos header={frontmatter.customerLogoHeader} />
-      </Grid>
-    </Grid>
+    <div style={gridFix}>
+      <Hero header={frontmatter.header} type="big" img={heroImg} />
+      <OurServices services={frontmatter.ourServices} />
+      <Typography
+        type="display2"
+        style={{ textAlign: "center", padding: "50px" }}
+      >
+        {frontmatter.promoText}
+      </Typography>
+      <Team header={frontmatter.teamHeader} people={frontmatter.team} />
+      <CustomerLogos header={frontmatter.customerLogoHeader} />
+    </div>
   )
 }
 

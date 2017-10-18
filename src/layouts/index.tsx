@@ -35,4 +35,7 @@ const theme = createMuiTheme({
     primary: deepPurple,
     secondary: amber,
   },
+  custom: {
+    pageMaxWith: 1200
+  }
 })

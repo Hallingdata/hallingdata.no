@@ -2,6 +2,7 @@ import { Grid, Typography } from "material-ui"
 import { map, test } from "ramda"
 import * as React from "react"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
+import { PageSection } from "../PageSection";
 
 import * as asgeirImg from "./asgeir.jpg"
 import * as eilevImg from "./eilev.jpg"
@@ -17,16 +18,7 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
   people,
 }) => (
-  <section className={classes.outer}>
-    <Typography
-      type="display1"
-      color="inherit"
-      className={classes.header}
-      gutterBottom
-    >
-      {header}
-    </Typography>
-
+  <PageSection header={header} headerColor="inherit" className={classes.pageSection}>
     <Grid container direction="row" justify="center">
       {map(
         (person: Person) => (
@@ -58,14 +50,14 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
         people
       )}
     </Grid>
-  </section>
+  </PageSection>
 )
 
 type StyleClassNames = {
   personOuter: string
   img: string
   header: string
-  outer: string
+  pageSection: string
   item: string
   icons: string
 }
@@ -79,14 +71,9 @@ const styles: StyleRulesCallback = theme => ({
     width: 150,
     height: 150,
   },
-  header: {
-    textAlign: "center",
-  },
-  outer: {
+  pageSection: {
     backgroundColor: "#673ab7",
     color: "#fff",
-    paddingTop: 100,
-    paddingBottom: 100,
   },
   item: {
     textAlign: "center",

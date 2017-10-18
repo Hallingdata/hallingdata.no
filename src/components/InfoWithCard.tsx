@@ -44,7 +44,7 @@ type StyleClassNames = {
 
 const styles: StyleRulesCallback = theme => ({
   infoContainer: {
-    maxWidth: 1200,
+    maxWidth: (theme as any).custom.pageMaxWith,
     margin: "auto",
   },
   content: {

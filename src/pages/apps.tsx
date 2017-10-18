@@ -51,29 +51,13 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   } = data.appsPage.childMarkdownRemark.frontmatter
   const html = data.appsPage.childMarkdownRemark.html
   return (
-    <Grid
-      container
-      direction="row"
-      style={gridFix}
-      justify="space-around"
-      spacing={0}
-    >
-      <Grid item xs={12}>
-        <Hero header={header} type="small" img={heroImg} />
-      </Grid>
-      <Grid item xs={12}>
-        <InfoWithCard htmlContent={html} checklistItems={checklist} />
-      </Grid>
-      <Grid item xs={12}>
-        <OurServices services={ourServices} />
-      </Grid>
-      <Grid item xs={12}>
-        <MobileLogoRow />
-      </Grid>
-      <Grid item xs={12} style={{ padding: 0 }}>
-        <BigImg img={bottomImg} />
-      </Grid>
-    </Grid>
+    <div style={gridFix}>
+      <Hero header={header} type="small" img={heroImg} />
+      <InfoWithCard htmlContent={html} checklistItems={checklist} />
+      <OurServices services={ourServices} />
+      <MobileLogoRow />
+      <BigImg img={bottomImg} />
+    </div>
   )
 }
 

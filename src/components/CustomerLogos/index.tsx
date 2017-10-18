@@ -16,6 +16,7 @@ import * as statsKraftLogo from "./img/statkraft_logo.png"
 import * as statnettLogo from "./img/statnett_logo_m_tekst.png"
 import * as telenorLogo from "./img/telenor_logo_v2.png"
 import * as vgLogo from "./img/vg_logo.png"
+import { PageSection } from "../PageSection";
 
 type Props = {
   header: string
@@ -41,10 +42,7 @@ const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
   header,
   classes,
 }) => (
-  <section className={classes.outer}>
-    <Typography type="display1" gutterBottom>
-      {header}
-    </Typography>
+  <PageSection header={header} className={classes.outer}>
     {map(
       logo => (
         <img
@@ -57,7 +55,7 @@ const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
       ),
       logos
     )}
-  </section>
+  </PageSection>
 )
 
 type StyleClassNames = {

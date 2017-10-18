@@ -2,13 +2,14 @@ import { Grid } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
+import { ChipGrid } from "../components/ChipGrid"
 import { BigImg } from "../components/BigImg"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
 import { MobileLogoRow } from "../components/MobileLogoRow"
 import { OurServices } from "../components/OurServices"
 import * as heroImg from "./img/hero/code1.jpeg"
-import * as bottomImg from "./img/hero/phone8.jpeg"
+import * as bottomImg from "./img/hero/dev1.jpeg"
 import * as style from "./index.module.css"
 
 type Props = {
@@ -26,6 +27,7 @@ type Frontmatter = {
   header: string
   checklistHeader: string
   checklist: Array<string>
+  technologiesHeader: string
   technologies: Array<string>
 }
 
@@ -43,27 +45,17 @@ const developmentPage: React.SFC<Props & { classes: StyleClassNames }> = ({
     checklist,
     header,
     checklistHeader,
+    technologiesHeader,
     technologies,
   } = data.developmentPage.childMarkdownRemark.frontmatter
   const html = data.developmentPage.childMarkdownRemark.html
   return (
-    <Grid
-      container
-      direction="row"
-      style={gridFix}
-      justify="space-around"
-      spacing={0}
-    >
-      <Grid item xs={12}>
-        <Hero header={header} type="small" img={heroImg} />
-      </Grid>
-      <Grid item xs={12}>
-        <InfoWithCard htmlContent={html} checklistItems={checklist} />
-      </Grid>
-      <Grid item xs={12} style={{ padding: 0 }}>
-        <BigImg img={bottomImg} />
-      </Grid>
-    </Grid>
+    <div style={gridFix}>
+      <Hero header={header} type="small" img={heroImg} />
+      <InfoWithCard htmlContent={html} checklistItems={checklist} />
+      <ChipGrid header={technologiesHeader} items={technologies} />
+      <BigImg img={bottomImg} />
+    </div>
   )
 }
 
@@ -82,6 +74,7 @@ export const pageQuery = graphql`
           header
           checklistHeader
           checklist
+          technologiesHeader
           technologies
         }
       }

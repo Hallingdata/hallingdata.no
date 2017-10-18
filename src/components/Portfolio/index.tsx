@@ -10,6 +10,7 @@ import * as sagabilImg from "./img/saga-bil.jpg"
 import * as haraldestImg from "./img/haraldset.jpg"
 
 import Card, { CardActions, CardContent, CardMedia } from "material-ui/Card"
+import { PageSection } from "../PageSection";
 
 type Props = {
   header: string
@@ -21,10 +22,7 @@ const portfolio: React.SFC<Props & { classes: StyleClassNames }> = ({
   header,
   portfolioItems,
 }) => (
-  <section className={classes.outer}>
-    <Typography type="display1" gutterBottom className={classes.header}>
-      {header}
-    </Typography>
+  <PageSection header={header} className={classes.outer}>
     <Grid
       container
       direction="row"
@@ -34,7 +32,7 @@ const portfolio: React.SFC<Props & { classes: StyleClassNames }> = ({
     >
       {map(
         portfolioItem => (
-          <Grid item xs={12} sm={6} md={4} key={portfolioItem.url}>
+          <Grid item xs={12} sm={6} md={4} key={portfolioItem.url} className={classes.gridItem}>
             <Card className={classes.card}>
               {itemPicture(portfolioItem.title, classes.media)}
               <CardContent>
@@ -61,7 +59,7 @@ const portfolio: React.SFC<Props & { classes: StyleClassNames }> = ({
         portfolioItems
       )}
     </Grid>
-  </section>
+  </PageSection>
 )
 
 type StyleClassNames = {
@@ -70,9 +68,13 @@ type StyleClassNames = {
   outer: string
   header: string
   grid: string
+  gridItem: string
 }
 
 const styles: StyleRulesCallback = theme => ({
+  gridItem: {
+    padding: "20px !important",
+  },
   card: {
     maxWidth: 290,
     height: "100%",
