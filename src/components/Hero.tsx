@@ -6,6 +6,7 @@ type Props = {
   header: string
   type: "small" | "big"
   img: string
+  imgPosition?: "top" | "bottom" | "center"
 }
 
 const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
@@ -13,13 +14,14 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
   type,
   img,
   classes,
+  imgPosition = "top",
 }) => (
   <Grid
     container
     className={classes[type]}
     alignItems="center"
     justify="center"
-    style={backgroundStyle(img)}
+    style={backgroundStyle(img, imgPosition)}
   >
     <Grid item>
       <div className={classes.inner}>
@@ -39,11 +41,11 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
   </Grid>
 )
 
-const backgroundStyle = (image: any) => {
+const backgroundStyle = (image: any, backgroundPosition: string) => {
   return {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
-    backgroundPosition: "bottom",
+    backgroundPosition
   }
 }
 

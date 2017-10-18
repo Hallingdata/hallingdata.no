@@ -43,7 +43,7 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
   const html = data.webpagesPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Hero header={header} type="small" img={heroImg} />
+      <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard
         htmlContent={html}
         checklistHeader={checklistHeader}

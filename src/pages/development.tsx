@@ -51,7 +51,7 @@ const developmentPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.developmentPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Hero header={header} type="small" img={heroImg} />
+      <Hero header={header} type="small" img={heroImg} imgPosition="center" />
       <InfoWithCard htmlContent={html} checklistItems={checklist} />
       <ChipGrid header={technologiesHeader} items={technologies} />
       <BigImg img={bottomImg} />

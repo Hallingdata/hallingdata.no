@@ -52,7 +52,7 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.appsPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Hero header={header} type="small" img={heroImg} />
+      <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard htmlContent={html} checklistItems={checklist} />
       <OurServices services={ourServices} />
       <MobileLogoRow />
