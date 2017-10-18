@@ -10,7 +10,7 @@ const footerAbout: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
 }) => (
   <Grid item xs={10} md={3} sm={5} className={classes.gridItem}>
-    <Logo color="white-transparent" className={classes.logo} />
+    <Logo className={classes.logo} />
     <Typography
       type="body1"
       gutterBottom
