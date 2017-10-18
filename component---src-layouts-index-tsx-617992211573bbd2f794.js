@@ -1,13 +1,13 @@
 webpackJsonp([22676092666560,60335399758886],{
 
-/***/ 161:
+/***/ "./node_modules/json-loader/index.js!./.cache/json/layout-index.json":
 /***/ (function(module, exports) {
 
 	module.exports = {"layoutContext":{}}
 
 /***/ }),
 
-/***/ 359:
+/***/ "./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/sogasg/dev/halling/hallingdata.no/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/sogasg/dev/halling/hallingdata.no/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/sogasg/dev/halling/hallingdata.no/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[[\"/Users/sogasg/dev/halling/hallingdata.no/node_modules/babel-preset-env/lib/index.js\",{\"loose\":true,\"uglify\":true,\"modules\":\"commonjs\",\"targets\":{\"browsers\":[\"> 1%\",\"last 2 versions\",\"IE >= 9\"]},\"exclude\":[\"transform-regenerator\",\"transform-es2015-typeof-symbol\"]}],\"/Users/sogasg/dev/halling/hallingdata.no/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/sogasg/dev/halling/hallingdata.no/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./.cache/layouts/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16,15 +16,15 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _react = __webpack_require__(2);
+	var _react = __webpack_require__("./node_modules/react/index.js");
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _index = __webpack_require__(373);
+	var _index = __webpack_require__("./src/layouts/index.tsx");
 	
 	var _index2 = _interopRequireDefault(_index);
 	
-	var _layoutIndex = __webpack_require__(161);
+	var _layoutIndex = __webpack_require__("./node_modules/json-loader/index.js!./.cache/json/layout-index.json");
 	
 	var _layoutIndex2 = _interopRequireDefault(_layoutIndex);
 	
@@ -38,12 +38,12 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 471:
+/***/ "./node_modules/deep-equal/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 	var pSlice = Array.prototype.slice;
-	var objectKeys = __webpack_require__(473);
-	var isArguments = __webpack_require__(472);
+	var objectKeys = __webpack_require__("./node_modules/deep-equal/lib/keys.js");
+	var isArguments = __webpack_require__("./node_modules/deep-equal/lib/is_arguments.js");
 	
 	var deepEqual = module.exports = function (actual, expected, opts) {
 	  if (!opts) opts = {};
@@ -139,7 +139,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 472:
+/***/ "./node_modules/deep-equal/lib/is_arguments.js":
 /***/ (function(module, exports) {
 
 	var supportsArgumentsClass = (function(){
@@ -166,7 +166,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 473:
+/***/ "./node_modules/deep-equal/lib/keys.js":
 /***/ (function(module, exports) {
 
 	exports = module.exports = typeof Object.keys === 'function'
@@ -182,7 +182,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 479:
+/***/ "./node_modules/exenv/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -229,7 +229,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 879:
+/***/ "./node_modules/react-helmet/lib/Helmet.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports.__esModule = true;
@@ -239,25 +239,25 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _react = __webpack_require__(2);
+	var _react = __webpack_require__("./node_modules/react/index.js");
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(1);
+	var _propTypes = __webpack_require__("./node_modules/prop-types/index.js");
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactSideEffect = __webpack_require__(907);
+	var _reactSideEffect = __webpack_require__("./node_modules/react-side-effect/lib/index.js");
 	
 	var _reactSideEffect2 = _interopRequireDefault(_reactSideEffect);
 	
-	var _deepEqual = __webpack_require__(471);
+	var _deepEqual = __webpack_require__("./node_modules/deep-equal/index.js");
 	
 	var _deepEqual2 = _interopRequireDefault(_deepEqual);
 	
-	var _HelmetUtils = __webpack_require__(880);
+	var _HelmetUtils = __webpack_require__("./node_modules/react-helmet/lib/HelmetUtils.js");
 	
-	var _HelmetConstants = __webpack_require__(348);
+	var _HelmetConstants = __webpack_require__("./node_modules/react-helmet/lib/HelmetConstants.js");
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -527,7 +527,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 348:
+/***/ "./node_modules/react-helmet/lib/HelmetConstants.js":
 /***/ (function(module, exports) {
 
 	exports.__esModule = true;
@@ -597,7 +597,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 880:
+/***/ "./node_modules/react-helmet/lib/HelmetUtils.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {exports.__esModule = true;
@@ -607,15 +607,15 @@ webpackJsonp([22676092666560,60335399758886],{
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	var _react = __webpack_require__(2);
+	var _react = __webpack_require__("./node_modules/react/index.js");
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _objectAssign = __webpack_require__(178);
+	var _objectAssign = __webpack_require__("./node_modules/object-assign/index.js");
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _HelmetConstants = __webpack_require__(348);
+	var _HelmetConstants = __webpack_require__("./node_modules/react-helmet/lib/HelmetConstants.js");
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1140,20 +1140,20 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 907:
+/***/ "./node_modules/react-side-effect/lib/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _react = __webpack_require__(2);
+	var _react = __webpack_require__("./node_modules/react/index.js");
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _exenv = __webpack_require__(479);
+	var _exenv = __webpack_require__("./node_modules/exenv/index.js");
 	
 	var _exenv2 = _interopRequireDefault(_exenv);
 	
-	var _shallowequal = __webpack_require__(924);
+	var _shallowequal = __webpack_require__("./node_modules/shallowequal/index.js");
 	
 	var _shallowequal2 = _interopRequireDefault(_shallowequal);
 	
@@ -1264,7 +1264,7 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 924:
+/***/ "./node_modules/shallowequal/index.js":
 /***/ (function(module, exports) {
 
 	module.exports = function shallowEqual(objA, objB, compare, compareContext) {
@@ -1321,29 +1321,29 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 364:
+/***/ "./src/components/FacebookBadge.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const React = __webpack_require__(2);
+	const React = __webpack_require__("./node_modules/react/index.js");
 	exports.FacebookBadge = props => React.createElement("div", { dangerouslySetInnerHTML: {
 	                __html: '<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhallingdata&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>'
 	        } });
 
 /***/ }),
 
-/***/ 365:
+/***/ "./src/components/Footer/FooterAbout.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const material_ui_1 = __webpack_require__(18);
-	const styles_1 = __webpack_require__(17);
-	const React = __webpack_require__(2);
-	const Logo_1 = __webpack_require__(204);
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const Logo_1 = __webpack_require__("./src/components/Logo/index.tsx");
 	const footerAbout = ({ classes }) => React.createElement(material_ui_1.Grid, { item: true, xs: 10, md: 3, sm: 5, className: classes.gridItem }, React.createElement(Logo_1.Logo, { className: classes.logo }), React.createElement(material_ui_1.Typography, { type: "body1", gutterBottom: true, color: "inherit", className: classes.vision }, "Hallingdata hjelper bedrifter og organisasjoner med fornuftig bruk av informasjonsteknologi (IT). Vi er IT-eksperter som skj\u00F8nner forretningsdrift. Ta kontakt for \u00E5 finne ut hvordan vi kan hjelpe deg og din organisasjon."), React.createElement(material_ui_1.Typography, { type: "body2", color: "inherit" }, "Bes\u00F8ksadresse:"), React.createElement(material_ui_1.Typography, { type: "body1", gutterBottom: true, color: "inherit" }, "Hallingdal N\u00E6ringshage", React.createElement("br", null), "Gamlevegen 6 ", React.createElement("br", null), "3550 GOL", React.createElement("br", null)));
 	const styles = theme => ({
 	    logo: {
@@ -1361,15 +1361,15 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 366:
+/***/ "./src/components/Footer/FooterContact.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const material_ui_1 = __webpack_require__(18);
-	const styles_1 = __webpack_require__(17);
-	const React = __webpack_require__(2);
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
 	const footerContact = ({ classes }) => React.createElement(material_ui_1.Grid, { item: true, md: 2, xs: 10, sm: 5, className: classes.gridItem }, React.createElement(material_ui_1.Typography, { type: "title", color: "inherit", gutterBottom: true, style: { paddingTop: "9px" } }, "Skal vi ta en prat?"), React.createElement(material_ui_1.Typography, { type: "body1", gutterBottom: true, color: "inherit" }, "Ring oss for en uforpliktende telefonsamtale."), React.createElement(material_ui_1.Button, { href: "tel:+4732178032", color: "inherit", raised: true, className: classes.contactButton }, React.createElement(material_ui_1.Icon, { color: "inherit", className: classes.icon }, "phone"), "Ring oss"), React.createElement(material_ui_1.Button, { href: "mailto:post@hallingdata.no", color: "inherit", raised: true, className: classes.contactButton }, React.createElement(material_ui_1.Icon, { color: "inherit", className: classes.icon }, "email"), "Send epost"), React.createElement(material_ui_1.Typography, { type: "body1", gutterBottom: true, color: "inherit" }, "TLF: 32 17 80 32", React.createElement("br", null), "E-post: post@hallingdata.no", React.createElement("br", null)));
 	const styles = theme => ({
 	    icon: {
@@ -1387,18 +1387,18 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 367:
+/***/ "./src/components/Footer/index.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const material_ui_1 = __webpack_require__(18);
-	const styles_1 = __webpack_require__(17);
-	const React = __webpack_require__(2);
-	const FacebookBadge_1 = __webpack_require__(364);
-	const FooterAbout_1 = __webpack_require__(365);
-	const FooterContact_1 = __webpack_require__(366);
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const FacebookBadge_1 = __webpack_require__("./src/components/FacebookBadge.tsx");
+	const FooterAbout_1 = __webpack_require__("./src/components/Footer/FooterAbout.tsx");
+	const FooterContact_1 = __webpack_require__("./src/components/Footer/FooterContact.tsx");
 	const footer = ({ classes }) => {
 	    return React.createElement(material_ui_1.Grid, { container: true, direction: "row", className: classes.outer, spacing: 0, justify: "space-around" }, React.createElement(FooterContact_1.FooterContact, null), React.createElement(FooterAbout_1.FooterAbout, null), React.createElement(material_ui_1.Grid, { item: true, md: 3, xs: 10, className: classes.gridItem, style: { overflow: "hidden" } }, React.createElement(FacebookBadge_1.FacebookBadge, null)));
 	};
@@ -1417,39 +1417,39 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 204:
+/***/ "./src/components/Logo/index.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const React = __webpack_require__(2);
-	const gatsby_link_1 = __webpack_require__(109);
-	const logo = __webpack_require__(938);
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const gatsby_link_1 = __webpack_require__("./node_modules/gatsby-link/index.js");
+	const logo = __webpack_require__("./src/components/Logo/logo-white-transparent.png");
 	exports.Logo = ({ className }) => React.createElement("img", { src: logo, alt: "Hallingdata logo", className: className, style: { cursor: "pointer" }, onClick: () => gatsby_link_1.navigateTo("/") });
 
 /***/ }),
 
-/***/ 938:
+/***/ "./src/components/Logo/logo-white-transparent.png":
 /***/ (function(module, exports) {
 
 	module.exports = "data:image/png;base64,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"
 
 /***/ }),
 
-/***/ 369:
+/***/ "./src/components/NavBar.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const gatsby_link_1 = __webpack_require__(109);
-	const material_ui_1 = __webpack_require__(18);
-	const styles_1 = __webpack_require__(17);
-	const ramda_1 = __webpack_require__(32);
-	const React = __webpack_require__(2);
-	const Logo_1 = __webpack_require__(204);
-	const NavDrawer_1 = __webpack_require__(370);
+	const gatsby_link_1 = __webpack_require__("./node_modules/gatsby-link/index.js");
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const ramda_1 = __webpack_require__("./node_modules/ramda/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const Logo_1 = __webpack_require__("./src/components/Logo/index.tsx");
+	const NavDrawer_1 = __webpack_require__("./src/components/NavDrawer.tsx");
 	const navBar = ({ classes }) => React.createElement(material_ui_1.AppBar, { position: "absolute", className: classes.appBar }, React.createElement(material_ui_1.Toolbar, null, React.createElement(Logo_1.Logo, { className: classes.logo }), React.createElement("span", { style: { flex: 1 } }), React.createElement(material_ui_1.Hidden, { smDown: true }, ramda_1.map(page => {
 	    if (page.name == "Kontakt") {
 	        return React.createElement(material_ui_1.Button, { className: classes.contactButton, color: "accent", raised: true, key: page.name + "-navBarButton", onClick: () => gatsby_link_1.navigateTo("/" + page.link) }, "Kontakt");
@@ -1497,16 +1497,16 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 370:
+/***/ "./src/components/NavDrawer.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const material_ui_1 = __webpack_require__(18);
-	const ramda_1 = __webpack_require__(32);
-	const React = __webpack_require__(2);
-	const gatsby_link_1 = __webpack_require__(109);
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
+	const ramda_1 = __webpack_require__("./node_modules/ramda/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const gatsby_link_1 = __webpack_require__("./node_modules/gatsby-link/index.js");
 	class NavDrawer extends React.Component {
 	    constructor(props) {
 	        super(props);
@@ -1529,19 +1529,19 @@ webpackJsonp([22676092666560,60335399758886],{
 
 /***/ }),
 
-/***/ 373:
+/***/ "./src/layouts/index.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const amber_1 = __webpack_require__(283);
-	const deepPurple_1 = __webpack_require__(284);
-	const styles_1 = __webpack_require__(17);
-	const React = __webpack_require__(2);
-	const react_helmet_1 = __webpack_require__(879);
-	const Footer_1 = __webpack_require__(367);
-	const NavBar_1 = __webpack_require__(369);
+	const amber_1 = __webpack_require__("./node_modules/material-ui/colors/amber.js");
+	const deepPurple_1 = __webpack_require__("./node_modules/material-ui/colors/deepPurple.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const react_helmet_1 = __webpack_require__("./node_modules/react-helmet/lib/Helmet.js");
+	const Footer_1 = __webpack_require__("./src/components/Footer/index.tsx");
+	const NavBar_1 = __webpack_require__("./src/components/NavBar.tsx");
 	const TemplateWrapper = ({ children }) => React.createElement(styles_1.MuiThemeProvider, { theme: theme }, React.createElement("div", null, React.createElement(react_helmet_1.Helmet, { title: "Hallingdata", meta: [{ name: "description", content: "Sample" }, { name: "keywords", content: "sample, something" }] }), React.createElement(NavBar_1.NavBar, null), children(), React.createElement(Footer_1.Footer, null)));
 	exports.default = TemplateWrapper;
 	const theme = styles_1.createMuiTheme({

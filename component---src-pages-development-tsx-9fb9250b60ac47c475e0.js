@@ -1,12 +1,12 @@
 webpackJsonp([8401069360376],{
 
-/***/ 134:
+/***/ "./src/components/BigImg.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const React = __webpack_require__(2);
+	const React = __webpack_require__("./node_modules/react/index.js");
 	const bigImg = ({ img }) => React.createElement("div", { style: backgroundStyle(img) });
 	const backgroundStyle = image => {
 	    return {
@@ -19,16 +19,16 @@ webpackJsonp([8401069360376],{
 
 /***/ }),
 
-/***/ 76:
+/***/ "./src/components/ChecklistCard.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const material_ui_1 = __webpack_require__(18);
-	const styles_1 = __webpack_require__(17);
-	const ramda_1 = __webpack_require__(32);
-	const React = __webpack_require__(2);
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const ramda_1 = __webpack_require__("./node_modules/ramda/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
 	const checklistCard = ({ header = "", list, icon = "check_circle", classes }) => {
 	    return React.createElement(material_ui_1.Card, { className: classes.card }, React.createElement(material_ui_1.CardContent, null, React.createElement(material_ui_1.Typography, { type: "body1", className: classes.title }, header), React.createElement(material_ui_1.List, null, ramda_1.map(item => React.createElement(material_ui_1.ListItem, { key: item }, React.createElement(material_ui_1.ListItemIcon, null, React.createElement(material_ui_1.Icon, null, icon)), React.createElement(material_ui_1.ListItemText, { primary: item })), list))));
 	};
@@ -54,17 +54,17 @@ webpackJsonp([8401069360376],{
 
 /***/ }),
 
-/***/ 362:
+/***/ "./src/components/ChipGrid.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const PageSection_1 = __webpack_require__(65);
-	const material_ui_1 = __webpack_require__(18);
-	const styles_1 = __webpack_require__(17);
-	const React = __webpack_require__(2);
-	const ramda_1 = __webpack_require__(32);
+	const PageSection_1 = __webpack_require__("./src/components/PageSection.tsx");
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const ramda_1 = __webpack_require__("./node_modules/ramda/index.js");
 	const chipGrid = ({ classes, header, items }) => React.createElement(PageSection_1.PageSection, { header: header, className: classes.outer }, React.createElement("div", { className: classes.chipsGrid }, ramda_1.map(item => React.createElement(material_ui_1.Chip, { key: item, label: item, className: classes.chip }), items)));
 	const backgroundStyle = image => {
 	    return {
@@ -95,16 +95,16 @@ webpackJsonp([8401069360376],{
 
 /***/ }),
 
-/***/ 77:
+/***/ "./src/components/InfoWithCard.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const ChecklistCard_1 = __webpack_require__(76);
-	const React = __webpack_require__(2);
-	const styles_1 = __webpack_require__(17);
-	const material_ui_1 = __webpack_require__(18);
+	const ChecklistCard_1 = __webpack_require__("./src/components/ChecklistCard.tsx");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
 	const infoWithCard = ({ classes, htmlContent, checklistHeader, checkListIcon, checklistItems }) => React.createElement(material_ui_1.Grid, { container: true, justify: "space-around", className: classes.infoContainer }, React.createElement(material_ui_1.Grid, { item: true, sm: 6, md: 5, xs: 10 }, React.createElement(material_ui_1.Typography, { type: "body1", gutterBottom: true, align: "justify", className: classes.content, dangerouslySetInnerHTML: { __html: htmlContent } })), React.createElement(material_ui_1.Grid, { item: true, sm: 5, md: 4, xs: 10 }, React.createElement(ChecklistCard_1.ChecklistCard, { header: checklistHeader, list: checklistItems, icon: checkListIcon })));
 	const styles = theme => ({
 	    infoContainer: {
@@ -119,20 +119,20 @@ webpackJsonp([8401069360376],{
 
 /***/ }),
 
-/***/ 378:
+/***/ "./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/sogasg/dev/halling/hallingdata.no/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\"]}!./node_modules/ts-loader/index.js?{\"compilerOptions\":{\"target\":\"esnext\",\"experimentalDecorators\":true,\"jsx\":\"react\",\"module\":\"commonjs\"},\"transpileOnly\":true}!./src/pages/development.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const styles_1 = __webpack_require__(17);
-	const React = __webpack_require__(2);
-	const ChipGrid_1 = __webpack_require__(362);
-	const BigImg_1 = __webpack_require__(134);
-	const Hero_1 = __webpack_require__(64);
-	const InfoWithCard_1 = __webpack_require__(77);
-	const heroImg = __webpack_require__(951);
-	const bottomImg = __webpack_require__(954);
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const ChipGrid_1 = __webpack_require__("./src/components/ChipGrid.tsx");
+	const BigImg_1 = __webpack_require__("./src/components/BigImg.tsx");
+	const Hero_1 = __webpack_require__("./src/components/Hero.tsx");
+	const InfoWithCard_1 = __webpack_require__("./src/components/InfoWithCard.tsx");
+	const heroImg = __webpack_require__("./src/pages/img/hero/code1.jpeg");
+	const bottomImg = __webpack_require__("./src/pages/img/hero/dev1.jpeg");
 	// https://github.com/callemall/material-ui/issues/7466
 	const gridFix = {
 	  width: "100%",
@@ -149,14 +149,14 @@ webpackJsonp([8401069360376],{
 
 /***/ }),
 
-/***/ 951:
+/***/ "./src/pages/img/hero/code1.jpeg":
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/code1.104e08ae.jpeg";
 
 /***/ }),
 
-/***/ 954:
+/***/ "./src/pages/img/hero/dev1.jpeg":
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/dev1.d04ca08c.jpeg";

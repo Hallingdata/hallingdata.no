@@ -1,18 +1,18 @@
 webpackJsonp([147894599050189],{
 
-/***/ 375:
+/***/ "./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/sogasg/dev/halling/hallingdata.no/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\"]}!./node_modules/ts-loader/index.js?{\"compilerOptions\":{\"target\":\"esnext\",\"experimentalDecorators\":true,\"jsx\":\"react\",\"module\":\"commonjs\"},\"transpileOnly\":true}!./src/pages/about.tsx":
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const PageSection_1 = __webpack_require__(65);
-	const material_ui_1 = __webpack_require__(18);
-	const styles_1 = __webpack_require__(17);
-	const React = __webpack_require__(2);
-	const Hero_1 = __webpack_require__(64);
-	const heroImg = __webpack_require__(202);
-	const hallingdalLogo = __webpack_require__(950);
+	const PageSection_1 = __webpack_require__("./src/components/PageSection.tsx");
+	const material_ui_1 = __webpack_require__("./node_modules/material-ui/index.js");
+	const styles_1 = __webpack_require__("./node_modules/material-ui/styles/index.js");
+	const React = __webpack_require__("./node_modules/react/index.js");
+	const Hero_1 = __webpack_require__("./src/components/Hero.tsx");
+	const heroImg = __webpack_require__("./src/pages/img/hero/hallingskarvet.jpg");
+	const hallingdalLogo = __webpack_require__("./src/pages/img/hallingdal-logo.png");
 	// https://github.com/callemall/material-ui/issues/7466
 	const gridFix = {
 	    width: "100%",
@@ -59,14 +59,14 @@ webpackJsonp([147894599050189],{
 
 /***/ }),
 
-/***/ 950:
+/***/ "./src/pages/img/hallingdal-logo.png":
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/hallingdal-logo.7aa75c6f.png";
 
 /***/ }),
 
-/***/ 202:
+/***/ "./src/pages/img/hero/hallingskarvet.jpg":
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/hallingskarvet.7cfcd475.jpg";
