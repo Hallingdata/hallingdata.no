@@ -68,6 +68,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
               <TextField
                 id="name"
                 label="Navn"
+                name="Navn"
                 className={classes.textField}
                 margin="normal"
                 required
@@ -75,6 +76,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
               <TextField
                 id="contact"
                 label="Kontakt"
+                name="Kontakt"
                 placeholder="Epost eller telefonnummer"
                 className={classes.textField}
                 margin="normal"
@@ -84,6 +86,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
               <TextField
                 id="message"
                 label="Din melding"
+                name="Melding"
                 multiline
                 rows="8"
                 rowsMax="50"
