@@ -45,7 +45,7 @@ module.exports = (data: any) => {
           rel="stylesheet"
         />
         <link
-          href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+          href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
           rel="stylesheet"
         />
         <meta
