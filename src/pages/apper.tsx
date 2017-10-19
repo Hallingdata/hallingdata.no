@@ -69,7 +69,7 @@ export default withStyles(styles)<Props>(webpagesPage)
 
 export const pageQuery = graphql`
   query AppsContent {
-    appsPage: file(relativePath: { eq: "content/apps-page.md" }) {
+    appsPage: file(relativePath: { eq: "content/apper_page.md" }) {
       childMarkdownRemark {
         html
         frontmatter {

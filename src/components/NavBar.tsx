@@ -84,22 +84,22 @@ const pages = [
   },
   {
     name: "Nettsider",
-    link: "webpages",
+    link: "nettsider",
   },
   {
     name: "Apper",
-    link: "apps",
+    link: "apper",
   },
   {
     name: "Systemutvikling",
-    link: "development",
+    link: "systemutvikling",
   },
   {
     name: "Om oss",
-    link: "about",
+    link: "om-oss",
   },
   {
     name: "Kontakt",
-    link: "contact",
+    link: "kontakt",
   },
 ]

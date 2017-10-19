@@ -67,7 +67,7 @@ export default withStyles(styles)<Props>(developmentPage)
 
 export const pageQuery = graphql`
   query DevelopmentAppsContent {
-    developmentPage: file(relativePath: { eq: "content/development-page.md" }) {
+    developmentPage: file(relativePath: { eq: "content/systemutvikling_page.md" }) {
       childMarkdownRemark {
         html
         frontmatter {

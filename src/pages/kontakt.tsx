@@ -1,5 +1,4 @@
 import { PageSection } from "../components/PageSection"
-import contact from "./contact"
 import { Grid, TextField, Button, Icon, Typography } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
@@ -213,7 +212,7 @@ export default withStyles(styles)<Props>(contactPage)
 
 export const pageQuery = graphql`
   query ContactContent {
-    contactPage: file(relativePath: { eq: "content/contact-page.md" }) {
+    contactPage: file(relativePath: { eq: "content/kontakt_page.md" }) {
       childMarkdownRemark {
         html
         frontmatter {

@@ -61,7 +61,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query LandingContent {
-    landingPage: file(relativePath: { eq: "content/landing-page.md" }) {
+    landingPage: file(relativePath: { eq: "content/hjem_page.md" }) {
       childMarkdownRemark {
         html
         timeToRead

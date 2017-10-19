@@ -134,7 +134,7 @@ export default withStyles(styles)<Props>(webpagesPage)
 
 export const pageQuery = graphql`
   query AboutContent {
-    aboutPage1: file(relativePath: { eq: "content/about-page-part1.md" }) {
+    aboutPage1: file(relativePath: { eq: "content/om-oss_page-part1.md" }) {
       childMarkdownRemark {
         html
         frontmatter {
@@ -142,7 +142,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    aboutPage2: file(relativePath: { eq: "content/about-page-part2.md" }) {
+    aboutPage2: file(relativePath: { eq: "content/om-oss_page-part2.md" }) {
       childMarkdownRemark {
         html
         frontmatter {
