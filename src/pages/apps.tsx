@@ -7,8 +7,8 @@ import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
 import { MobileLogoRow } from "../components/MobileLogoRow"
 import { OurServices } from "../components/OurServices"
-import * as heroImg from "./img/hero/phone3.jpeg"
-import * as bottomImg from "./img/hero/phone8.jpeg"
+import * as heroImg from "./img/hero/phone3-min.jpeg"
+import * as bottomImg from "./img/hero/phone8-min.jpeg"
 import * as style from "./index.module.css"
 
 type Props = {

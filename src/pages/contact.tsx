@@ -6,7 +6,7 @@ import * as React from "react"
 import { map } from "ramda"
 
 import { Hero } from "../components/Hero"
-import * as heroImg from "./img/hero/hallingskarvet.jpg"
+import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
 import * as style from "./index.module.css"
 
 type Props = {

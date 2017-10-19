@@ -8,10 +8,8 @@ import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
 import { MobileLogoRow } from "../components/MobileLogoRow"
 import { OurServices } from "../components/OurServices"
-import * as heroImg from "./img/hero/hallingskarvet.jpg"
-import * as bottomImg from "./img/hero/phone8.jpeg"
-import * as style from "./index.module.css"
-import * as hallingdalLogo from "./img/hallingdal-logo.png"
+import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
+import * as hallingdalLogo from "./img/hallingdal-logo-min.png"
 
 type Props = {
   data: {
