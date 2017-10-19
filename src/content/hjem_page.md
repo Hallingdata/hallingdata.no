@@ -1,5 +1,5 @@
 ---
-header: "Web og app utvikling"
+header: "Vi utvikler digitale løsninger"
 ourServices:
   - header: "Web"
     icon: "important_devices"
