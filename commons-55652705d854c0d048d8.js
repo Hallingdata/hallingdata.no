@@ -5452,8 +5452,8 @@
 	
 	var pathPrefix = "/"; /*global __PREFIX_PATHS__, __PATH_PREFIX__ */
 	
-	if (true) {
-	  pathPrefix = ("");
+	if (false) {
+	  pathPrefix = __PATH_PREFIX__;
 	}
 	
 	function normalizePath(path) {
