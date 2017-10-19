@@ -3,7 +3,7 @@ header: "Web og app utvikling"
 ourServices:
   - header: "Web"
     icon: "important_devices"
-    description: "Vi tar i bruk de mest moderne teknologiene for å skreddersy nettsider og nettbutikker til ditt behov. 
+    description: "Vi tar i bruk de mest moderne teknologiene for å skreddersy nettsider og nettbutikker til ditt behov." 
   - header: "App"
     icon: "phone_iphone"
     description: "Vi utvikler applikasjoner for Android og Iphone."
