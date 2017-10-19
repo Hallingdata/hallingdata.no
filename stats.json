@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-development-tsx": [
-      "component---src-pages-development-tsx-9fb9250b60ac47c475e0.js",
-      "component---src-pages-development-tsx-9fb9250b60ac47c475e0.js.map"
+      "component---src-pages-development-tsx-ee71c4796cddafe621b2.js",
+      "component---src-pages-development-tsx-ee71c4796cddafe621b2.js.map"
     ],
     "component---src-layouts-index-tsx": [
       "component---src-layouts-index-tsx-617992211573bbd2f794.js",
@@ -17,16 +17,16 @@
       "component---src-pages-webpages-tsx-fab4e0a12e850ab1f9e0.js.map"
     ],
     "component---src-pages-apps-tsx": [
-      "component---src-pages-apps-tsx-6f23df5076dd9f7feb68.js",
-      "component---src-pages-apps-tsx-6f23df5076dd9f7feb68.js.map"
+      "component---src-pages-apps-tsx-6877c3e123d136c780ba.js",
+      "component---src-pages-apps-tsx-6877c3e123d136c780ba.js.map"
     ],
     "path---index": [
       "path---index-5fa520fdac1c44b6895f.js",
       "path---index-5fa520fdac1c44b6895f.js.map"
     ],
     "component---src-pages-about-tsx": [
-      "component---src-pages-about-tsx-1f34b48fa521b20ed017.js",
-      "component---src-pages-about-tsx-1f34b48fa521b20ed017.js.map"
+      "component---src-pages-about-tsx-d0c4ad9268c11d94f7c1.js",
+      "component---src-pages-about-tsx-d0c4ad9268c11d94f7c1.js.map"
     ],
     "commons": [
       "commons-b8e5e284040270819410.js",
@@ -53,8 +53,8 @@
       "path---webpages-71f6ab8d336c1b5ed0ec.js.map"
     ],
     "component---src-pages-index-tsx": [
-      "component---src-pages-index-tsx-423e4a35c96fc12e1ef1.js",
-      "component---src-pages-index-tsx-423e4a35c96fc12e1ef1.js.map"
+      "component---src-pages-index-tsx-4b3ab9d225999908e451.js",
+      "component---src-pages-index-tsx-4b3ab9d225999908e451.js.map"
     ],
     "app": [
       "app-701d53ad83679632d8c5.js",
@@ -69,8 +69,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-contact-tsx": [
-      "component---src-pages-contact-tsx-ebff2597f1537828a6d6.js",
-      "component---src-pages-contact-tsx-ebff2597f1537828a6d6.js.map"
+      "component---src-pages-contact-tsx-9728296ab87140464f0d.js",
+      "component---src-pages-contact-tsx-9728296ab87140464f0d.js.map"
     ],
     "path---about": [
       "path---about-10a75a5fce4dfed289ce.js",
