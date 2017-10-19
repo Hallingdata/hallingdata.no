@@ -12,49 +12,58 @@ type Props = {}
 const navBar: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
 }) => (
-  <AppBar position="absolute" className={classes.appBar}>
-    <Toolbar>
-      <Logo className={classes.logo} />
-      <span style={{ flex: 1 }} />
-      <Hidden smDown>
-        {map(page => {
-          if (page.name == "Kontakt") {
-            return (
-              <Button
-                className={classes.contactButton}
-                color="accent"
-                raised
-                key={page.name + "-navBarButton"}
-                onClick={() => navigateTo("/" + page.link)}
-              >
-                Kontakt
-              </Button>
-            )
-          } else {
-            return (
-              <Button
-                className={classes.navButton}
-                key={page.name + "-navBarButton"}
-                onClick={() => navigateTo("/" + page.link)}
-              >
-                {page.name}
-              </Button>
-            )
-          }
-        }, pages)}
-      </Hidden>
-      <Hidden mdUp>
-        <NavDrawer links={pages} />
-      </Hidden>
-    </Toolbar>
-  </AppBar>
+  <div>
+    <Hidden mdUp>
+      <AppBar position="fixed">
+        <Toolbar>
+          <Logo className={classes.logo} />
+          <span style={{ flex: 1 }} />
+          <NavDrawer links={pages} />
+        </Toolbar>
+      </AppBar>
+    </Hidden>
+
+    <Hidden smDown>
+      <AppBar position="absolute" className={classes.appBarLarge}>
+        <Toolbar>
+          <Logo className={classes.logo} />
+          <span style={{ flex: 1 }} />
+            {map(page => {
+              if (page.name == "Kontakt") {
+                return (
+                  <Button
+                    className={classes.contactButton}
+                    color="accent"
+                    raised
+                    key={page.name + "-navBarButton"}
+                    onClick={() => navigateTo("/" + page.link)}
+                  >
+                    Kontakt
+                  </Button>
+                )
+              } else {
+                return (
+                  <Button
+                    className={classes.navButton}
+                    key={page.name + "-navBarButton"}
+                    onClick={() => navigateTo("/" + page.link)}
+                  >
+                    {page.name}
+                  </Button>
+                )
+              }
+            }, pages)}
+        </Toolbar>
+      </AppBar>
+    </Hidden>
+  </div>
 )
 
 type StyleClassNames = {
   navButton: string
   logo: string
   contactButton: string
-  appBar: string
+  appBarLarge: string
 }
 
 const styles: StyleRulesCallback = theme => ({
@@ -69,7 +78,7 @@ const styles: StyleRulesCallback = theme => ({
   contactButton: {
     marginLeft: 15,
   },
-  appBar: {
+  appBarLarge: {
     backgroundColor: "transparent !important",
     boxShadow: "unset !important",
   },
