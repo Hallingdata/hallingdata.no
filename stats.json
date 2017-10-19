@@ -1,32 +1,44 @@
 {
   "assetsByChunkName": {
-    "component---src-pages-development-tsx": [
-      "component---src-pages-development-tsx-ee71c4796cddafe621b2.js",
-      "component---src-pages-development-tsx-ee71c4796cddafe621b2.js.map"
+    "component---src-pages-kontakt-tsx": [
+      "component---src-pages-kontakt-tsx-c750a9e24e7c9281a732.js",
+      "component---src-pages-kontakt-tsx-c750a9e24e7c9281a732.js.map"
     ],
     "component---src-layouts-index-tsx": [
-      "component---src-layouts-index-tsx-10d545662f1f7d811e75.js",
-      "component---src-layouts-index-tsx-10d545662f1f7d811e75.js.map"
+      "component---src-layouts-index-tsx-22cc4b21ca82e4a6ae5f.js",
+      "component---src-layouts-index-tsx-22cc4b21ca82e4a6ae5f.js.map"
+    ],
+    "component---src-pages-om-oss-tsx": [
+      "component---src-pages-om-oss-tsx-93d208f81e0d23e31133.js",
+      "component---src-pages-om-oss-tsx-93d208f81e0d23e31133.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
-    "component---src-pages-webpages-tsx": [
-      "component---src-pages-webpages-tsx-fab4e0a12e850ab1f9e0.js",
-      "component---src-pages-webpages-tsx-fab4e0a12e850ab1f9e0.js.map"
+    "component---src-pages-systemutvikling-tsx": [
+      "component---src-pages-systemutvikling-tsx-c9584a4d84cfd9dbfa90.js",
+      "component---src-pages-systemutvikling-tsx-c9584a4d84cfd9dbfa90.js.map"
     ],
-    "component---src-pages-apps-tsx": [
-      "component---src-pages-apps-tsx-6877c3e123d136c780ba.js",
-      "component---src-pages-apps-tsx-6877c3e123d136c780ba.js.map"
+    "component---src-pages-nettsider-tsx": [
+      "component---src-pages-nettsider-tsx-fab4e0a12e850ab1f9e0.js",
+      "component---src-pages-nettsider-tsx-fab4e0a12e850ab1f9e0.js.map"
+    ],
+    "path---nettsider": [
+      "path---nettsider-204c694ce0cab9e7902f.js",
+      "path---nettsider-204c694ce0cab9e7902f.js.map"
+    ],
+    "path---om-oss": [
+      "path---om-oss-10a75a5fce4dfed289ce.js",
+      "path---om-oss-10a75a5fce4dfed289ce.js.map"
+    ],
+    "component---src-pages-apper-tsx": [
+      "component---src-pages-apper-tsx-6877c3e123d136c780ba.js",
+      "component---src-pages-apper-tsx-6877c3e123d136c780ba.js.map"
     ],
     "path---index": [
       "path---index-bcd5a06613bac76d18c0.js",
       "path---index-bcd5a06613bac76d18c0.js.map"
-    ],
-    "component---src-pages-about-tsx": [
-      "component---src-pages-about-tsx-d0c4ad9268c11d94f7c1.js",
-      "component---src-pages-about-tsx-d0c4ad9268c11d94f7c1.js.map"
     ],
     "commons": [
       "commons-55652705d854c0d048d8.js",
@@ -40,43 +52,31 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---contact": [
-      "path---contact-f94cb7c650cac4e15142.js",
-      "path---contact-f94cb7c650cac4e15142.js.map"
+    "path---apper": [
+      "path---apper-8c9c498c1767eca26eb6.js",
+      "path---apper-8c9c498c1767eca26eb6.js.map"
     ],
-    "path---development": [
-      "path---development-e571e405e65d506857bb.js",
-      "path---development-e571e405e65d506857bb.js.map"
+    "path---kontakt": [
+      "path---kontakt-f94cb7c650cac4e15142.js",
+      "path---kontakt-f94cb7c650cac4e15142.js.map"
     ],
-    "path---webpages": [
-      "path---webpages-204c694ce0cab9e7902f.js",
-      "path---webpages-204c694ce0cab9e7902f.js.map"
+    "path---systemutvikling": [
+      "path---systemutvikling-e571e405e65d506857bb.js",
+      "path---systemutvikling-e571e405e65d506857bb.js.map"
     ],
     "component---src-pages-index-tsx": [
       "component---src-pages-index-tsx-4b3ab9d225999908e451.js",
       "component---src-pages-index-tsx-4b3ab9d225999908e451.js.map"
     ],
     "app": [
-      "app-701d53ad83679632d8c5.js",
+      "app-dc2b419c49a4115da28a.js",
       "build-js-styles.css",
-      "app-701d53ad83679632d8c5.js.map",
+      "app-dc2b419c49a4115da28a.js.map",
       "build-js-styles.css.map"
-    ],
-    "path---apps": [
-      "path---apps-ebe45ae60fa606711703.js",
-      "path---apps-ebe45ae60fa606711703.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
-    ],
-    "component---src-pages-contact-tsx": [
-      "component---src-pages-contact-tsx-9728296ab87140464f0d.js",
-      "component---src-pages-contact-tsx-9728296ab87140464f0d.js.map"
-    ],
-    "path---about": [
-      "path---about-10a75a5fce4dfed289ce.js",
-      "path---about-10a75a5fce4dfed289ce.js.map"
     ]
   }
 }
