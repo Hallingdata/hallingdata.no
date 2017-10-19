@@ -3,6 +3,9 @@ import deepPurple from "material-ui/colors/deepPurple"
 import { createMuiTheme, MuiThemeProvider } from "material-ui/styles"
 import * as React from "react"
 import { Helmet } from "react-helmet"
+import "typeface-roboto"
+import "ionicons/css/ionicons.min.css"
+import "material-design-icons-iconfont/dist/material-design-icons.css"
 
 import { Footer } from "../components/Footer"
 import { NavBar } from "../components/NavBar"
@@ -36,6 +39,6 @@ const theme = createMuiTheme({
     secondary: amber,
   },
   custom: {
-    pageMaxWith: 1200
-  }
+    pageMaxWith: 1200,
+  },
 })

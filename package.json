@@ -15,8 +15,9 @@
     "gatsby-plugin-typescript": "^1.4.8",
     "gatsby-source-filesystem": "^1.5.1",
     "gatsby-transformer-remark": "^1.7.15",
+    "ionicons": "2.0.1",
+    "material-design-icons-iconfont": "^3.0.3",
     "material-ui": "^1.0.0-beta.17",
-    "material-ui-icons": "^1.0.0-beta.15",
     "ramda": "^0.24.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -36,9 +37,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
-    "@types/jest": "^21.1.1",
     "@types/ramda": "github:types/npm-ramda#dist",
-    "gh-pages": "^1.0.0",
-    "jest": "^21.2.1"
+    "gh-pages": "^1.0.0"
   }
 }
