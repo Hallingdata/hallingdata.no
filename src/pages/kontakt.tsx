@@ -1,10 +1,10 @@
-import { PageSection } from "../components/PageSection"
-import { Grid, TextField, Button, Icon, Typography } from "material-ui"
+import { Button, Grid, Icon, TextField, Typography } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
-import * as React from "react"
 import { map } from "ramda"
+import * as React from "react"
 
 import { Hero } from "../components/Hero"
+import { PageSection } from "../components/PageSection"
 import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
 import * as style from "./index.module.css"
 

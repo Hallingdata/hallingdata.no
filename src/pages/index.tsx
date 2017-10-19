@@ -1,5 +1,4 @@
 import { Typography } from "material-ui"
-import Grid from "material-ui/Grid"
 import * as React from "react"
 
 import { CustomerLogos } from "../components/CustomerLogos"

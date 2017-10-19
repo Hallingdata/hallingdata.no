@@ -1,4 +1,3 @@
-import { Grid } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 

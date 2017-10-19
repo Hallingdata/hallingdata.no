@@ -1,15 +1,11 @@
-import { PageSection } from "../components/PageSection"
 import { Grid, Typography } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
-import { BigImg } from "../components/BigImg"
 import { Hero } from "../components/Hero"
-import { InfoWithCard } from "../components/InfoWithCard"
-import { MobileLogoRow } from "../components/MobileLogoRow"
-import { OurServices } from "../components/OurServices"
-import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
+import { PageSection } from "../components/PageSection"
 import * as hallingdalLogo from "./img/hallingdal-logo-min.png"
+import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
 
 type Props = {
   data: {

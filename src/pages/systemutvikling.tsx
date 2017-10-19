@@ -1,13 +1,10 @@
-import { Grid } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
-import { ChipGrid } from "../components/ChipGrid"
 import { BigImg } from "../components/BigImg"
+import { ChipGrid } from "../components/ChipGrid"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
-import { MobileLogoRow } from "../components/MobileLogoRow"
-import { OurServices } from "../components/OurServices"
 import * as heroImg from "./img/hero/code1-min.jpeg"
 import * as bottomImg from "./img/hero/dev1-min.jpeg"
 import * as style from "./index.module.css"
@@ -67,7 +64,9 @@ export default withStyles(styles)<Props>(developmentPage)
 
 export const pageQuery = graphql`
   query DevelopmentAppsContent {
-    developmentPage: file(relativePath: { eq: "content/systemutvikling_page.md" }) {
+    developmentPage: file(
+      relativePath: { eq: "content/systemutvikling_page.md" }
+    ) {
       childMarkdownRemark {
         html
         frontmatter {

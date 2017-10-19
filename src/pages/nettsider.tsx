@@ -1,4 +1,3 @@
-import Grid from "material-ui/Grid"
 import * as React from "react"
 
 import { Hero } from "../components/Hero"

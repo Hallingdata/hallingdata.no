@@ -1,10 +1,8 @@
-/* tslint:disable no-var-requires */
-/* tslint:disable no-console */
-
 import * as React from "react"
+
 import * as appleTouchIcon from "./favicons/apple-touch-icon.png"
-import * as icon32 from "./favicons/favicon-32x32.png"
 import * as icon16 from "./favicons/favicon-16x16.png"
+import * as icon32 from "./favicons/favicon-32x32.png"
 import * as manifest from "./favicons/manifest.json"
 import * as safariPinned from "./favicons/safari-pinned-tab.svg"
 import * as screenshot from "./screenshot.png"
