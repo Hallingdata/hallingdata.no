@@ -3,6 +3,9 @@
 
 import * as React from "react"
 
+// Load Roboto typeface
+require('typeface-roboto')
+
 // Load production style
 let styles: string
 if (process.env.NODE_ENV === `production`) {
@@ -36,10 +39,6 @@ module.exports = (data: any) => {
         <title>My website</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-        />
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"

@@ -20,6 +20,7 @@
     "ramda": "^0.24.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "typeface-roboto": "0.0.41",
     "typescript": "^2.5.3"
   },
   "keywords": [
