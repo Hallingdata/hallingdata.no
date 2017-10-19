@@ -52,6 +52,7 @@ const backgroundStyle = (image: any, backgroundPosition: string) => {
   return {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
+    backgroundColor: "#363839",
     backgroundPosition,
   }
 }
