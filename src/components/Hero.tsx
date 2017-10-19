@@ -26,7 +26,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
     justify="center"
     style={backgroundStyle(img, imgPosition)}
   >
-    <Grid item>
+    <Grid item xs={12} style={{ flexBasis: "unset" }}>
       <div className={classes.inner}>
         <Typography
           type="display3"
@@ -39,11 +39,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
         {hideButton ? (
           undefined
         ) : (
-          <Button
-            color="accent"
-            raised
-            onClick={() => navigateTo("/contact")}
-          >
+          <Button color="accent" raised onClick={() => navigateTo("/contact")}>
             Kontakt oss
           </Button>
         )}
