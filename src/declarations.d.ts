@@ -1,4 +1,5 @@
 declare const graphql: (query: TemplateStringsArray) => void
+declare module "react-headroom"
 declare module "*.jpg"
 declare module "*.jpeg"
 declare module "*.css"

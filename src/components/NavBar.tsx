@@ -3,6 +3,7 @@ import { AppBar, Button, Hidden, Toolbar } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import { map } from "ramda"
 import * as React from "react"
+import Headroom from "react-headroom"
 
 import { Logo } from "./Logo"
 import { NavDrawer } from "./NavDrawer"
@@ -14,13 +15,15 @@ const navBar: React.SFC<Props & { classes: StyleClassNames }> = ({
 }) => (
   <div>
     <Hidden mdUp>
-      <AppBar position="fixed">
-        <Toolbar>
-          <Logo className={classes.logo} />
-          <span style={{ flex: 1 }} />
-          <NavDrawer links={pages} />
-        </Toolbar>
-      </AppBar>
+      <Headroom>
+        <AppBar position="static">
+          <Toolbar>
+            <Logo className={classes.logo} />
+            <span style={{ flex: 1 }} />
+            <NavDrawer links={pages} />
+          </Toolbar>
+        </AppBar>
+      </Headroom>
     </Hidden>
 
     <Hidden smDown>
@@ -28,31 +31,31 @@ const navBar: React.SFC<Props & { classes: StyleClassNames }> = ({
         <Toolbar>
           <Logo className={classes.logo} />
           <span style={{ flex: 1 }} />
-            {map(page => {
-              if (page.name == "Kontakt") {
-                return (
-                  <Button
-                    className={classes.contactButton}
-                    color="accent"
-                    raised
-                    key={page.name + "-navBarButton"}
-                    onClick={() => navigateTo("/" + page.link)}
-                  >
-                    Kontakt
-                  </Button>
-                )
-              } else {
-                return (
-                  <Button
-                    className={classes.navButton}
-                    key={page.name + "-navBarButton"}
-                    onClick={() => navigateTo("/" + page.link)}
-                  >
-                    {page.name}
-                  </Button>
-                )
-              }
-            }, pages)}
+          {map(page => {
+            if (page.name == "Kontakt") {
+              return (
+                <Button
+                  className={classes.contactButton}
+                  color="accent"
+                  raised
+                  key={page.name + "-navBarButton"}
+                  onClick={() => navigateTo("/" + page.link)}
+                >
+                  Kontakt
+                </Button>
+              )
+            } else {
+              return (
+                <Button
+                  className={classes.navButton}
+                  key={page.name + "-navBarButton"}
+                  onClick={() => navigateTo("/" + page.link)}
+                >
+                  {page.name}
+                </Button>
+              )
+            }
+          }, pages)}
         </Toolbar>
       </AppBar>
     </Hidden>
