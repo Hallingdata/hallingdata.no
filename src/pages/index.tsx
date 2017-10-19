@@ -24,7 +24,7 @@ type Frontmatter = {
   ourServices: Array<{
     header: string
     icon: string
-    description: strin
+    description: string
   }>
   promoText: string
   teamHeader: string
