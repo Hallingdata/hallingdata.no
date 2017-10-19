@@ -1,5 +1,5 @@
 ---
-header: "Vi utvikler apper til iPhone og Android"
+header: "App utvikling"
 checklistHeader: ""
 checklist:
 - "Fra idé til marked"
