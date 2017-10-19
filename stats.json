@@ -5,8 +5,8 @@
       "component---src-pages-development-tsx-ee71c4796cddafe621b2.js.map"
     ],
     "component---src-layouts-index-tsx": [
-      "component---src-layouts-index-tsx-617992211573bbd2f794.js",
-      "component---src-layouts-index-tsx-617992211573bbd2f794.js.map"
+      "component---src-layouts-index-tsx-eef53eb939702ed07cd6.js",
+      "component---src-layouts-index-tsx-eef53eb939702ed07cd6.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -58,7 +58,9 @@
     ],
     "app": [
       "app-701d53ad83679632d8c5.js",
-      "app-701d53ad83679632d8c5.js.map"
+      "build-js-styles.css",
+      "app-701d53ad83679632d8c5.js.map",
+      "build-js-styles.css.map"
     ],
     "path---apps": [
       "path---apps-d14f7b1784e898b41a11.js",
