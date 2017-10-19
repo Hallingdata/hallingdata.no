@@ -3,7 +3,7 @@ header: "Vi utvikler profesjonelle nettsider"
 checklistHeader: "Våre nettsider leveres alltid med:"
 checklist:
 - "Responsivt design"
-- "Mobil tilpassing"
+- "Mobiltilpasning"
 - "Rask webhosting"
 - "SEO-vennlighet"
 - "Mulighet for endring av innhold selv"
@@ -11,11 +11,11 @@ portfolioHeader: "Nettsider utviklet av våre medarbeidere"
 portfolio:
 - title: "Stølsrock 2017"
   img: ""
-  description: "Konsert arrangement i Hemsedal"
+  description: "Konsertarrangement i Hemsedal"
   url: "http://stolsrock.no/"
 - title: "Fargerike Hemsedal"
   img: ""
-  description: "Farge og interiør-butikk i Hemsedal"
+  description: "Farge- og interiørbutikk i Hemsedal"
   url: "http://www.fargerikehemsedal.no/"
 - title: "Hallingdal Næringshage"
   img: ""
@@ -34,7 +34,7 @@ portfolio:
   description: "Naturfotograf"
   url: "http://haraldset.com/"
 ---
-Vi hjelper deg med din tilstedeværelse på nett. Vi lager dine nye websiders, med det innholdet du ønsker.
+Vi hjelper deg med din tilstedeværelse på nett. Vi lager dine nye websider, med det innholdet du ønsker.
 
 Vi behersker de fleste moderne web-teknologier, og gir deg gode råd på veien for at du skal få det resultatet du ønsker.
 
