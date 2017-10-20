@@ -36,7 +36,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build && echo 'hallingdata.no' > ./public/CNAME && gh-pages -d public"
+    "deploy": "gatsby build && npm run publish",
+    "publish": "echo 'hallingdata.no' > ./public/CNAME && gh-pages -d public"
   },
   "devDependencies": {
     "@types/ramda": "github:types/npm-ramda#dist",
