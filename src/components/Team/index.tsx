@@ -4,7 +4,7 @@ import { map, test } from "ramda"
 import * as React from "react"
 
 import { PageSection } from "../PageSection"
-import asgeirImg from "./asgeir.jpg"
+import asgeirImg from "../../img/asgeir.jpg"
 import eilevImg from "./eilev.jpg"
 import ingerImg from "./inger.jpg"
 
