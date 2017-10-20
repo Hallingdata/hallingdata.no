@@ -1,8 +1,6 @@
 module.exports = {
-  // Note: it must *not* have a trailing slash.
-  pathPrefix: `/hallingdata.no`,
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Hallingdata`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
