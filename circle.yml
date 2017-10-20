@@ -1,0 +1,19 @@
+machine:
+  node:
+    version: 8.5
+
+dependencies:
+  override: 
+    - npm imstall
+
+compile:
+  override: 
+    - npm run build
+
+test:
+  override:
+    - "true"
+
+deployment:
+  override: 
+    - npm run publish
