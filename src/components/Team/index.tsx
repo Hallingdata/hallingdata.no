@@ -1,12 +1,12 @@
-import { Grid, Typography } from "material-ui"
-import { map, test } from "ramda"
-import * as React from "react"
-import { StyleRulesCallback, withStyles } from "material-ui/styles"
-import { PageSection } from "../PageSection";
+import { Grid, Typography } from 'material-ui';
+import { StyleRulesCallback, withStyles } from 'material-ui/styles';
+import { map, test } from 'ramda';
+import * as React from 'react';
 
-import * as eilevImg from "./eilev.jpg"
-import * as asgeirImg from "./asgeir.jpg"
-import * as ingerImg from "./inger.jpg"
+import { PageSection } from '../PageSection';
+import * as asgeirImg from './asgeir.jpg';
+import * as eilevImg from './eilev.jpg';
+import * as ingerImg from './inger.jpg';
 
 type Props = {
   header: string
