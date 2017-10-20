@@ -1,12 +1,12 @@
-import { Grid, Typography } from 'material-ui';
-import { StyleRulesCallback, withStyles } from 'material-ui/styles';
-import { map, test } from 'ramda';
-import * as React from 'react';
+import { Grid, Typography } from "material-ui"
+import { StyleRulesCallback, withStyles } from "material-ui/styles"
+import { map, test } from "ramda"
+import * as React from "react"
 
-import { PageSection } from '../PageSection';
-const asgeirImg = require('./asgeir.jpg')
-import * as eilevImg from './eilev.jpg';
-import * as ingerImg from './inger.jpg';
+import { PageSection } from "../PageSection"
+import asgeirImg from "./asgeir.jpg"
+import eilevImg from "./eilev.jpg"
+import ingerImg from "./inger.jpg"
 
 type Props = {
   header: string
@@ -18,7 +18,11 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
   people,
 }) => (
-  <PageSection header={header} headerColor="inherit" className={classes.pageSection}>
+  <PageSection
+    header={header}
+    headerColor="inherit"
+    className={classes.pageSection}
+  >
     <Grid container direction="row" justify="center">
       {map(
         (person: Person) => (
