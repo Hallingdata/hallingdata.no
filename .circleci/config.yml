@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: 'circleci/node:8.5'
     working_directory: ~/hallingdata.no
+    branches:
+      only:
+        - master
     steps:
       - checkout
       - restore_cache:
