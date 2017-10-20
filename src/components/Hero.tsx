@@ -39,7 +39,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
         {hideButton ? (
           undefined
         ) : (
-          <Button color="accent" raised onClick={() => navigateTo("/contact")}>
+          <Button color="accent" raised onClick={() => navigateTo("/kontakt")}>
             Kontakt oss
           </Button>
         )}
