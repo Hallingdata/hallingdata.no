@@ -4,9 +4,9 @@ import { map, test } from "ramda"
 import * as React from "react"
 
 import { PageSection } from "../PageSection"
-import asgeirImg from "./asgeir.jpg"
-import eilevImg from "./eilev.jpg"
-import ingerImg from "./inger.jpg"
+import * as asgeirImg from "./asgeir.jpg"
+import * as eilevImg from "./eilev.jpg"
+import * as ingerImg from "./inger.jpg"
 
 type Props = {
   header: string
@@ -93,11 +93,11 @@ const styles: StyleRulesCallback = theme => ({
 export const Team = withStyles(styles)<Props>(team)
 
 const personPhoto = (name: string, imgClassName: string) => {
-  if (test(/^Asgeir/, name)) {
+  if (test(/^Asgeir/i, name)) {
     return <img src={asgeirImg} alt="Ansatt" className={imgClassName} />
-  } else if (test(/^Inger/, name)) {
+  } else if (test(/^Inger/i, name)) {
     return <img src={ingerImg} alt="Ansatt" className={imgClassName} />
-  } else if (test(/^Eilev/, name)) {
+  } else if (test(/^Eilev/i, name)) {
     return <img src={eilevImg} alt="Ansatt" className={imgClassName} />
   } else {
     return (
