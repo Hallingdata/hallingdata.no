@@ -4,7 +4,7 @@ import { map, test } from 'ramda';
 import * as React from 'react';
 
 import { PageSection } from '../PageSection';
-import * as asgeirImg from './asgeir.jpg';
+const asgeirImg = require('./asgeir.jpg')
 import * as eilevImg from './eilev.jpg';
 import * as ingerImg from './inger.jpg';
 
