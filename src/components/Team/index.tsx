@@ -4,8 +4,8 @@ import * as React from "react"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import { PageSection } from "../PageSection";
 
-import * as asgeirImg from "./asgeir.jpg"
 import * as eilevImg from "./eilev.jpg"
+import * as asgeirImg from "./asgeir.jpg"
 import * as ingerImg from "./inger.jpg"
 
 type Props = {
