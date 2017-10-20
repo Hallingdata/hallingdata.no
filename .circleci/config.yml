@@ -15,14 +15,10 @@ jobs:
           paths:
             - node_modules
           key: 'v1-dependencies-{{ checksum "package.json" }}'
-      - run: null
-        name: Build
-        command: npm run build
+      - run: npm run build
   deploy:
     machine:
       enabled: true
     working_directory: ~/hallingdata.no
     steps:
-      - run: null
-        name: Publish to GitHub Pages
-        command: npm run publish
+      - run: npm run publish
