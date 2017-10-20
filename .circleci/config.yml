@@ -19,9 +19,5 @@ jobs:
             - node_modules
           key: 'v1-dependencies-{{ checksum "package.json" }}'
       - run: npm run build
-  deploy:
-    machine:
-      enabled: true
-    working_directory: ~/hallingdata.no
-    steps:
-      - run: npm run publish
+      - deploy:
+          command: npm run publish
