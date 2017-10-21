@@ -17,7 +17,7 @@ team:
     description: "Inger er prosjektleder og administrator."
     linkedinUrl: "https://www.linkedin.com/in/inger-vik-halbj%C3%B8rhus-99713939/?ppe=1"
   - name: "Eilev Halbjørhus"
-    description: "Eilev er databaseutvikler, Oracle-ekspert og vår daglig leder."
+    description: "Eilev er databaseutvikler, Oracle-ekspert og daglig leder."
     linkedinUrl: "https://www.linkedin.com/in/eilevhalbjorhus/"
   - name: "Asgeir Sognefest"
     description: "Asgeir er full-stack utvikler, blockchain-entusiast og har mastergrad i programutvikling."
