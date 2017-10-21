@@ -1,12 +1,13 @@
+import { ContactForm } from '../components/ContactForm';
 import { Button, Grid, Icon, TextField, Typography } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import { map } from "ramda"
-import * as React from "react"
+import * as React from 'react';
 
 import { Hero } from "../components/Hero"
 import { PageSection } from "../components/PageSection"
-import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
-import * as style from "./index.module.css"
+import * as heroImg from './img/hero/hallingskarvet-min.jpg';
+import * as style from './index.module.css';
 
 type Props = {
   data: {
@@ -58,51 +59,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
       <Grid container spacing={0}>
         <Grid item xs={12} sm={6}>
           <PageSection header={contactFormHeader}>
-            <form
-              autoComplete="off"
-              className={classes.form}
-              name="contact" 
-              action="thank-you" 
-              netlify
-            >
-              <TextField
-                id="name"
-                label="Navn"
-                name="Navn"
-                className={classes.textField}
-                margin="normal"
-                required
-              />
-              <TextField
-                id="contact"
-                label="Kontakt"
-                name="Kontakt"
-                placeholder="Epost eller telefonnummer"
-                className={classes.textField}
-                margin="normal"
-                required
-              />
-              <br />
-              <TextField
-                id="message"
-                label="Din melding"
-                name="Melding"
-                multiline
-                rows="8"
-                rowsMax="50"
-                className={classes.textField}
-                margin="normal"
-                required
-              />
-              <Button
-                raised
-                color="primary"
-                type="submit"
-                className={classes.sendButton}
-              >
-                Send
-              </Button>
-            </form>
+            <ContactForm />
           </PageSection>
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -158,9 +115,6 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
 }
 
 type StyleClassNames = {
-  textField: string
-  form: string
-  sendButton: string
   contactTile: string
   contactIcon: string
   contactTileInner: string
@@ -172,24 +126,6 @@ type StyleClassNames = {
 const styles: StyleRulesCallback = theme => ({
   contactIcon: {
     fontSize: 60,
-  },
-  form: {
-    maxWidth: 500,
-    margin: "auto",
-    paddingLeft: 30,
-    paddingRight: 30,
-  },
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-    width: "100%",
-  },
-  sendButton: {
-    height: 50,
-    width: 120,
-    fontSize: 16,
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
   },
   contactTile: {
     height: 250,
