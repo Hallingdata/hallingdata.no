@@ -51,6 +51,7 @@ const thankyouPage: React.SFC<Props & { classes: StyleClassNames }> = ({
             align="justify"
             className={classes.content}
             dangerouslySetInnerHTML={{ __html: html }}
+            hidden
           />
           <Typography
             type="body1"
