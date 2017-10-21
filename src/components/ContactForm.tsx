@@ -10,9 +10,9 @@ const contactForm: React.SFC<Props & { classes: StyleClassNames }> = ({
   <form
     autoComplete="off"
     className={classes.form}
-    name="contact"
+    name="Kontakt"
     action="thank-you"
-    netlify="true"
+    data-netlify="true"
   >
     <TextField
       id="name"
