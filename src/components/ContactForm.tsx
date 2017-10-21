@@ -7,8 +7,9 @@ type Props = {}
 const contactForm: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
 }) => (
+  <div>
+  
   <form
-    autoComplete="off"
     className={classes.form}
     name="Kontakt"
     method="post"
@@ -16,6 +17,12 @@ const contactForm: React.SFC<Props & { classes: StyleClassNames }> = ({
     data-netlify="true"
     data-netlify-honeypot="bot-field"
   >
+    <input type="hidden" name="form-name" value="contact" />
+    <p hidden>
+      <label>
+        Don’t fill this out: <input name="bot-field" />
+      </label>
+    </p>
     <TextField
       id="name"
       label="Navn"
@@ -49,6 +56,7 @@ const contactForm: React.SFC<Props & { classes: StyleClassNames }> = ({
       Send
     </Button>
   </form>
+  </div>
 )
 
 type StyleClassNames = {
