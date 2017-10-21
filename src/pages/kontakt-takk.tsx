@@ -45,7 +45,7 @@ const thankyouPage: React.SFC<Props & { classes: StyleClassNames }> = ({
       <Grid container className={classes.contentContainer} spacing={0}>
         <Grid item xs={12}>
           <Typography
-            style={{display: "hidden"}}
+            style={{display: "none"}}
             type="body1"
             gutterBottom
             align="justify"
