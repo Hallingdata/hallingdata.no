@@ -54,6 +54,10 @@ const thankyouPage: React.SFC<Props & { classes: StyleClassNames }> = ({
           <div
             dangerouslySetInnerHTML={{ __html: html }}
           / >
+          <Typography
+            type="body2"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </Grid>
       </Grid>
     </div>
