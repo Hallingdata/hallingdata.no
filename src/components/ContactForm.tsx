@@ -56,6 +56,28 @@ const contactForm: React.SFC<Props & { classes: StyleClassNames }> = ({
       Send
     </Button>
   </form>
+
+  <div
+  dangerouslySetInnerHTML={{
+    __html:
+      `
+      <form name="tryer" action="thank-you" netlify>
+      <p>
+        <label>Your Name: <input type="text" name="name"></label>   
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email"></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+      `,
+  }}
+/>
   </div>
 )
 
