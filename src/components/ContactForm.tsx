@@ -12,7 +12,7 @@ const contactForm: React.SFC<Props & { classes: StyleClassNames }> = ({
       className={classes.form}
       name="Kontakt"
       method="post"
-      action="/thanks/"
+      action="/kontakt-takk/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
