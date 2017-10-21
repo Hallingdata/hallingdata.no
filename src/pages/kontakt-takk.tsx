@@ -55,7 +55,21 @@ const thankyouPage: React.SFC<Props & { classes: StyleClassNames }> = ({
             dangerouslySetInnerHTML={{ __html: html }}
           / >
           <Typography
-            type="body2"
+            type="body1"
+            dangerouslySetInnerHTML={{ __html: html }}
+            align="justify"
+          />
+          <Typography
+            type="body1"
+            gutterBottom
+            align="justify"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+          <Typography
+            type="body1"
+            gutterBottom
+            align="justify"
+            className={classes.content}
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </Grid>
