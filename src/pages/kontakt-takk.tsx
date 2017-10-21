@@ -14,12 +14,6 @@ type Props = {
         html: any
       }
     }
-    aboutPage2: {
-      childMarkdownRemark: {
-        frontmatter: Frontmatter
-        html: any
-      }
-    }
   }
 }
 
@@ -57,6 +51,9 @@ const thankyouPage: React.SFC<Props & { classes: StyleClassNames }> = ({
             className={classes.content}
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          <div
+            dangerouslySetInnerHTML={{ __html: html }}
+          / >
         </Grid>
       </Grid>
     </div>
