@@ -61,8 +61,9 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
             <form
               autoComplete="off"
               className={classes.form}
-              action="https://formspree.io/post@hallingdata.no"
-              method="POST"
+              name="contact" 
+              action="thank-you" 
+              netlify
             >
               <TextField
                 id="name"
