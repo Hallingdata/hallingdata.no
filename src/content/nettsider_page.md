@@ -1,4 +1,5 @@
 ---
+pageName: "Nettsider"
 header: "Vi utvikler profesjonelle nettsider"
 checklistHeader: "Våre nettsider leveres alltid med:"
 checklist:

@@ -1,4 +1,5 @@
 ---
+pageName: "Takk"
 heroHeader: "Takk"
 ---
 ##Takk for at du tar kontakt

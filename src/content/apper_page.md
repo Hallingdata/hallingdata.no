@@ -1,4 +1,5 @@
 ---
+pageName: "Apper"
 header: "App utvikling"
 checklistHeader: ""
 checklist:

@@ -1,4 +1,5 @@
 ---
+pageName: "Om oss"
 header: "Om oss"
 ---
 Hvis du trenger flere kunder, bedre kunder, reduserte kostnader, mer effektiv drift, eller bare noen å diskutere muligheter med, så kan vi kanskje hjelpe deg. Som firmanavnet indikerer er vi lokalisert i Hallingdal. Men vi jobber med kunder og partnere både i Norge og i utlandet.

@@ -1,4 +1,5 @@
 ---
+pageName: "Kontakt"
 header: "Kontakt"
 contactFormHeader: "Kontaktskjema"
 contactList:
