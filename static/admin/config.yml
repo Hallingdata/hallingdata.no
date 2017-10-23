@@ -72,6 +72,10 @@ collections:
       - lable: Sjekkliste
         name: checklist
         widsget: list
+        fields:
+          - label: item
+            name: Item
+            widget: string
       - label: Portfolio overskrift
         name: portfolioHeader
         widget: string
@@ -87,4 +91,37 @@ collections:
             widget: text
           - label: Nettaddresse
             name: url
+            widget: string
+  - name: apper
+    label: Apper
+    folder: src/content
+    filter:
+      field: pageName
+      value: Apper
+    create: false
+    fields:
+      - label: Overskrift
+        name: header
+        widget: string
+      - label: Tekst
+        name: body
+        widget: markdown
+      - label: Sjekkliste overskrift
+        name: checklistHeader
+        widget: string
+      - lable: Sjekkliste
+        name: checklist
+        widsget: object
+      - label: Tjenester
+        name: ourServices
+        widget: list
+        fields:
+          - label: Titel
+            name: header
+            widget: string
+          - label: Tekst
+            name: description
+            widget: text
+          - label: Ikon
+            name: icon
             widget: string
