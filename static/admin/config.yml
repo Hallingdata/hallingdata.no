@@ -69,13 +69,9 @@ collections:
       - label: Sjekkliste overskrift
         name: checklistHeader
         widget: string
-      - lable: Sjekkliste
+      - label: Sjekkliste
         name: checklist
-        widsget: list
-        fields:
-          - label: item
-            name: Item
-            widget: string
+        widget: list
       - label: Portfolio overskrift
         name: portfolioHeader
         widget: string
@@ -109,9 +105,9 @@ collections:
       - label: Sjekkliste overskrift
         name: checklistHeader
         widget: string
-      - lable: Sjekkliste
+      - label: Sjekkliste
         name: checklist
-        widsget: object
+        widget: object
       - label: Tjenester
         name: ourServices
         widget: list
