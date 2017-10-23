@@ -194,3 +194,17 @@ collections:
           - label: Ikon
             name: icon
             widget: string
+  - name: Kontakt takk
+    label: Kontakt takk
+    folder: src/content
+    filter:
+      field: pageName
+      value: Takk
+    create: false
+    fields:
+      - label: Overskrift
+        name: header
+        widget: string
+      - label: Tekst
+        name: body
+        widget: markdown
