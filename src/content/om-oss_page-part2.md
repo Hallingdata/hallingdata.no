@@ -1,5 +1,5 @@
 ---
-pageName: "Om pss"
+pageName: "Om oss"
 header: "Regional utvikling"
 ---
 Hallingdal som region har mange gode sider, og er et godt sted å bo. Men alt er ikke rosenrødt. Noen av regionens utfordringer er blant annet:
