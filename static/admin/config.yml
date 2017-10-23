@@ -146,4 +146,51 @@ collections:
         widget: string
       - label: Teknologier
         name: technologies
-        widget: list 
+        widget: list
+  - name: Om oss
+    label: Om oss
+    folder: src/content
+    filter:
+      field: pageName
+      value: Om oss
+    create: false
+    fields:
+      - label: Overskrift
+        name: header
+        widget: string
+      - label: Tekst
+        name: body
+        widget: markdown
+  - name: Kontakt
+    label: Kontakt
+    folder: src/content
+    filter:
+      field: pageName
+      value: Kontakt
+    create: false
+    fields:
+      - label: Overskrift
+        name: header
+        widget: string
+      - label: Kontaktskjema overskrift
+        name: contactFormHeader
+        widget: string
+      - label: Tekst
+        name: body
+        widget: markdown
+      - label: Kontakt info
+        name: contactList
+        widget: list
+        fields:
+          - label: Kontakt overskrift
+            name: header
+            widget: string
+          - label: Kontakt
+            name: contact
+            widget: string
+          - label: Kontakt info
+            name: info
+            widget: text
+          - label: Ikon
+            name: icon
+            widget: string
