@@ -1,6 +1,6 @@
 ---
 pageName: "Takk"
-heroHeader: "Takk"
+header: "Takk"
 ---
 ##Takk for at du tar kontakt
 Vi vil svare deg så fort som mulig.

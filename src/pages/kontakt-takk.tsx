@@ -18,7 +18,7 @@ type Props = {
 }
 
 type Frontmatter = {
-  heroHeader: string
+  header: string
 }
 
 // https://github.com/callemall/material-ui/issues/7466
@@ -31,12 +31,12 @@ const thankyouPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   data,
   classes,
 }) => {
-  const { heroHeader } = data.thankYouContactPage.childMarkdownRemark.frontmatter
+  const { header } = data.thankYouContactPage.childMarkdownRemark.frontmatter
   const html = data.thankYouContactPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
       <Hero
-        header={heroHeader}
+        header={header}
         hideButton={true}
         type="small"
         img={heroImg}
@@ -90,7 +90,7 @@ export const pageQuery = graphql`
       childMarkdownRemark {
         html
         frontmatter {
-          heroHeader
+          header
         }
       }
     }
