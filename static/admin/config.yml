@@ -107,7 +107,7 @@ collections:
         widget: string
       - label: Sjekkliste
         name: checklist
-        widget: object
+        widget: list
       - label: Tjenester
         name: ourServices
         widget: list
@@ -121,3 +121,29 @@ collections:
           - label: Ikon
             name: icon
             widget: string
+  - name: Systemutvikling
+    label: Systemutvikling
+    folder: src/content
+    filter:
+      field: pageName
+      value: Systemutvikling
+    create: false
+    fields:
+      - label: Overskrift
+        name: header
+        widget: string
+      - label: Tekst
+        name: body
+        widget: markdown
+      - label: Sjekkliste overskrift
+        name: checklistHeader
+        widget: string
+      - label: Sjekkliste
+        name: checklist
+        widget: list
+      - label: Teknologier overskrift
+        name: technologiesHeader
+        widget: string
+      - label: Teknologier
+        name: technologies
+        widget: list 
