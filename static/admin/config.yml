@@ -34,6 +34,9 @@ collections:
           - label: Ikon
             name: icon
             widget: string
+          - label: Link til side
+            name: link
+            widget: string
       - label: Team title
         name: teamHeader
         widget: string

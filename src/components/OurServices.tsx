@@ -1,3 +1,4 @@
+import { navigateTo } from "gatsby-link"
 import { Grid, Icon, Typography } from "material-ui"
 import { map } from "ramda"
 import * as React from "react"
@@ -15,7 +16,11 @@ const ourServices: React.SFC<Props & { classes: StyleClassNames }> = ({
     {map(
       (service: Service) => (
         <Grid item xs={12} md={3} sm={4} key={service.header + service.icon}>
-          <div className={classes.item}>
+          <div
+            className={classes.item}
+            style={{ cursor: "pointer" }}
+            onClick={() => navigateTo("/" + service.link)}
+          >
             <Icon color="primary" style={{ fontSize: 80 }}>
               {service.icon}
             </Icon>
@@ -56,4 +61,5 @@ type Service = {
   header: string
   icon: string
   description: string
+  link: string
 }

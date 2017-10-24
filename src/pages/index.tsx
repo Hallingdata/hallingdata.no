@@ -24,6 +24,7 @@ type Frontmatter = {
     header: string
     icon: string
     description: string
+    link: string
   }>
   promoText: string
   teamHeader: string
@@ -70,6 +71,7 @@ export const pageQuery = graphql`
             header
             icon
             description
+            link
           }
           promoText
           teamHeader

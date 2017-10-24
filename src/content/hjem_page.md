@@ -8,12 +8,15 @@ ourServices:
       nettbutikker til ditt behov.
     header: Web
     icon: important_devices
+    link: nettsider
   - description: Vi utvikler applikasjoner for Android og Iphone.
     header: App
     icon: phone_iphone
+    link: apper
   - description: Utvikling av nye IT-løsninger.
     header: Systemutvikling
     icon: settings_applications
+    link: systemutvikling
 teamHeader: Team
 team:
   - description: >-
