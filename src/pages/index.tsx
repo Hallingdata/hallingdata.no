@@ -1,7 +1,7 @@
-import { Typography } from "material-ui"
 import * as React from "react"
 
 import { CustomerLogos } from "../components/CustomerLogos"
+import { FacebookPosts } from "../components/FacebookPosts"
 import { Hero } from "../components/Hero"
 import { OurServices } from "../components/OurServices"
 import { Team } from "../components/Team"
@@ -26,7 +26,7 @@ type Frontmatter = {
     description: string
     link: string
   }>
-  promoText: string
+  facebookPosts: Array<string>
   teamHeader: string
   team: any
   customerLogoHeader: string
@@ -40,17 +40,13 @@ const gridFix = {
 
 const IndexPage: React.SFC<Props> = ({ data }) => {
   const frontmatter = data.landingPage.childMarkdownRemark.frontmatter
-
+  console.log(frontmatter.facebookPosts)
   return (
     <div style={gridFix}>
       <Hero header={frontmatter.header} type="big" img={heroImg} />
       <OurServices services={frontmatter.ourServices} />
-      <Typography
-        type="display2"
-        style={{ textAlign: "center", padding: "50px" }}
-      >
-        {frontmatter.promoText}
-      </Typography>
+
+      <FacebookPosts header="Oppdateringer" posts={frontmatter.facebookPosts} />
       <Team header={frontmatter.teamHeader} people={frontmatter.team} />
       <CustomerLogos header={frontmatter.customerLogoHeader} />
     </div>
@@ -73,7 +69,7 @@ export const pageQuery = graphql`
             description
             link
           }
-          promoText
+          facebookPosts
           teamHeader
           team {
             name

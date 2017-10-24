@@ -1,7 +1,11 @@
 ---
 pageName: Hjem
 header: Vi utvikler digitale løsninger
-promoText: Vi er teknologiske eksperter
+facebookPosts:
+- "1949150865344665"
+- "1863264100600009"
+- "1611568959102859"
+- "1687577874835300"
 ourServices:
   - description: >-
       Vi tar i bruk de mest moderne teknologiene for å skreddersy nettsider og

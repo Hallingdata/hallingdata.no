@@ -18,9 +18,9 @@ collections:
       - label: Overskrift
         name: header
         widget: string
-      - label: Promo tekst
-        name: promoText
-        widget: string
+      - label: Facebook Posts
+        name: facebookPosts
+        widget: list
       - label: Tjenester
         name: ourServices
         widget: list
