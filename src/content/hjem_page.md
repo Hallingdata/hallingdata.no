@@ -1,4 +1,5 @@
 ---
+pageName: Hjem
 header: Vi utvikler digitale løsninger
 promoText: Vi er teknologiske eksperter
 ourServices:

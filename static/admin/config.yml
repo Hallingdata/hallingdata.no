@@ -12,6 +12,9 @@ collections:
       value: Hjem
     create: false
     fields:
+      - label: pageName
+        name: pageName
+        widget: hidden
       - label: Overskrift
         name: header
         widget: string
