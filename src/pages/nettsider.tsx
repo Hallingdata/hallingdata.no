@@ -67,7 +67,6 @@ export const pageQuery = graphql`
           portfolioHeader
           portfolio {
             title
-            img
             description
             url
           }
