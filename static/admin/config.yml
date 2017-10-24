@@ -52,6 +52,9 @@ collections:
             name: githubUrl
             widget: string
             required: false
+      - label: Kunder logoer overskrift
+        name: customerLogoHeader
+        widget: string
   - name: nettsider
     label: Nettsider
     folder: src/content
