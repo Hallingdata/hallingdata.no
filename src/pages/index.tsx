@@ -26,6 +26,7 @@ type Frontmatter = {
     description: string
     link: string
   }>
+  facebookPostsHeader: string
   facebookPosts: Array<string>
   teamHeader: string
   team: any
@@ -46,7 +47,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => {
       <Hero header={frontmatter.header} type="big" img={heroImg} />
       <OurServices services={frontmatter.ourServices} />
 
-      <FacebookPosts header="Oppdateringer" posts={frontmatter.facebookPosts} />
+      <FacebookPosts header={frontmatter.facebookPostsHeader} posts={frontmatter.facebookPosts} />
       <Team header={frontmatter.teamHeader} people={frontmatter.team} />
       <CustomerLogos header={frontmatter.customerLogoHeader} />
     </div>
@@ -69,6 +70,7 @@ export const pageQuery = graphql`
             description
             link
           }
+          facebookPostsHeader
           facebookPosts
           teamHeader
           team {

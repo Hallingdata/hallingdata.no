@@ -1,6 +1,7 @@
 ---
 pageName: Hjem
 header: Vi utvikler digitale løsninger
+facebookPostsHeader: "Oppdaterienger"
 facebookPosts:
 - "1949150865344665"
 - "1863264100600009"

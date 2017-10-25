@@ -18,6 +18,9 @@ collections:
       - label: Overskrift
         name: header
         widget: string
+      - label: Overskrift facebook oppdateringer
+        name: facebookPostsHeader
+        widget: string
       - label: Facebook Posts
         name: facebookPosts
         widget: list
