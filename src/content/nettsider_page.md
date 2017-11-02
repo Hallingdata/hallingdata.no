@@ -1,38 +1,38 @@
 ---
-pageName: "Nettsider"
-header: "Vi utvikler profesjonelle nettsider"
-checklistHeader: "Våre nettsider leveres alltid med:"
+pageName: Nettsider
+header: Vi utvikler profesjonelle nettsider
+checklistHeader: 'Våre nettsider leveres alltid med:'
 checklist:
-- "Responsivt design"
-- "Mobiltilpasning"
-- "Rask webhosting"
-- "SEO-vennlighet"
-- "Mulighet for endring av innhold selv"
-portfolioHeader: "Nettsider utviklet av våre medarbeidere"
+  - Responsivt design
+  - Mobiltilpasning
+  - Rask webhosting
+  - SEO-vennlighet
+  - Mulighet for endring av innhold selv
+portfolioHeader: Nettsider utviklet av våre medarbeidere
 portfolio:
-- title: "Stølsrock 2017"
-  description: "Konsertarrangement i Hemsedal"
-  url: "http://stolsrock.no/"
-- title: "Fargerike Hemsedal"
-  description: "Farge- og interiørbutikk i Hemsedal"
-  url: "http://www.fargerikehemsedal.no/"
-- title: "Hallingdal Næringshage"
-  description: "Utviklings- og kompetansesenter for næringslivet i Hallingdal"
-  url: "http://nhage.no/"
-- title: "Smart Dekk"
-  description: "Dekk- og felgbutikk"
-  url: "http://smartdekk.no/"
-- title: "Saga bil"
-  description: "Bilbutikk"
-  url: "http://sagabil.no/"
-- title: "Haraldset Foto"
-  description: "Naturfotograf"
-  url: "http://haraldset.com/"
+  - description: Konsertarrangement i Hemsedal
+    title: Stølsrock 2017
+    url: 'http://stolsrock.no/'
+  - description: Farge- og interiørbutikk i Hemsedal
+    title: Fargerike Hemsedal
+    url: 'http://www.fargerikehemsedal.no/'
+  - description: Utviklings- og kompetansesenter for næringslivet i Hallingdal
+    title: Hallingdal Næringshage
+    url: 'http://nhage.no/'
+  - description: Dekk- og felgbutikk
+    title: Smart Dekk
+    url: 'http://smartdekk.no/'
+  - description: Bilbutikk
+    title: Saga bil
+    url: 'http://sagabil.no/'
+  - description: Naturfotograf
+    title: Haraldset Foto
+    url: 'http://haraldset.com/'
 ---
-Vi hjelper deg med din tilstedeværelse på nett. Vi lager dine nye websider, med det innholdet du ønsker.
+Vi hjelper deg med din tilstedeværelse på nett.
 
-Vi behersker de fleste moderne web-teknologier, og gir deg gode råd på veien for at du skal få det resultatet du ønsker.
+Vi tar i bruk de mest moderne webteknologiene for å bygge responsive og mobiltilpassede nettsider fra grunnen (uten noe forutbestemt rammeverk). Dette fører til at du får en skreddersydd nettside med både teknologi og design spesialtilpasset dine behov.
 
-Websider som fungerer på alle typer apparater er en selvfølge. Ekstra innsats på søkemotoroptimalisering kan vi hjelpe til med hvis ønskelig. Kobling til sosiale medier som Facebook, Instagram og Twitter kan du få. Det samme gjelder bistand til annonsering på Facebook eller Google.
+Vi er en totalleverandør som også kan hjelpe med domene, drift og markedsføring dersom det ønskes.
 
-Ta kontakt og fortell hva du ønsker, så starter vi en dialog om hvordan du kan nå dine mål på nett.
+Kontakt oss nå for en uforpliktende samtale.
