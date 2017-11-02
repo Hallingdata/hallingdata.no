@@ -41,10 +41,11 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const {
     header: headerPart1,
   } = data.aboutPage1.childMarkdownRemark.frontmatter
+  const htmlPart1 = data.aboutPage1.childMarkdownRemark.html
   const {
     header: headerPart2,
   } = data.aboutPage2.childMarkdownRemark.frontmatter
-  const html = data.aboutPage1.childMarkdownRemark.html
+  const htmlPart2 = data.aboutPage2.childMarkdownRemark.html
   return (
     <div style={gridFix}>
       <Hero
@@ -60,7 +61,7 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
             gutterBottom
             align="justify"
             className={classes.content}
-            dangerouslySetInnerHTML={{ __html: html }}
+            dangerouslySetInnerHTML={{ __html: htmlPart1 }}
           />
         </Grid>
       </Grid>
@@ -77,7 +78,7 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
           gutterBottom
           align="justify"
           className={`${classes.contentContainer} ${classes.content}`}
-          dangerouslySetInnerHTML={{ __html: html }}
+          dangerouslySetInnerHTML={{ __html: htmlPart2 }}
         />
       </PageSection>
       <div
