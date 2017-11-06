@@ -41,7 +41,6 @@ const gridFix = {
 
 const IndexPage: React.SFC<Props> = ({ data }) => {
   const frontmatter = data.landingPage.childMarkdownRemark.frontmatter
-  console.log(frontmatter.facebookPosts)
   return (
     <div style={gridFix}>
       <Hero header={frontmatter.header} type="big" img={heroImg} />
