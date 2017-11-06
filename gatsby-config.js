@@ -15,6 +15,15 @@ module.exports = {
     "gatsby-plugin-material-ui",
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#673ab7`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-108385655-1",
