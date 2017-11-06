@@ -21,7 +21,7 @@ const facebookPosts: React.SFC<Props & { classes: StyleClassNames }> = ({
       <div className={classes.root}>
         <GridList className={classes.gridList} cols={2.5}>
           {posts.map(postId => (
-            <GridListTile className={classes.gridListTile}>
+            <GridListTile key={postId} className={classes.gridListTile}>
               <FacebookPost postId={postId} />
             </GridListTile>
           ))}
