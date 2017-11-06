@@ -1,13 +1,15 @@
-import { ChecklistCard } from './ChecklistCard';
-import * as React from 'react';
+import { Grid } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
-import { Grid, Typography } from "material-ui"
+import * as React from "react"
+
+import { ChecklistCard } from "./ChecklistCard"
+import { RenderMdHtml } from "./RenderMdHtml"
 
 type Props = {
-    htmlContent: string
-    checklistHeader?: string
-    checkListIcon?: string
-    checklistItems: Array<string>
+  htmlContent: string
+  checklistHeader?: string
+  checkListIcon?: string
+  checklistItems: Array<string>
 }
 
 const infoWithCard: React.SFC<Props & { classes: StyleClassNames }> = ({
@@ -19,13 +21,7 @@ const infoWithCard: React.SFC<Props & { classes: StyleClassNames }> = ({
 }) => (
   <Grid container justify="space-around" className={classes.infoContainer}>
     <Grid item sm={6} md={5} xs={10}>
-      <Typography
-        type="body1"
-        gutterBottom
-        align="justify"
-        className={classes.content}
-        dangerouslySetInnerHTML={{ __html: htmlContent }}
-      />
+      <RenderMdHtml html={htmlContent} className={classes.content} />
     </Grid>
     <Grid item sm={5} md={4} xs={10}>
       <ChecklistCard
@@ -48,8 +44,8 @@ const styles: StyleRulesCallback = theme => ({
     margin: "auto",
   },
   content: {
-    fontSize: "16px" 
-  }
+    fontSize: "16px",
+  },
 })
 
 export const InfoWithCard = withStyles(styles)<Props>(infoWithCard)

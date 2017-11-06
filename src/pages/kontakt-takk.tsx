@@ -1,9 +1,9 @@
-import { Typography, Grid } from "material-ui"
+import { Grid } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
 import { Hero } from "../components/Hero"
-import { PageSection } from "../components/PageSection"
+import { RenderMdHtml } from "../components/RenderMdHtml"
 import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
 
 type Props = {
@@ -44,22 +44,7 @@ const thankyouPage: React.SFC<Props & { classes: StyleClassNames }> = ({
       />
       <Grid container className={classes.contentContainer} spacing={0}>
         <Grid item xs={12}>
-          <Typography
-            style={{display: "none"}}
-            type="body1"
-            gutterBottom
-            align="justify"
-            className={classes.content}
-            dangerouslySetInnerHTML={{ __html: html }}
-            hidden
-          />
-          <Typography
-            type="body1"
-            gutterBottom
-            align="justify"
-            className={classes.content}
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <RenderMdHtml className={classes.content} html={html} />
         </Grid>
       </Grid>
     </div>
@@ -86,7 +71,9 @@ export default withStyles(styles)<Props>(thankyouPage)
 
 export const pageQuery = graphql`
   query ThankYouContactContent {
-    thankYouContactPage: file(relativePath: { eq: "content/kontakt-takk_page.md" }) {
+    thankYouContactPage: file(
+      relativePath: { eq: "content/kontakt-takk_page.md" }
+    ) {
       childMarkdownRemark {
         html
         frontmatter {

@@ -1,16 +1,16 @@
 import { Button, Grid, Typography } from "material-ui"
-import { StyleRulesCallback, withStyles } from "material-ui/styles"
-import * as React from "react"
-import { map, test } from "ramda"
-import * as fargerikehemsedalImg from "./img/fargerikehemsedal.min.jpg"
-import * as stolsrockImg from "./img/stolsrock.min.jpg"
-import * as nhageImg from "./img/nhage.min.jpg"
-import * as smartdekkImg from "./img/smart-dekk.min.jpg"
-import * as sagabilImg from "./img/saga-bil.min.jpg"
-import * as haraldestImg from "./img/haraldset.min.jpg"
-
 import Card, { CardActions, CardContent, CardMedia } from "material-ui/Card"
-import { PageSection } from "../PageSection";
+import { StyleRulesCallback, withStyles } from "material-ui/styles"
+import { test, map } from "ramda"
+import * as React from "react"
+
+import { PageSection } from "../PageSection"
+import * as fargerikehemsedalImg from "./img/fargerikehemsedal.min.jpg"
+import * as haraldestImg from "./img/haraldset.min.jpg"
+import * as nhageImg from "./img/nhage.min.jpg"
+import * as sagabilImg from "./img/saga-bil.min.jpg"
+import * as smartdekkImg from "./img/smart-dekk.min.jpg"
+import * as stolsrockImg from "./img/stolsrock.min.jpg"
 
 type Props = {
   header: string
@@ -32,7 +32,14 @@ const portfolio: React.SFC<Props & { classes: StyleClassNames }> = ({
     >
       {map(
         portfolioItem => (
-          <Grid item xs={12} sm={6} md={4} key={portfolioItem.url} className={classes.gridItem}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            key={portfolioItem.url}
+            className={classes.gridItem}
+          >
             <Card className={classes.card}>
               {itemPicture(portfolioItem.title, classes.media)}
               <CardContent>

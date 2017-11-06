@@ -1,9 +1,10 @@
-import { Grid, Typography } from "material-ui"
+import { Grid } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
 import { Hero } from "../components/Hero"
 import { PageSection } from "../components/PageSection"
+import { RenderMdHtml } from "../components/RenderMdHtml"
 import * as hallingdalLogo from "./img/hallingdal-logo-min.png"
 import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
 
@@ -56,13 +57,7 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
       />
       <Grid container className={classes.contentContainer} spacing={0}>
         <Grid item xs={12}>
-          <Typography
-            type="body1"
-            gutterBottom
-            align="justify"
-            className={classes.content}
-            dangerouslySetInnerHTML={{ __html: htmlPart1 }}
-          />
+          <RenderMdHtml className={classes.content} html={htmlPart1} />
         </Grid>
       </Grid>
       <PageSection header={headerPart2} className={classes.reginalSection}>
@@ -73,12 +68,9 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
             className={classes.hallingdalLogo}
           />
         </div>
-        <Typography
-          type="body1"
-          gutterBottom
-          align="justify"
+        <RenderMdHtml
           className={`${classes.contentContainer} ${classes.content}`}
-          dangerouslySetInnerHTML={{ __html: htmlPart2 }}
+          html={htmlPart2}
         />
       </PageSection>
       <div
