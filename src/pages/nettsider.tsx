@@ -3,7 +3,7 @@ import * as React from "react"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
 import { Portfolio, PortfolioItem } from "../components/Portfolio"
-import * as heroImg from "./img/hero/code15.jpeg"
+import * as heroImg from "./img/hero/code15.min.jpeg"
 import * as style from "./index.module.css"
 
 type Props = {
