@@ -9,18 +9,17 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/`,
-        name: 'src',
+        name: "src",
       },
     },
-    {
-      resolve: 'gatsby-plugin-material-ui'
-    },
+    "gatsby-plugin-material-ui",
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-108385655-1',
+        trackingId: "UA-108385655-1",
       },
     },
+    `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }

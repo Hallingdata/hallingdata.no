@@ -5,13 +5,16 @@
   "author": "Hallingdata",
   "dependencies": {
     "@types/node": "^8.0.31",
+    "@types/ramda": "github:types/npm-ramda#dist",
     "@types/react": "^16.0.7",
     "@types/react-dom": "^15.5.5",
     "@types/react-helmet": "^5.0.3",
-    "@types/ramda": "github:types/npm-ramda#dist",
     "gatsby": "^1.9.45",
+    "gatsby-cli": "^1.1.11",
     "gatsby-link": "^1.6.17",
+    "gatsby-plugin-google-analytics": "^1.0.10",
     "gatsby-plugin-material-ui": "^0.1.3",
+    "gatsby-plugin-netlify": "^1.0.6",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-typescript": "^1.4.8",
     "gatsby-source-filesystem": "^1.5.1",
@@ -24,9 +27,7 @@
     "react-dom": "^16.0.0",
     "react-headroom": "^2.2.2",
     "typeface-roboto": "0.0.41",
-    "typescript": "^2.5.3",
-    "gatsby-cli": "^1.1.11",
-    "gatsby-plugin-google-analytics": "^1.0.10"
+    "typescript": "^2.5.3"
   },
   "keywords": [
     "gatsby"
