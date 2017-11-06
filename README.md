@@ -2,12 +2,20 @@
 
 **Run in develop mode**
 
-    npm run deploy
+    yarn run dev
 
 
 **Deploy to GitHub-Pages**
 
-    npm run develop
+    yarn run deploy
+
+**Build**
+
+    yarn run build
+
+**Serve the build result**
+
+    yarn run serve
 
 ## Style guide
 Based on [aribnb](https://github.com/airbnb/javascript/tree/master/react)
