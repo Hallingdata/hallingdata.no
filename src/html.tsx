@@ -70,12 +70,12 @@ module.exports = (data: any) => {
         <meta name="twitter:title" content={page.title} />
         <meta name="twitter:description" content={page.description} />
         <meta name="twitter:image" content={page.screenshot} />
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         {css}
       </head>
       <body style={{ margin: 0 }}>
         <div id="___gatsby" dangerouslySetInnerHTML={{ __html: data.body }} />
         {data.postBodyComponents}
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
