@@ -16,7 +16,7 @@ type Props = {
 }
 
 const TemplateWrapper: React.SFC<Props> = ({ children }) => (
-  <MuiThemeProvider theme={theme}>
+  <MuiThemeProvider theme={theme} sheetsManager={new Map()}>
     <div>
       <Helmet
         title="Hallingdata"
