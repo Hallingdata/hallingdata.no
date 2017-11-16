@@ -29,6 +29,11 @@ const footer: React.SFC<Props & { classes: StyleClassNames }> = ({
         style={{ overflow: "hidden" }}
       >
         <FacebookBadge />
+        <img
+          src="https://ratinglogo.kredittverdig.no/laurels/side/black/livelogo_912305597.png"
+          alt="kreditt rating logo"
+          className={classes.creditRatingLogo}
+        />
       </Grid>
     </Grid>
   )
@@ -37,6 +42,7 @@ const footer: React.SFC<Props & { classes: StyleClassNames }> = ({
 type StyleClassNames = {
   outer: string
   gridItem: string
+  creditRatingLogo: string
 }
 
 const styles: StyleRulesCallback = theme => ({
@@ -48,6 +54,10 @@ const styles: StyleRulesCallback = theme => ({
   },
   gridItem: {
     marginBottom: 30,
+  },
+  creditRatingLogo: {
+    height: 100,
+    marginTop: 20
   },
 })
 
