@@ -2,6 +2,7 @@ import { navigateTo } from "gatsby-link"
 import { Button, Grid, Typography } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
+import MessageButton from "./FacebookMessageButton"
 
 type Props = {
   header: string
@@ -39,15 +40,15 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
         {hideButton ? (
           undefined
         ) : (
-          <Button color="accent" raised onClick={() => navigateTo("/kontakt")}>
-            Kontakt oss
-          </Button>
+          <div>
+            <MessageButton />
+          </div>
         )}
       </div>
     </Grid>
   </Grid>
 )
-
+///#007ff
 const backgroundStyle = (image: any, backgroundPosition: string) => {
   return {
     backgroundImage: `url(${image})`,
