@@ -18,6 +18,28 @@ module.exports = {
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          
+          allSitePage(
+            filter: {
+              path: {regex: "/^((?!(kontakt-takk|404)).)*$/"},
+            }
+          ) {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+      }`,
+      },
     },
     {
       resolve: `gatsby-plugin-nprogress`,
