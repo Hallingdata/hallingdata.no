@@ -35,3 +35,21 @@ Based on [aribnb](https://github.com/airbnb/javascript/tree/master/react)
 * **[Netlify CMS](https://github.com/netlify/netlify-cms/blob/master/docs/quick-start.md) - Free?**
 * [Prose](http://prose.io/) - Free
 * [Dato CMS](https://www.datocms.com/) - 70 NOK/month per site
+
+## SEO
+### Keywords
+- Hallingdal
+- IT
+- hjemmeside
+- nettside
+- app
+- systemutvikling
+- gol
+- ål
+- nesbyen
+- hensedal
+- hol
+- geilo
+- flå
+- data
+- webside
