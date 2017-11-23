@@ -14,6 +14,7 @@ const facebookMessageButton: React.SFC<
     className={classes.button}
     href="https://m.me/hallingdata"
     target="_blank"
+    title="Send en melding til oss på Facebook Messenger"
   >
     Send oss en melding
     <svg

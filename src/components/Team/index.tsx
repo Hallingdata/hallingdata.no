@@ -122,7 +122,7 @@ const renderIcons = (person: Person) => {
   const icons = []
   if (person.githubUrl) {
     icons.push(
-      <a href={person.githubUrl} target="_blank" key={person.githubUrl}>
+      <a href={person.githubUrl} title={person.name.split(" ")[0] + "'s GitHub profil"} target="_blank" key={person.githubUrl}>
         <i
           className="ion-social-github"
           style={{ margin: "5px", color: "#fff" }}
@@ -132,7 +132,7 @@ const renderIcons = (person: Person) => {
   }
   if (person.linkedinUrl) {
     icons.push(
-      <a href={person.linkedinUrl} target="_blank" key={person.linkedinUrl}>
+      <a href={person.linkedinUrl} target="_blank" title={person.name.split(" ")[0] + "'s LinkedIn profil"} key={person.linkedinUrl}>
         <i
           className="ion-social-linkedin"
           style={{ margin: "5px", color: "#fff" }}
