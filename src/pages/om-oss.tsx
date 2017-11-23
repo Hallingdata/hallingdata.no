@@ -5,6 +5,7 @@ import * as React from "react"
 import { Hero } from "../components/Hero"
 import { PageSection } from "../components/PageSection"
 import { RenderMdHtml } from "../components/RenderMdHtml"
+import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
 import * as hallingdalLogo from "./img/hallingdal-logo-min.png"
 import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
 
@@ -49,6 +50,7 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const htmlPart2 = data.aboutPage2.childMarkdownRemark.html
   return (
     <div style={gridFix}>
+          <SchemaBreadcrumbList pageName="Om oss"/>
       <Hero
         header={headerPart1}
         type="small"

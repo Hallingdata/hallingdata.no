@@ -121,6 +121,38 @@ module.exports = (data: any) => {
 `,
           }}
         />
+
+<div
+          dangerouslySetInnerHTML={{
+            __html: `
+            <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "url": "https://www.hallingdata.no",
+              "logo": "https://www.hallingdata.no/img/logo-color-circle.png",
+              "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+47-32178032",
+                "contactType": "customer service",
+                "availableLanguage": ["Norwegian", "English"]
+              }]
+            }
+            </script>
+            <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "name": "Hallingdata",
+              "url": "httsp://www.hallingdata.no",
+              "sameAs": [
+                "http://facebook.com/hallingdata/",
+                "http://www.linkedin.com/company/5025257/"
+              ]
+            }
+            </script>`,
+          }}
+        />
       </body>
     </html>
   )

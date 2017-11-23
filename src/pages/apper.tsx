@@ -5,7 +5,9 @@ import { BigImg } from "../components/BigImg"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
 import { MobileLogoRow } from "../components/MobileLogoRow"
-import { OurServices } from "../components/OurServices"
+import { OurServices, Service } from "../components/OurServices"
+import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
+
 import * as heroImg from "./img/hero/phone3-min.jpeg"
 import * as bottomImg from "./img/hero/phone8-min.jpeg"
 import * as style from "./index.module.css"
@@ -25,11 +27,7 @@ type Frontmatter = {
   header: string
   checklistHeader: string
   checklist: Array<string>
-  ourServices: Array<{
-    header: string
-    icon: string
-    description: string
-  }>
+  ourServices: Array<Service>
 }
 
 // https://github.com/callemall/material-ui/issues/7466
@@ -51,6 +49,7 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.appsPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
+      <SchemaBreadcrumbList pageName="Apper"/>
       <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard htmlContent={html} checklistItems={checklist} />
       <OurServices services={ourServices} />

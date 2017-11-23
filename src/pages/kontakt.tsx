@@ -5,6 +5,7 @@ import { map } from "ramda"
 import * as React from 'react';
 
 import { Hero } from "../components/Hero"
+import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
 import { PageSection } from "../components/PageSection"
 import * as heroImg from './img/hero/hallingskarvet-min.jpg';
 import * as style from './index.module.css';
@@ -56,6 +57,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
         imgPosition="center"
         hideButton
       />
+            <SchemaBreadcrumbList pageName="Kontakt"/>
       <Grid container spacing={0}>
         <Grid item xs={12} sm={6}>
           <PageSection header={contactFormHeader}>

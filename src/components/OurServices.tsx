@@ -57,7 +57,7 @@ const styles: StyleRulesCallback = theme => ({
 
 export const OurServices = withStyles(styles)<Props>(ourServices)
 
-type Service = {
+export type Service = {
   header: string
   icon: string
   description: string

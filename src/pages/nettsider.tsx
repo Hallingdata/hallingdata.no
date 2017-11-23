@@ -3,6 +3,7 @@ import * as React from "react"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
 import { Portfolio, PortfolioItem } from "../components/Portfolio"
+import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
 import * as heroImg from "./img/hero/code15.min.jpeg"
 import * as style from "./index.module.css"
 
@@ -42,6 +43,7 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
   const html = data.webpagesPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
+          <SchemaBreadcrumbList pageName="Nettsider"/>
       <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard
         htmlContent={html}

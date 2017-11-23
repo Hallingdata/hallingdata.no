@@ -5,6 +5,7 @@ import { BigImg } from "../components/BigImg"
 import { ChipGrid } from "../components/ChipGrid"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
+import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
 import * as heroImg from "./img/hero/code1-min.jpeg"
 import * as bottomImg from "./img/hero/dev1-min.jpeg"
 import * as style from "./index.module.css"
@@ -48,6 +49,7 @@ const developmentPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.developmentPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
+          <SchemaBreadcrumbList pageName="Systemutvikling"/>
       <Hero header={header} type="small" img={heroImg} imgPosition="center" />
       <InfoWithCard htmlContent={html} checklistItems={checklist} />
       <ChipGrid header={technologiesHeader} items={technologies} />
