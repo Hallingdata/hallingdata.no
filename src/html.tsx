@@ -52,6 +52,7 @@ module.exports = (data: any) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
         />
         <title>Hallingdata</title>
+        <meta name="google-site-verification" content="1yiEMEoDW18WwjhUFd5DBQKzG_3tbfm8SBYoriT1oSw" />
         <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
         <link rel="icon" type="image/png" sizes="32x32" href={icon32} />
         <link rel="icon" type="image/png" sizes="16x16" href={icon16} />
