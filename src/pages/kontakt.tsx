@@ -55,7 +55,6 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
         type="small"
         img={heroImg}
         imgPosition="center"
-        hideButton
       />
             <SchemaBreadcrumbList pageName="Kontakt"/>
       <Grid container spacing={0}>
