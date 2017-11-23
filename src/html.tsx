@@ -10,7 +10,7 @@ import * as screenshot from "./screenshot.png"
 const page = {
   title: "Hallingdata",
   description:
-    "Vi utvikler nettsider, apper og IT systemer som hjelper deg med å få flere kunder og gjøre hverdagen din enklere.",
+    "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjøre hverdagen din enklere.",
   url: "http://hallingdata.no",
   screenshot,
 }

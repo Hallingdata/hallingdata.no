@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hallingdata`,
-    description: `Vi utvikler nettsider, apper og IT systemer som hjelper deg med å få flere kunder og gjøre hverdagen din enklere.`,
+    description: `Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjøre hverdagen din enklere.`,
     siteUrl: `https://www.hallingdata.no`,
   },
   plugins: [

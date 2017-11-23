@@ -1,6 +1,7 @@
 ---
 pageName: Hjem
 header: Vi utvikler digitale løsninger
+promoText: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjør hverdagen din enklere"
 facebookPostsHeader: Oppdaterienger
 facebookPosts:
   - '1863264100600009'
@@ -37,4 +38,3 @@ team:
     name: Inger Vik
 customerLogoHeader: Kunder våre medarbeidere har bistått
 ---
-

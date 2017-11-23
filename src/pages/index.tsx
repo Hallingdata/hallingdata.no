@@ -5,6 +5,7 @@ import { FacebookPosts } from "../components/FacebookPosts"
 import { Hero } from "../components/Hero"
 import { OurServices } from "../components/OurServices"
 import { Team } from "../components/Team"
+import PromoText from "../components/PromoText"
 import * as heroImg from "./img/hero/code18-light-min.jpg"
 import * as style from "./index.module.css"
 
@@ -20,6 +21,7 @@ type Props = {
 
 type Frontmatter = {
   header: string
+  promoText: string
   ourServices: Array<{
     header: string
     icon: string
@@ -43,7 +45,7 @@ const IndexPage: React.SFC<Props> = ({ data }) => {
   const frontmatter = data.landingPage.childMarkdownRemark.frontmatter
   return (
     <div style={gridFix}>
-      <Hero header={frontmatter.header} type="big" img={heroImg} />
+      <Hero header={frontmatter.header} type="big" img={heroImg} promoText={frontmatter.promoText} />
       <OurServices services={frontmatter.ourServices} />
 
       <FacebookPosts header={frontmatter.facebookPostsHeader} posts={frontmatter.facebookPosts} />
@@ -63,6 +65,7 @@ export const pageQuery = graphql`
         timeToRead
         frontmatter {
           header
+          promoText
           ourServices {
             header
             icon

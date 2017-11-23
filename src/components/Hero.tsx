@@ -1,11 +1,13 @@
 import { navigateTo } from "gatsby-link"
 import { Button, Grid, Typography } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
+import PromoText from "../components/PromoText"
 import * as React from "react"
 import MessageButton from "./FacebookMessageButton"
 
 type Props = {
   header: string
+  promoText: string
   type: "small" | "big"
   img: string
   imgPosition?: "top" | "bottom" | "center"
@@ -14,6 +16,7 @@ type Props = {
 
 const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
   header,
+  promoText,
   type,
   img,
   classes,
@@ -37,6 +40,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
         >
           {header}
         </Typography>
+        {promoText? <PromoText text={promoText} />: <span/>}
         {hideButton ? (
           undefined
         ) : (
@@ -82,6 +86,7 @@ const styles: StyleRulesCallback = theme => ({
     backgroundColor: "black",
     paddingLeft: 20,
     paddingRight: 20,
+    marginTop: 50
   },
 })
 
