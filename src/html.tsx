@@ -52,14 +52,20 @@ module.exports = (data: any) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
         />
         <title>Hallingdata</title>
-        <meta name="google-site-verification" content="1yiEMEoDW18WwjhUFd5DBQKzG_3tbfm8SBYoriT1oSw" />
+        <meta
+          name="google-site-verification"
+          content="1yiEMEoDW18WwjhUFd5DBQKzG_3tbfm8SBYoriT1oSw"
+        />
         <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
         <link rel="icon" type="image/png" sizes="32x32" href={icon32} />
         <link rel="icon" type="image/png" sizes="16x16" href={icon16} />
         <link rel="manifest" href={manifest} />
         <link rel="mask-icon" href={safariPinned} color="#5bbad5" />
         <meta name="description" content={page.description} />
-        <meta name="keywords" content="hjemmeside,nettside,apper,apps,systemutvikling,IT,Hallingdal,data" />
+        <meta
+          name="keywords"
+          content="hjemmeside,nettside,apper,apps,systemutvikling,IT,Hallingdal,data"
+        />
         <meta name="author" content="Hallingdata" />
         <meta name="theme-color" content="#673ab7" />
         <meta property="og:url" content="http://hallingdata.no" />
@@ -97,6 +103,7 @@ module.exports = (data: any) => {
           }}
         />
 
+        {/* Facebook chat integration */}
         <div
           dangerouslySetInnerHTML={{
             __html: `
@@ -122,13 +129,15 @@ module.exports = (data: any) => {
           }}
         />
 
-<div
+        {/* Schema.org SEO */}
+        <div
           dangerouslySetInnerHTML={{
             __html: `
             <script type="application/ld+json">
             {
               "@context": "http://schema.org",
               "@type": "Organization",
+              "name": "Hallingdata",
               "url": "https://www.hallingdata.no",
               "logo": "https://www.hallingdata.no/img/logo-color-circle.png",
               "contactPoint": [{
@@ -136,21 +145,13 @@ module.exports = (data: any) => {
                 "telephone": "+47-32178032",
                 "contactType": "customer service",
                 "availableLanguage": ["Norwegian", "English"]
-              }]
-            }
-            </script>
-            <script type="application/ld+json">
-            {
-              "@context": "http://schema.org",
-              "@type": "Organization",
-              "name": "Hallingdata",
-              "url": "httsp://www.hallingdata.no",
+              }],
               "sameAs": [
                 "http://facebook.com/hallingdata/",
                 "http://www.linkedin.com/company/5025257/"
               ]
             }
-            </script>`,
+`,
           }}
         />
       </body>
