@@ -53,3 +53,10 @@ Based on [aribnb](https://github.com/airbnb/javascript/tree/master/react)
 - flå
 - data
 - webside
+- design
+- webdesign
+- wordpress
+- pris
+- bedrift
+- leverandør
+- webside
