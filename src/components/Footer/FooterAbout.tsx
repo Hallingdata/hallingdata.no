@@ -40,7 +40,7 @@ type StyleClassNames = {
 
 const styles: StyleRulesCallback = theme => ({
   logo: {
-    height: 38,
+    height: 68,
     marginBottom: 6,
   },
   vision: {

@@ -76,7 +76,7 @@ const styles: StyleRulesCallback = theme => ({
     color: "white !important",
   },
   logo: {
-    height: 37,
+    height: 57,
   },
   contactButton: {
     marginLeft: 15,

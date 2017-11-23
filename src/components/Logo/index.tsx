@@ -1,7 +1,7 @@
 import * as React from "react"
 import { navigateTo } from "gatsby-link"
 
-import * as logo from "./logo-white-transparent.png"
+import * as logo from "./logo-white-row.svg"
 
 type Props = {
   className?: string
