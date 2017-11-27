@@ -28,7 +28,7 @@ const footerContact: React.SFC<Props & { classes: StyleClassNames }> = ({
       <Icon color="inherit" className={classes.icon}>
         phone
       </Icon>
-      Ring oss
+      Ring oss: 32 17 80 32
     </Button>
     <Button
       href="mailto:post@hallingdata.no"
@@ -42,7 +42,6 @@ const footerContact: React.SFC<Props & { classes: StyleClassNames }> = ({
       Send epost
     </Button>
     <Typography type="body1" gutterBottom color="inherit">
-      TLF: 32 17 80 32<br />
       E-post: post@hallingdata.no<br />
     </Typography>
   </Grid>

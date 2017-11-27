@@ -19,7 +19,8 @@ const footerAbout: React.SFC<Props & { classes: StyleClassNames }> = ({
     >
       Hallingdata hjelper bedrifter og organisasjoner med fornuftig bruk av
       informasjonsteknologi (IT). Vi er IT-eksperter som skjønner
-      forretningsdrift. Ta kontakt for å finne ut hvordan vi kan hjelpe deg og
+      forretningsdrift. Vi holder til i Hallingdal. 
+      <br/>Ta kontakt for å finne ut hvordan vi kan hjelpe deg og
       din organisasjon.
     </Typography>
     <Typography type="body2" color="inherit">

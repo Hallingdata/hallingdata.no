@@ -59,4 +59,3 @@ Based on [aribnb](https://github.com/airbnb/javascript/tree/master/react)
 - pris
 - bedrift
 - leverandør
-- webside

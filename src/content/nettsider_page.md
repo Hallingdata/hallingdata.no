@@ -1,38 +1,41 @@
 ---
 pageName: Nettsider
 header: Vi utvikler profesjonelle nettsider
-checklistHeader: 'Våre nettsider leveres alltid med:'
+checklistHeader: 'Vi leverer hjemmesider med:'
 checklist:
   - Responsivt design
   - Mobiltilpasning
   - Rask webhosting
-  - SEO-vennlighet
+  - SEO
   - Mulighet for endring av innhold selv
+  - Integrasjon mot sosiale medier
 portfolioHeader: Nettsider utviklet av våre medarbeidere
 portfolio:
-  - description: Konsertarrangement i Hemsedal
+  - description: Hjemmeside til konsertarrangement i Hemsedal
     title: Stølsrock 2017
     url: 'http://stolsrock.no/'
-  - description: Farge- og interiørbutikk i Hemsedal
+  - description: Hjemmeside til farge- og interiørbutikk i Hemsedal
     title: Fargerike Hemsedal
     url: 'http://www.fargerikehemsedal.no/'
-  - description: Utviklings- og kompetansesenter for næringslivet i Hallingdal
+  - description: Hjemmeside til utviklings- og kompetansesenter for næringslivet i Hallingdal
     title: Hallingdal Næringshage
     url: 'http://nhage.no/'
-  - description: Dekk- og felgbutikk
+  - description: Nettside til dekk- og felgbutikk i Bergen
     title: Smart Dekk
     url: 'http://smartdekk.no/'
-  - description: Bilbutikk
+  - description: Nettside til bilbutikk i Bergen
     title: Saga bil
     url: 'http://sagabil.no/'
-  - description: Naturfotograf
+  - description: Hjemmeside til naturfotograf i Nesbyen
     title: Haraldset Foto
     url: 'http://haraldset.com/'
 ---
 Vi hjelper deg med din tilstedeværelse på nett.
 
-Vi tar i bruk de mest moderne webteknologiene for å bygge responsive og mobiltilpassede nettsider fra grunnen (uten noe forutbestemt rammeverk). Dette fører til at du får en skreddersydd nettside med både teknologi og design spesialtilpasset dine behov.
+Vi tar i bruk de mest moderne webteknologiene for å bygge responsive og mobiltilpassede nettsider.
 
-Vi er en totalleverandør som også kan hjelpe med domene, drift og markedsføring dersom det ønskes.
+Våres tekniske ekspertise innen webløsninger gjør det mulig for oss å utvikler skreddersydde nettsider fra grunnen (uten noe forutbestemt rammeverk) spesialtilpasset akkurat dine behov. Vi kan også utvikle nettsider basert på løsninger som Wordpress og Joomla. 
 
-Kontakt oss nå for en uforpliktende samtale.
+Vi er en totalleverandør som også kan hjelpe med domene, webhotell, drift, markedsføring og SEO dersom det ønskes.
+
+Kontakt oss nå for en uforpliktende prat om hvordan vi kan hjelpe deg.
