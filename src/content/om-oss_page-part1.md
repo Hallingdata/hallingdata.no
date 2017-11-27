@@ -6,7 +6,7 @@ Som firmanavnet indikerer er vi lokalisert i Hallingdal. Vi har kontorer på Gol
 
 
 
-Det som skiller Hallingdata fra andre aktører i Hallingdal er kompetansen og erfaringene med å utvikle nye og spesialtilpassede IT-løsninger. Dette inkluderer hjemmesider/nettsider, apper (Android og iOS) og annen systemutvikling. Vi innehar også spesiell kompetanse innen blockchain ogkryptovaluta/digital valuta (Bitcoin, Ethereum mm.). I bagasjen har vi solid utdanning fra inn- og utland. Sammen med over 20 års erfaring fra ulike roller i it-bransjen i Oslo.
+Det som skiller Hallingdata fra andre aktører i Hallingdal er kompetansen og erfaringene med å utvikle nye og spesialtilpassede IT-løsninger. Dette inkluderer hjemmesider/nettsider, apper (Android og iOS) og annen systemutvikling. Vi innehar også spesiell kompetanse innen blockchain og krypto-/digital valuta (Bitcoin, Ethereum mm.). I bagasjen har vi solid utdanning fra inn- og utland. Sammen med over 20 års erfaring fra ulike roller i it-bransjen i Oslo.
 
 
 
@@ -18,4 +18,4 @@ Ta kontakt med oss i dag for en uforpliktende dialog om hvordan vi kan hjelpe de
 
 
 
-I bagasjen har vi solid utdanning fra inn- og utland. Sammen med over 20 års erfaring fra ulike roller i it-bransjen i Oslo, har vi god greie på det vi driver med.
+I bagasjen har vi solid utdanning og over 20 års erfaring fra ulike roller i IT-bransjen i Oslo.
