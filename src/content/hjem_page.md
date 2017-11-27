@@ -1,6 +1,6 @@
 ---
 pageName: Hjem
-header: Vi utvikler digitale løsninger
+header: Nettsider, apper og systemutvikling
 promoText: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjør hverdagen din enklere"
 facebookPostsHeader: Oppdaterienger
 facebookPosts:
@@ -9,16 +9,16 @@ facebookPosts:
   - '1687577874835300'
 ourServices:
   - description: >-
-      Vi tar i bruk de mest moderne teknologiene for å skreddersy nettsider og
+      Vi tar i bruk de mest moderne teknologiene for å skreddersy hjemmesider/nettsider og
       nettbutikker til ditt behov.
     header: Web
     icon: important_devices
     link: nettsider
-  - description: Vi utvikler applikasjoner for Android og Iphone.
+  - description: Vi utvikler applikasjoner for Android og iOS.
     header: App
     icon: phone_iphone
     link: apper
-  - description: Utvikling av nye IT-løsninger.
+  - description: VI utvikler nye IT-løsninger.
     header: Systemutvikling
     icon: settings_applications
     link: systemutvikling

@@ -47,7 +47,7 @@ Based on [aribnb](https://github.com/airbnb/javascript/tree/master/react)
 - gol
 - ål
 - nesbyen
-- hensedal
+- hemsedal
 - hol
 - geilo
 - flå

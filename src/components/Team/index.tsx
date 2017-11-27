@@ -24,6 +24,11 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
     className={classes.pageSection}
   >
     <Grid container direction="row" justify="center">
+      <Typography type="subheading" color="inherit" gutterBottom>
+        Vi er lokalisert i Hallingdal med kontorer på Gol
+      </Typography>
+    </Grid>
+    <Grid container direction="row" justify="center">
       {map(
         (person: Person) => (
           <Grid
@@ -122,7 +127,12 @@ const renderIcons = (person: Person) => {
   const icons = []
   if (person.githubUrl) {
     icons.push(
-      <a href={person.githubUrl} title={person.name.split(" ")[0] + "'s GitHub profil"} target="_blank" key={person.githubUrl}>
+      <a
+        href={person.githubUrl}
+        title={person.name.split(" ")[0] + "'s GitHub profil"}
+        target="_blank"
+        key={person.githubUrl}
+      >
         <i
           className="ion-social-github"
           style={{ margin: "5px", color: "#fff" }}
@@ -132,7 +142,12 @@ const renderIcons = (person: Person) => {
   }
   if (person.linkedinUrl) {
     icons.push(
-      <a href={person.linkedinUrl} target="_blank" title={person.name.split(" ")[0] + "'s LinkedIn profil"} key={person.linkedinUrl}>
+      <a
+        href={person.linkedinUrl}
+        target="_blank"
+        title={person.name.split(" ")[0] + "'s LinkedIn profil"}
+        key={person.linkedinUrl}
+      >
         <i
           className="ion-social-linkedin"
           style={{ margin: "5px", color: "#fff" }}
