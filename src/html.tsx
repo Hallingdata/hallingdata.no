@@ -54,7 +54,7 @@ module.exports = (data: any) => {
         <link rel="mask-icon" href={safariPinned} color="#5bbad5" />
         <meta name="author" content="Hallingdata" />
         <meta name="theme-color" content="#673ab7" />
-        <meta property="og:url" content="http://hallingdata.no" />
+        <meta property="og:url" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={screenshot} />
         <meta property="og:locale" content="no_NO" />
