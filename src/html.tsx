@@ -5,7 +5,6 @@ import * as icon16 from "./favicons/favicon-16x16.png"
 import * as icon32 from "./favicons/favicon-32x32.png"
 import * as manifest from "./favicons/manifest.json"
 import * as safariPinned from "./favicons/safari-pinned-tab.svg"
-import * as screenshot from "./screenshot.png"
 
 // Load production style
 let styles: string
@@ -22,6 +21,8 @@ interface HtmlProps {
   postBodyComponents: any
   headComponents: any
 }
+
+const screenshot = "https://www.hallingdata.no/screenshot.png"
 
 // Use `module.exports` to be compliant with `webpack-require` import method
 module.exports = (data: any) => {
