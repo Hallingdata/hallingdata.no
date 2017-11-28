@@ -19,9 +19,11 @@ ourServices:
   icon: "phonelink_setup"
   description: "Etter at appen er lansert på App Store og/eller Google Play hjelper vi til med drift, videreutvikling og markedsføring."
 ---
+**Vi utvikler brukervennlige apper som kjører på både iOS og Android.**
+
 Vi tar apper fra idé til marked. Vi har høyt fokus på brukervennlighet og design.
 
-Alt starter med en uforpliktende samtale.
+Alt starter med en uforpliktende samtale. [Kontakt oss](https://m.me/hallingdata) nå.
 
 *Vi utvikler også apper for Mac, Windows og Linux.*
 

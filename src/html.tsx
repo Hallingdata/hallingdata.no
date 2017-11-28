@@ -7,14 +7,6 @@ import * as manifest from "./favicons/manifest.json"
 import * as safariPinned from "./favicons/safari-pinned-tab.svg"
 import * as screenshot from "./screenshot.png"
 
-const page = {
-  title: "Hallingdata",
-  description:
-    "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjøre hverdagen din enklere.",
-  url: "http://hallingdata.no",
-  screenshot,
-}
-
 // Load production style
 let styles: string
 if (process.env.NODE_ENV === `production`) {
@@ -51,7 +43,6 @@ module.exports = (data: any) => {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
         />
-        <title>Hallingdata</title>
         <meta
           name="google-site-verification"
           content="1yiEMEoDW18WwjhUFd5DBQKzG_3tbfm8SBYoriT1oSw"
@@ -61,26 +52,14 @@ module.exports = (data: any) => {
         <link rel="icon" type="image/png" sizes="16x16" href={icon16} />
         <link rel="manifest" href={manifest} />
         <link rel="mask-icon" href={safariPinned} color="#5bbad5" />
-        <meta name="description" content={page.description} />
-        <meta
-          name="keywords"
-          content="hjemmeside,nettside,apper,apps,systemutvikling,IT,Hallingdal,data"
-        />
         <meta name="author" content="Hallingdata" />
         <meta name="theme-color" content="#673ab7" />
         <meta property="og:url" content="http://hallingdata.no" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Hallingdata" />
         <meta property="og:image" content={screenshot} />
-        <meta property="og:description" content={page.description} />
-        <meta property="og:site_name" content={page.title} />
         <meta property="og:locale" content="no_NO" />
-        <meta name="twitter:card" content={page.description} />
         <meta name="twitter:creator" content="@sogasg" />
-        <meta name="twitter:url" content={page.url} />
-        <meta name="twitter:title" content={page.title} />
-        <meta name="twitter:description" content={page.description} />
-        <meta name="twitter:image" content={page.screenshot} />
+        <meta name="twitter:image" content={screenshot} />
         {css}
       </head>
       <body style={{ margin: 0 }}>

@@ -3,6 +3,7 @@ import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
 import { Hero } from "../components/Hero"
+import Head from "../components/Head"
 import { RenderMdHtml } from "../components/RenderMdHtml"
 import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
 
@@ -35,6 +36,10 @@ const thankyouPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.thankYouContactPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
+      <Head
+        title="Takk for at du kontaktet oss"
+        url="https://www.hallingdata.no/kontakt-takk"
+      />
       <Hero
         header={header}
         hideButton={true}

@@ -5,6 +5,7 @@ import { BigImg } from "../components/BigImg"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
 import { MobileLogoRow } from "../components/MobileLogoRow"
+import Head from "../components/Head"
 import { OurServices, Service } from "../components/OurServices"
 import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
 
@@ -49,6 +50,11 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.appsPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
+      <Head
+        title="Ny app? Vi utvikler apper for iOS og Android"
+        description="Vi utvikler brukervennlige apper som kjører på både iOS og Android."
+        url="https://www.hallingdata.no/apper"
+      />
       <SchemaBreadcrumbList pageName="Apper"/>
       <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard htmlContent={html} checklistItems={checklist} />

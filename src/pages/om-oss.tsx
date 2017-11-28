@@ -3,6 +3,7 @@ import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
 import { Hero } from "../components/Hero"
+import Head from "../components/Head"
 import { PageSection } from "../components/PageSection"
 import { RenderMdHtml } from "../components/RenderMdHtml"
 import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
@@ -50,7 +51,12 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const htmlPart2 = data.aboutPage2.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-          <SchemaBreadcrumbList pageName="Om oss"/>
+      <Head
+        title="Om Hallingdata"
+        description="Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse."
+        url="https://www.hallingdata.no/om-oss"
+      />
+      <SchemaBreadcrumbList pageName="Om oss" />
       <Hero
         header={headerPart1}
         type="small"

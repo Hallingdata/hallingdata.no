@@ -1,14 +1,15 @@
-import { ContactForm } from '../components/ContactForm';
+import { ContactForm } from "../components/ContactForm"
 import { Button, Grid, Icon, TextField, Typography } from "material-ui"
 import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import { map } from "ramda"
-import * as React from 'react';
+import * as React from "react"
 
 import { Hero } from "../components/Hero"
+import Head from "../components/Head"
 import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
 import { PageSection } from "../components/PageSection"
-import * as heroImg from './img/hero/hallingskarvet-min.jpg';
-import * as style from './index.module.css';
+import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
+import * as style from "./index.module.css"
 
 type Props = {
   data: {
@@ -50,14 +51,20 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.contactPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Hero
-        header={header}
-        type="small"
-        img={heroImg}
-        imgPosition="center"
+      <Head
+        title="Kontakt Hallingdata"
+        description="Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse."
+        url="https://www.hallingdata.no/kontakt"
       />
-            <SchemaBreadcrumbList pageName="Kontakt"/>
+      <Hero header={header} type="small" img={heroImg} imgPosition="center" />
+      <SchemaBreadcrumbList pageName="Kontakt" />
       <Grid container spacing={0}>
+        <Grid item xs={12}>
+          <Typography type="display1" className={classes.promoText}>
+            Vi er Hallingdals leverandør av hjemmesider/nettsider, apper <br />og
+            annen systemutviklings kompetanse.
+          </Typography>
+        </Grid>
         <Grid item xs={12} sm={6}>
           <PageSection header={contactFormHeader}>
             <ContactForm />
@@ -116,6 +123,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
 }
 
 type StyleClassNames = {
+  promoText: string
   contactTile: string
   contactIcon: string
   contactTileInner: string
@@ -125,6 +133,12 @@ type StyleClassNames = {
 }
 
 const styles: StyleRulesCallback = theme => ({
+  promoText: {
+    margin: "auto",
+    textAlign: "center",
+    marginTop: 25,
+    fontSize: 22
+  },
   contactIcon: {
     fontSize: 60,
   },

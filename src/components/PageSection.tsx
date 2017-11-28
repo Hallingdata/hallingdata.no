@@ -24,7 +24,7 @@ const pageSection: React.SFC<Props & { classes: StyleClassNames }> = ({
 }) => (
   <section className={`${classes.outer} ${className}`}>
     <Typography
-      type="display1"
+      type="headline"
       color={headerColor}
       className={classes.header}
       gutterBottom

@@ -30,12 +30,12 @@ portfolio:
     title: Haraldset Foto
     url: 'http://haraldset.com/'
 ---
-Vi hjelper deg med din tilstedeværelse på nett.
+**Vi utvikler nettsider som hjelper deg få flere kunder og gjør deg synlig på internett.**
 
 Vi tar i bruk de mest moderne webteknologiene for å bygge responsive og mobiltilpassede nettsider.
 
 Våres tekniske ekspertise innen webløsninger gjør det mulig for oss å utvikler skreddersydde nettsider fra grunnen (uten noe forutbestemt rammeverk) spesialtilpasset akkurat dine behov. Vi kan også utvikle nettsider basert på løsninger som Wordpress og Joomla. 
 
-Vi er en totalleverandør som også kan hjelpe med domene, webhotell, drift, markedsføring og SEO dersom det ønskes.
+Vi er en totalleverandør som også kan hjelpe med domene, webhotell, drift, markedsføring og SEO.
 
-Kontakt oss nå for en uforpliktende prat om hvordan vi kan hjelpe deg.
+[Kontakt oss](https://m.me/hallingdata) nå for en uforpliktende prat om hvordan vi kan hjelpe deg.

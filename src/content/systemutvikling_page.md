@@ -48,6 +48,8 @@ technologies:
 - Solidity
 - Bitcoin
 ---
+**Vi hjelper deg og din organisasjon med alt innen systemutvikling. Vi har over 20 års erfaring og et brennende engasjement for utvikling av nye løsninger.**
+
 Vi elsker å lage nye løsninger. I it-bransjen kalles det systemutvikling.
 
 I bagasjen har vi solid utdanning fra inn- og utland. Sammen med over 20 års erfaring fra ulike roller i it-bransjen i Oslo, har vi god greie på det vi driver med.

@@ -1,6 +1,6 @@
 ---
 pageName: "Kontakt"
-header: "Kontakt"
+header: "Kontakt Hallingdata"
 contactFormHeader: "Kontaktskjema"
 contactList:
 - header: "Ring oss"

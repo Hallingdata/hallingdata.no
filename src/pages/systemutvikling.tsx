@@ -2,6 +2,7 @@ import { StyleRulesCallback, withStyles } from "material-ui/styles"
 import * as React from "react"
 
 import { BigImg } from "../components/BigImg"
+import Head from "../components/Head"
 import { ChipGrid } from "../components/ChipGrid"
 import { Hero } from "../components/Hero"
 import { InfoWithCard } from "../components/InfoWithCard"
@@ -49,6 +50,11 @@ const developmentPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.developmentPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
+      <Head
+        title="Trenger du IT-utvikler? Vi er høyt utdannede systemutviklere"
+        description="Vi hjelper deg og din organisasjon med alt innen systemutvikling. Vi har over 20 års erfaring og et brennende engasjement for utvikling av nye løsninger."
+        url="https://www.hallingdata.no/systemutvikling"
+      />
           <SchemaBreadcrumbList pageName="Systemutvikling"/>
       <Hero header={header} type="small" img={heroImg} imgPosition="center" />
       <InfoWithCard htmlContent={html} checklistItems={checklist} />

@@ -7,11 +7,11 @@ import MessageButton from "./FacebookMessageButton"
 
 type Props = {
   header: string
-  promoText: string
   type: "small" | "big"
   img: string
   imgPosition?: "top" | "bottom" | "center"
   hideButton?: boolean
+  promoText?: string
 }
 
 const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
@@ -40,7 +40,7 @@ const hero: React.SFC<Props & { classes: StyleClassNames }> = ({
         >
           {header}
         </Typography>
-        {promoText? <PromoText text={promoText} />: <span/>}
+        {promoText != null ? <PromoText text={promoText} /> : <span />}
         {hideButton ? (
           undefined
         ) : (
@@ -86,7 +86,7 @@ const styles: StyleRulesCallback = theme => ({
     backgroundColor: "black",
     paddingLeft: 20,
     paddingRight: 20,
-    marginTop: 50
+    marginTop: 50,
   },
 })
 

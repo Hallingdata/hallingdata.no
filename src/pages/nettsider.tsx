@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import { Hero } from "../components/Hero"
+import Head from "../components/Head"
 import { InfoWithCard } from "../components/InfoWithCard"
 import { Portfolio, PortfolioItem } from "../components/Portfolio"
 import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
@@ -43,7 +44,12 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
   const html = data.webpagesPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-          <SchemaBreadcrumbList pageName="Nettsider"/>
+      <Head
+        title="Ny hjemmeside? Vi utvikler moderne nettsider"
+        description="Vi utvikler nettsider som hjelper deg få flere kunder og gjør deg synlig på internett."
+        url="https://www.hallingdata.no/nettsider"
+      />
+      <SchemaBreadcrumbList pageName="Nettsider" />
       <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard
         htmlContent={html}

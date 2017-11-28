@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import { CustomerLogos } from "../components/CustomerLogos"
+import Head from "../components/Head"
 import { FacebookPosts } from "../components/FacebookPosts"
 import { Hero } from "../components/Hero"
 import { OurServices } from "../components/OurServices"
@@ -45,10 +46,23 @@ const IndexPage: React.SFC<Props> = ({ data }) => {
   const frontmatter = data.landingPage.childMarkdownRemark.frontmatter
   return (
     <div style={gridFix}>
-      <Hero header={frontmatter.header} type="big" img={heroImg} promoText={frontmatter.promoText} />
+      <Head
+        title="Hallingdata: Hjemmesider, apps og systemutvikling"
+        description="Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjøre hverdagen din enklere."
+        url="https://www.hallingdata.no"
+      />
+      <Hero
+        header={frontmatter.header}
+        type="big"
+        img={heroImg}
+        promoText={frontmatter.promoText}
+      />
       <OurServices services={frontmatter.ourServices} />
 
-      <FacebookPosts header={frontmatter.facebookPostsHeader} posts={frontmatter.facebookPosts} />
+      <FacebookPosts
+        header={frontmatter.facebookPostsHeader}
+        posts={frontmatter.facebookPosts}
+      />
       <Team header={frontmatter.teamHeader} people={frontmatter.team} />
       <CustomerLogos header={frontmatter.customerLogoHeader} />
     </div>

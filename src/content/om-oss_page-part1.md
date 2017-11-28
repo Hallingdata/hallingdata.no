@@ -1,6 +1,6 @@
 ---
 pageName: Om oss
-header: Om oss
+header: Om Hallingdata
 ---
 Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse. Vi har kontorer på Gol, men kommer gjerne på besøk i Hemsedal, Nesbyen, Hol, Ål, Flå og omegn. Ellers tar vi det meste over nett og telefon, men for større prosjekter tar vi turen til kunder hvor som helst i land og utland. Vi jobber i dag med kunder og partnere over hele Norge.
 
