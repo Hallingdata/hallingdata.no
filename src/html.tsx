@@ -128,7 +128,8 @@ module.exports = (data: any) => {
               }],
               "sameAs": [
                 "http://facebook.com/hallingdata/",
-                "http://www.linkedin.com/company/5025257/"
+                "http://www.linkedin.com/company/5025257/",
+                "https://twitter.com/hallingdata"
               ]
             }
 `,
