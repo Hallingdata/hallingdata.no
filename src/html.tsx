@@ -59,6 +59,7 @@ module.exports = (data: any) => {
         <meta property="og:type" content="website" />
         <meta property="og:image" content={screenshot} />
         <meta property="og:locale" content="no_NO" />
+        <meta property="twitter:site" content="@hallingdata" />
         <meta name="twitter:creator" content="@sogasg" />
         <meta name="twitter:image" content={screenshot} />
         {css}
