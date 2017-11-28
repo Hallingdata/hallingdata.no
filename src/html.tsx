@@ -48,6 +48,7 @@ module.exports = (data: any) => {
           name="google-site-verification"
           content="1yiEMEoDW18WwjhUFd5DBQKzG_3tbfm8SBYoriT1oSw"
         />
+        <meta name="msvalidate.01" content="F99B74BB59D9EB230374FE7306F24B26" />
         <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
         <link rel="icon" type="image/png" sizes="32x32" href={icon32} />
         <link rel="icon" type="image/png" sizes="16x16" href={icon16} />
