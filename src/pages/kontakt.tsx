@@ -24,6 +24,9 @@ type Props = {
 
 type Frontmatter = {
   header: string
+  metaTitle: string
+  metaDescription: string
+  metaUrl: string
   contactFormHeader: string
   contactList: Array<{
     contact: string
@@ -47,14 +50,17 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
     header,
     contactList,
     contactFormHeader,
+    metaTitle,
+    metaDescription,
+    metaUrl,
   } = data.contactPage.childMarkdownRemark.frontmatter
   const html = data.contactPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
       <Head
-        title="Kontakt Hallingdata"
-        description="Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse."
-        url="https://www.hallingdata.no/kontakt"
+        title={metaTitle}
+        description={metaDescription}
+        url={metaUrl}
       />
       <Hero header={header} type="small" img={heroImg} imgPosition="center" />
       <SchemaBreadcrumbList pageName="Kontakt" />
@@ -169,6 +175,9 @@ export const pageQuery = graphql`
         html
         frontmatter {
           header
+          metaTitle
+          metaDescription
+          metaUrl
           contactFormHeader
           contactList {
             contact
