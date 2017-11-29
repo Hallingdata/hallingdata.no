@@ -1,6 +1,7 @@
 import "ionicons/css/ionicons.min.css"
 import "material-design-icons-iconfont/dist/material-design-icons.css"
 import "typeface-roboto"
+import "animate.css/animate.css"
 
 import amber from "material-ui/colors/amber"
 import deepPurple from "material-ui/colors/deepPurple"

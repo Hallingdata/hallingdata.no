@@ -7,14 +7,16 @@ type Props = {}
 
 const facebookMessageButton: React.SFC<
   Props & { classes: StyleClassNames }
-> = ({ classes }) => (
+> = ({ classes }) => {
+  const className = `${classes.button} animated pulse`
+  return (
   <Button
     raised
     color="accent"
-    className={classes.button}
+    className={className}
     href="https://m.me/hallingdata"
     target="_blank"
-    title="Send en melding til oss på Facebook Messenger"
+    title="Send en meding til oss på Facebook Messenger"
   >
     Send oss en melding
     <svg
@@ -30,7 +32,7 @@ const facebookMessageButton: React.SFC<
       />
     </svg>
   </Button>
-)
+)}
 ///#007ff
 
 type StyleClassNames = {
