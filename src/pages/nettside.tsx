@@ -20,6 +20,7 @@ type Props = {
 }
 
 type Frontmatter = {
+  pageName: string
   header: string
   metaTitle: string
   metaDescription: string
@@ -38,6 +39,7 @@ const gridFix = {
 
 const WebpagesPage: React.SFC<Props> = ({ data }) => {
   const {
+    pageName,
     header,
     metaTitle,
     metaDescription,
@@ -51,7 +53,7 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
   return (
     <div style={gridFix}>
       <Head title={metaTitle} description={metaDescription} url={metaUrl} />
-      <SchemaBreadcrumbList pageName="Nettsider" />
+      <SchemaBreadcrumbList pageName={pageName} />
       <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard
         htmlContent={html}
@@ -71,6 +73,7 @@ export const pageQuery = graphql`
       childMarkdownRemark {
         html
         frontmatter {
+          pageName
           header
           metaTitle
           metaDescription

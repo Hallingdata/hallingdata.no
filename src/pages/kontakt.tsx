@@ -23,6 +23,7 @@ type Props = {
 }
 
 type Frontmatter = {
+  pageName: string
   header: string
   metaTitle: string
   metaDescription: string
@@ -47,6 +48,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
 }) => {
   const {
+    pageName,
     header,
     contactList,
     contactFormHeader,
@@ -59,7 +61,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
     <div style={gridFix}>
       <Head title={metaTitle} description={metaDescription} url={metaUrl} />
       <Hero header={header} type="small" img={heroImg} imgPosition="center" />
-      <SchemaBreadcrumbList pageName="Kontakt" />
+      <SchemaBreadcrumbList pageName={pageName} />
       <Grid container spacing={0}>
         <Grid item xs={12}>
           <Typography type="display1" className={classes.promoText}>
@@ -170,6 +172,7 @@ export const pageQuery = graphql`
       childMarkdownRemark {
         html
         frontmatter {
+          pageName
           header
           metaTitle
           metaDescription
