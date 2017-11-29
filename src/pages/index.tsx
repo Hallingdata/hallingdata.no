@@ -21,6 +21,9 @@ type Props = {
 }
 
 type Frontmatter = {
+  metaTitle: string
+  metaDescription: string
+  metaUrl: string
   header: string
   promoText: string
   ourServices: Array<{
@@ -47,9 +50,9 @@ const IndexPage: React.SFC<Props> = ({ data }) => {
   return (
     <div style={gridFix}>
       <Head
-        title="Hallingdata: Hjemmesider, apps og systemutvikling"
-        description="Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjøre hverdagen din enklere."
-        url="https://www.hallingdata.no"
+        title={frontmatter.metaTitle}
+        description={frontmatter.metaDescription}
+        url={frontmatter.metaUrl}
       />
       <Hero
         header={frontmatter.header}
@@ -78,6 +81,9 @@ export const pageQuery = graphql`
         html
         timeToRead
         frontmatter {
+          metaTitle
+          metaDescription
+          metaUrl
           header
           promoText
           ourServices {

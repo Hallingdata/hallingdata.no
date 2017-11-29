@@ -1,5 +1,8 @@
 ---
 pageName: Hjem
+metaTitle: "Hallingdata: Hjemmesider, apps og systemutvikling"
+metaDescription: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjøre hverdagen din enklere."
+metaUrl: "https://www.hallingdata.no"
 header: Nettside, app og systemutvikling
 promoText: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjør hverdagen din enklere"
 facebookPostsHeader: Oppdaterienger
