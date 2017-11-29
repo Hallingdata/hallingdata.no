@@ -28,7 +28,11 @@ type Props = {
 }
 
 type Frontmatter = {
+  pageName: string
   header: string
+  metaTitle?: string
+  metaDescription?: string
+  metaUrl?: string
 }
 
 // https://github.com/callemall/material-ui/issues/7466
@@ -42,7 +46,11 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
 }) => {
   const {
+    pageName,
     header: headerPart1,
+    metaTitle,
+    metaDescription,
+    metaUrl,
   } = data.aboutPage1.childMarkdownRemark.frontmatter
   const htmlPart1 = data.aboutPage1.childMarkdownRemark.html
   const {
@@ -51,12 +59,8 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const htmlPart2 = data.aboutPage2.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Head
-        title="Om Hallingdata"
-        description="Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse."
-        url="https://www.hallingdata.no/om-oss"
-      />
-      <SchemaBreadcrumbList pageName="Om oss" />
+      <Head title={metaTitle} description={metaDescription} url={metaUrl} />
+      <SchemaBreadcrumbList pageName={pageName} />
       <Hero
         header={headerPart1}
         type="small"
@@ -135,7 +139,11 @@ export const pageQuery = graphql`
       childMarkdownRemark {
         html
         frontmatter {
+          pageName
           header
+          metaTitle
+          metaDescription
+          metaUrl
         }
       }
     }
