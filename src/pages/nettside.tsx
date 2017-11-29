@@ -21,6 +21,9 @@ type Props = {
 
 type Frontmatter = {
   header: string
+  metaTitle: string
+  metaDescription: string
+  metaUrl: string
   checklistHeader: string
   checklist: Array<string>
   portfolioHeader: string
@@ -36,6 +39,9 @@ const gridFix = {
 const WebpagesPage: React.SFC<Props> = ({ data }) => {
   const {
     header,
+    metaTitle,
+    metaDescription,
+    metaUrl,
     checklist,
     checklistHeader,
     portfolio,
@@ -44,11 +50,7 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
   const html = data.webpagesPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Head
-        title="Ny hjemmeside? Vi utvikler moderne nettsider"
-        description="Vi utvikler nettsider som hjelper deg få flere kunder og gjør deg synlig på internett."
-        url="https://www.hallingdata.no/nettsider"
-      />
+      <Head title={metaTitle} description={metaDescription} url={metaUrl} />
       <SchemaBreadcrumbList pageName="Nettsider" />
       <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard
@@ -70,6 +72,9 @@ export const pageQuery = graphql`
         html
         frontmatter {
           header
+          metaTitle
+          metaDescription
+          metaUrl
           checklistHeader
           checklist
           portfolioHeader

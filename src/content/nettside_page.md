@@ -1,5 +1,8 @@
 ---
 pageName: Nettside
+metaTitle: "Ny hjemmeside? Vi utvikler moderne nettsider"
+metaDescription: "Vi utvikler nettsider som hjelper deg få flere kunder og gjør deg synlig på internett."
+metaUrl: "https://www.hallingdata.no/nettsider"
 header: Vi utvikler profesjonelle nettsider
 checklistHeader: 'Vi leverer hjemmesider med:'
 checklist:
