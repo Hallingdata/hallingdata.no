@@ -1,5 +1,5 @@
 ---
-pageName: Nettsider
+pageName: Nettside
 header: Vi utvikler profesjonelle nettsider
 checklistHeader: 'Vi leverer hjemmesider med:'
 checklist:

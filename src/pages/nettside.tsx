@@ -65,7 +65,7 @@ export default WebpagesPage
 
 export const pageQuery = graphql`
   query WebpagesContent {
-    webpagesPage: file(relativePath: { eq: "content/nettsider_page.md" }) {
+    webpagesPage: file(relativePath: { eq: "content/nettside_page.md" }) {
       childMarkdownRemark {
         html
         frontmatter {

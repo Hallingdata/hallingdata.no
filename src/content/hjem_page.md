@@ -1,6 +1,6 @@
 ---
 pageName: Hjem
-header: Nettsider, apper og systemutvikling
+header: Nettside, app og systemutvikling
 promoText: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjør hverdagen din enklere"
 facebookPostsHeader: Oppdaterienger
 facebookPosts:
@@ -13,11 +13,11 @@ ourServices:
       nettbutikker til ditt behov.
     header: Web
     icon: important_devices
-    link: nettsider
+    link: nettside
   - description: Vi utvikler applikasjoner for Android og iOS.
     header: App
     icon: phone_iphone
-    link: apper
+    link: app
   - description: VI utvikler nye IT-løsninger.
     header: Systemutvikling
     icon: settings_applications

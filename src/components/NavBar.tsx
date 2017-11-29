@@ -95,12 +95,12 @@ const pages = [
     link: "",
   },
   {
-    name: "Nettsider",
-    link: "nettsider/",
+    name: "Nettside",
+    link: "nettside/",
   },
   {
-    name: "Apper",
-    link: "apper/",
+    name: "App",
+    link: "app/",
   },
   {
     name: "Systemutvikling",

@@ -64,12 +64,12 @@ collections:
       - label: Kunder logoer overskrift
         name: customerLogoHeader
         widget: string
-  - name: nettsider
-    label: Nettsider
+  - name: nettside
+    label: Nettside
     folder: src/content
     filter:
       field: pageName
-      value: Nettsider
+      value: Nettside
     create: false
     fields:
       - label: pageName
@@ -103,12 +103,12 @@ collections:
           - label: Nettaddresse
             name: url
             widget: string
-  - name: apper
-    label: Apper
+  - name: app
+    label: App
     folder: src/content
     filter:
       field: pageName
-      value: Apper
+      value: App
     create: false
     fields:
       - label: pageName
