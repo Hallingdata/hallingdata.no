@@ -1,5 +1,8 @@
 ---
 pageName: "App"
+metaTitle: "Ny app? Vi utvikler apper for iOS og Android"
+metaDescription: "Vi utvikler brukervennlige apper som kjører på både iOS og Android."
+metaUrl: "https://www.hallingdata.no/apper"
 header: "App utvikling"
 checklistHeader: ""
 checklist:
