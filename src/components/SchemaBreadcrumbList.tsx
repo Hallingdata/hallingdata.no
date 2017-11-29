@@ -12,7 +12,6 @@ type Props = {
 const breadcrumbList: React.SFC<Props> = ({
 pageName
 }) => (
-    console.log("pageNAme: " + pageName),
     <div
     dangerouslySetInnerHTML={{
       __html: `<script type="application/ld+json">
