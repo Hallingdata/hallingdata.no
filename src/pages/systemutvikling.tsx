@@ -24,6 +24,9 @@ type Props = {
 
 type Frontmatter = {
   header: string
+  metaTitle?: string
+  metaDescription?: string
+  metaUrl?: string
   checklistHeader: string
   checklist: Array<string>
   technologiesHeader: string
@@ -42,6 +45,9 @@ const developmentPage: React.SFC<Props & { classes: StyleClassNames }> = ({
 }) => {
   const {
     checklist,
+    metaTitle,
+    metaDescription,
+    metaUrl,
     header,
     checklistHeader,
     technologiesHeader,
@@ -50,12 +56,8 @@ const developmentPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.developmentPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Head
-        title="Trenger du IT-utvikler? Vi er høyt utdannede systemutviklere"
-        description="Vi hjelper deg og din organisasjon med alt innen systemutvikling. Vi har over 20 års erfaring og et brennende engasjement for utvikling av nye løsninger."
-        url="https://www.hallingdata.no/systemutvikling"
-      />
-          <SchemaBreadcrumbList pageName="Systemutvikling"/>
+      <Head title={metaTitle} description={metaDescription} url={metaUrl} />
+      <SchemaBreadcrumbList pageName="Systemutvikling" />
       <Hero header={header} type="small" img={heroImg} imgPosition="center" />
       <InfoWithCard htmlContent={html} checklistItems={checklist} />
       <ChipGrid header={technologiesHeader} items={technologies} />
@@ -79,6 +81,9 @@ export const pageQuery = graphql`
         html
         frontmatter {
           header
+          metaTitle
+          metaDescription
+          metaUrl
           checklistHeader
           checklist
           technologiesHeader

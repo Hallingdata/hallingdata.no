@@ -1,5 +1,8 @@
 ---
 pageName: "Systemutvikling"
+metaTitle: "Trenger du IT-utvikler? Vi er høyt utdannede systemutviklere"
+metaDescription: "Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse."
+metaUrl: "https://www.hallingdata.no/systemutvikling"
 header: "Systemutvikling"
 checklistHeader: ""
 checklist:
