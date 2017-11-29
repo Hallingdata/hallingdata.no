@@ -57,11 +57,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.contactPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Head
-        title={metaTitle}
-        description={metaDescription}
-        url={metaUrl}
-      />
+      <Head title={metaTitle} description={metaDescription} url={metaUrl} />
       <Hero header={header} type="small" img={heroImg} imgPosition="center" />
       <SchemaBreadcrumbList pageName="Kontakt" />
       <Grid container spacing={0}>
@@ -143,7 +139,7 @@ const styles: StyleRulesCallback = theme => ({
     margin: "auto",
     textAlign: "center",
     marginTop: 25,
-    fontSize: 22
+    fontSize: 22,
   },
   contactIcon: {
     fontSize: 60,

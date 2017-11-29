@@ -56,12 +56,8 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
   const html = data.appsPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
-      <Head
-        title={metaTitle}
-        description={metaDescription}
-        url={metaUrl}
-      />
-      <SchemaBreadcrumbList pageName="Apper"/>
+      <Head title={metaTitle} description={metaDescription} url={metaUrl} />
+      <SchemaBreadcrumbList pageName="Apper" />
       <Hero header={header} type="small" img={heroImg} imgPosition="bottom" />
       <InfoWithCard htmlContent={html} checklistItems={checklist} />
       <OurServices services={ourServices} />
