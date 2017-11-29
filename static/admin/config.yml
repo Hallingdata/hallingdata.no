@@ -250,6 +250,15 @@ collections:
       - label: pageName
         name: pageName
         widget: hidden
+      - label: Meta Title
+        name: metaTitle
+        widget: string
+      - label: Meta Description
+        name: metaDescription
+        widget: string
+      - label: Meta URL
+        name: metaUrl
+        widget: string
       - label: Overskrift
         name: header
         widget: string
