@@ -16,7 +16,7 @@ ourServices:
       nettbutikker til ditt behov.
     header: Web
     icon: important_devices
-    link: nettside
+    link: web
   - description: Vi utvikler applikasjoner for Android og iOS.
     header: App
     icon: phone_iphone

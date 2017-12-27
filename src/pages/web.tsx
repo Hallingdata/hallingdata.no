@@ -10,7 +10,7 @@ import * as style from "./index.module.css"
 
 type Props = {
   data: {
-    webpagesPage: {
+    webPage: {
       childMarkdownRemark: {
         frontmatter: Frontmatter
         html: any
@@ -37,7 +37,7 @@ const gridFix = {
   overflow: "hidden" as any,
 }
 
-const WebpagesPage: React.SFC<Props> = ({ data }) => {
+const WebPage: React.SFC<Props> = ({ data }) => {
   const {
     pageName,
     header,
@@ -48,8 +48,8 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
     checklistHeader,
     portfolio,
     portfolioHeader,
-  } = data.webpagesPage.childMarkdownRemark.frontmatter
-  const html = data.webpagesPage.childMarkdownRemark.html
+  } = data.webPage.childMarkdownRemark.frontmatter
+  const html = data.webPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
       <Head title={metaTitle} description={metaDescription} url={metaUrl} />
@@ -65,11 +65,11 @@ const WebpagesPage: React.SFC<Props> = ({ data }) => {
   )
 }
 
-export default WebpagesPage
+export default WebPage
 
 export const pageQuery = graphql`
-  query WebpagesContent {
-    webpagesPage: file(relativePath: { eq: "content/nettside_page.md" }) {
+  query WebContent {
+    webPage: file(relativePath: { eq: "content/web_page.md" }) {
       childMarkdownRemark {
         html
         frontmatter {

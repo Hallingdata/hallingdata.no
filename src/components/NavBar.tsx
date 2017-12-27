@@ -95,20 +95,20 @@ const pages = [
     link: "",
   },
   {
-    name: "Nettside",
-    link: "nettside/",
+    name: "Web",
+    link: "web/",
   },
   {
     name: "App",
     link: "app/",
   },
   {
-    name: "Kryptovaluta",
-    link: "kryptovaluta/",
-  },
-  {
     name: "Systemutvikling",
     link: "systemutvikling/",
+  },
+  {
+    name: "Kryptovaluta",
+    link: "kryptovaluta/",
   },
   {
     name: "Om oss",

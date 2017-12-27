@@ -73,12 +73,12 @@ collections:
       - label: Kunder logoer overskrift
         name: customerLogoHeader
         widget: string
-  - name: nettside
-    label: Nettside
+  - name: web
+    label: Web
     folder: src/content
     filter:
       field: pageName
-      value: Nettside
+      value: Web
     create: false
     fields:
       - label: pageName
