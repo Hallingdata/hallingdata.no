@@ -18,8 +18,8 @@ const ourServices: React.SFC<Props & { classes: StyleClassNames }> = ({
         <Grid item xs={12} md={3} sm={4} key={service.header + service.icon}>
           <div
             className={classes.item}
-            style={{ cursor: "pointer" }}
-            onClick={() => navigateTo("/" + service.link)}
+            style={service.link ? { cursor: "pointer" }: {}}
+            onClick={service.link? (() => navigateTo("/" + service.link)): undefined}
           >
             <Icon color="primary" style={{ fontSize: 80 }}>
               {service.icon}

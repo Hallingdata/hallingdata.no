@@ -103,6 +103,10 @@ const pages = [
     link: "app/",
   },
   {
+    name: "Kryptovaluta",
+    link: "kryptovaluta/",
+  },
+  {
     name: "Systemutvikling",
     link: "systemutvikling/",
   },
