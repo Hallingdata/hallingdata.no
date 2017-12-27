@@ -166,6 +166,51 @@ collections:
           - label: Ikon
             name: icon
             widget: string
+  - name: kryptovaluta
+    label: Kryptovaluta
+    folder: src/content
+    filter:
+      field: pageName
+      value: Kryptovaluta
+    create: false
+    fields:
+      - label: pageName
+        name: pageName
+        widget: hidden
+      - label: Meta Title
+        name: metaTitle
+        widget: string
+      - label: Meta Description
+        name: metaDescription
+        widget: string
+      - label: Meta URL
+        name: metaUrl
+        widget: string
+      - label: Overskrift
+        name: header
+        widget: string
+      - label: Tekst
+        name: body
+        widget: markdown
+      - label: Sjekkliste overskrift
+        name: checklistHeader
+        widget: string
+      - label: Sjekkliste
+        name: checklist
+        widget: list
+      - label: Tjenester
+        name: ourServices
+        widget: list
+        fields:
+          - label: Titel
+            name: header
+            widget: string
+          - label: Tekst
+            name: description
+            widget: text
+          - label: Ikon
+            name: icon
+            widget: string
   - name: Systemutvikling
     label: Systemutvikling
     folder: src/content
