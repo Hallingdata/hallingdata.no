@@ -2,7 +2,7 @@
 pageName: "Kryptovaluta"
 metaTitle: "Kryptovaluta"
 metaDescription: "Våre ansatte har erfaring med kryptovaluta siden 2013"
-metaUrl: "https://www.hallingdata.no/apper"
+metaUrl: "https://www.hallingdata.no/kryptovaluta"
 header: "Kryptovaluta"
 checklistHeader: ""
 checklist:
