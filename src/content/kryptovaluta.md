@@ -12,7 +12,7 @@ checklist:
 - "Sikker håndtering"
 - "Fundametal Analyse"
 - "Trading"
-- "Algoritme trading (tradingbots)"
+- "Algoritmehandel (tradingbots)"
 - "Backtesting"
 - "Mining"
 ourServices:
@@ -28,11 +28,11 @@ ourServices:
 ---
 **Våre ansatte har erfaring med kryptovaluta og blockchain siden 2013.**
 
-Kryptovaluta er valuta som kun eksisterer i digital (digital valuta) form og bruker kryptografi for å sikre transaksjoner og genereringen av nye mynter. Kryptovaluta er som regel desentraliserte og kontrolleres ikke av en sentral enhet (for eksempel sentralbanken).
+Kryptovaluta er valuta som kun eksisterer i digital form (digital valuta) og bruker kryptografi for å sikre transaksjoner og genereringen av nye mynter. Kryptovaluta er som regel desentraliserte og kontrolleres ikke av en sentral enhet (for eksempel en sentralbank).
 
-Bitcoin er den største og mest kjente kryptovalutaen. Bitcoin ble lansert i 2009. Siden den gang har det kommet mange nye kryptovalutaer. Mange av de nye kryptovalutaene kopier av Bitcoin med små endringer, men det er også laget kryptovalutaer med helt andre egenskaper enn Bitcoin. For eksempel Ethereum som har et innebygget turing komplett programmeringsspråk eller Monero som fokuserer på personvern (private og ikke sporbare transaksjoner).
+Bitcoin er den største og mest kjente kryptovalutaen. Bitcoin ble lansert i 2009. Siden den gang har det kommet mange nye kryptovalutaer. Mange av de nye kryptovalutaene er kopier av Bitcoin med små endringer, men det finnes også kryptovalutaer med helt andre egenskaper enn Bitcoin. For eksempel Ethereum og Monero. Ethereum har et innebygget Turing-komplett programmeringsspråk, noe som i praksis betyr at “hva som helst” kan programmeres på Ethereum-blokkjeden. Monero har høyt fokus på personvern, med blant annet private og ikke sporbare transaksjoner.
 
-Vi har erfaring med algoritme trading, analyse og strategiutvikling for kryptovalutaer. En av våre ansatte har blant annet skrevet masteroppgave om bruk av maskinlæring i automatisk tradingsystemer for Bitcoin.
+Vi har erfaring med algoritmehandel, analyse og strategiutvikling for kryptovalutaer. En av våre ansatte har blant annet skrevet masteroppgave om bruk av maskinlæring i automatisk tradingsystemer for Bitcoin.
 
 Vi har også erfaring med utvikling av smart kontrakter (ÐApps) og mining.
 
