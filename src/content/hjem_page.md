@@ -1,19 +1,20 @@
 ---
 pageName: Hjem
-metaTitle: "Hallingdata: Hjemmesider, apps og systemutvikling"
-metaDescription: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjøre hverdagen din enklere."
-metaUrl: "https://www.hallingdata.no"
-header: Nettside, app og systemutvikling
-promoText: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjør hverdagen din enklere"
+metaTitle: 'Hallingdata: Hjemmesider, apps og systemutvikling'
+metaDescription: >-
+  Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder
+  og gjøre hverdagen din enklere.
+metaUrl: 'https://www.hallingdata.no'
+header: 'Nettside, app og systemutvikling'
 facebookPostsHeader: Oppdaterienger
 facebookPosts:
-  - '1863264100600009'
-  - '1611568959102859'
-  - '1687577874835300'
+  - '1977838622475889'
+  - '1977450709181347'
+  - '1577258782533877'
 ourServices:
   - description: >-
-      Vi tar i bruk de mest moderne teknologiene for å skreddersy hjemmesider/nettsider og
-      nettbutikker til ditt behov.
+      Vi tar i bruk de mest moderne teknologiene for å skreddersy
+      hjemmesider/nettsider og nettbutikker til ditt behov.
     header: Web
     icon: important_devices
     link: web
@@ -41,3 +42,4 @@ team:
     name: Inger Vik
 customerLogoHeader: Kunder våre medarbeidere har bistått
 ---
+
