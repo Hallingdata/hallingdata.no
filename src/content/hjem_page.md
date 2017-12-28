@@ -6,6 +6,7 @@ metaDescription: >-
   og gjøre hverdagen din enklere.
 metaUrl: 'https://www.hallingdata.no'
 header: 'Nettside, app og systemutvikling'
+promoText: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjør hverdagen din enklere"
 facebookPostsHeader: Oppdaterienger
 facebookPosts:
   - '1977838622475889'
