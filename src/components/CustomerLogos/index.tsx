@@ -16,6 +16,7 @@ import * as statsKraftLogo from "./img/statkraft_logo.png"
 import * as statnettLogo from "./img/statnett_logo_m_tekst.png"
 import * as telenorLogo from "./img/telenor_logo_v2.png"
 import * as vgLogo from "./img/vg_logo.png"
+import * as EosPortal from "./img/EOS-portal.png"
 import { PageSection } from "../PageSection";
 
 type Props = {
@@ -23,6 +24,7 @@ type Props = {
 }
 
 const logos = [
+  EosPortal,
   basefarmLogo,
   eikaLogo,
   felleskjopetLogo,

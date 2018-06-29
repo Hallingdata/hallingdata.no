@@ -40,6 +40,6 @@ team:
   - description: Inger er prosjektleder og administrator.
     linkedinUrl: 'https://www.linkedin.com/in/inger-vik-halbj%C3%B8rhus-99713939/?ppe=1'
     name: Inger Vik
-customerLogoHeader: Kunder våre medarbeidere har bistått
+customerLogoHeader: Kunder og prosjekter våre medarbeidere har bistått
 ---
 
