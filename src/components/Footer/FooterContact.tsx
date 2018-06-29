@@ -28,7 +28,7 @@ const footerContact: React.SFC<Props & { classes: StyleClassNames }> = ({
       <Icon color="inherit" className={classes.icon}>
         phone
       </Icon>
-      Ring oss: 32 17 80 32
+      Ring oss
     </Button>
     <Button
       href="mailto:post@hallingdata.no"
@@ -42,13 +42,31 @@ const footerContact: React.SFC<Props & { classes: StyleClassNames }> = ({
       Send epost
     </Button>
     <Typography type="body1" gutterBottom color="inherit">
-      E-post: post@hallingdata.no<br />
+      <b>E-post</b>: post@hallingdata.no<br />
+      <b>Telefon</b>: 32 17 80 32
     </Typography>
+
+    <div style={{ marginTop: 70 }}>
+      <a href="https://github.com/hallingdata" title="GitHub" target="_blank">
+        <i
+          className={`ion-social-github ${classes.socialIcon}`}
+          style={{ marginLeft: 0 }}
+        />
+      </a>
+      <a href="https://twitter.com/hallingdata" title="GitHub" target="_blank">
+        <i className={`ion-social-twitter ${classes.socialIcon}`} />
+      </a>
+      <a href="https://www.facebook.com/hallingdata" title="GitHub" target="_blank">
+        <i className={`ion-social-facebook ${classes.socialIcon}`} />
+      </a>
+      <br />
+    </div>
   </Grid>
 )
 
 type StyleClassNames = {
   icon: string
+  socialIcon: string
   contactButton: string
   gridItem: string
 }
@@ -56,6 +74,11 @@ type StyleClassNames = {
 const styles: StyleRulesCallback = theme => ({
   icon: {
     paddingRight: 5,
+  },
+  socialIcon: {
+    margin: 15,
+    color: "#fff",
+    fontSize: 30,
   },
   contactButton: {
     marginBottom: 10,
