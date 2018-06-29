@@ -62,10 +62,6 @@ const IndexPage: React.SFC<Props> = ({ data }) => {
       />
       <OurServices services={frontmatter.ourServices} />
 
-      <FacebookPosts
-        header={frontmatter.facebookPostsHeader}
-        posts={frontmatter.facebookPosts}
-      />
       <Team header={frontmatter.teamHeader} people={frontmatter.team} />
       <CustomerLogos header={frontmatter.customerLogoHeader} />
     </div>

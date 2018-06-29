@@ -6,6 +6,7 @@ import { Hero } from "../components/Hero"
 import Head from "../components/Head"
 import { PageSection } from "../components/PageSection"
 import { RenderMdHtml } from "../components/RenderMdHtml"
+import { Team } from "../components/Team"
 import SchemaBreadcrumbList from "../components/SchemaBreadcrumbList"
 import * as hallingdalLogo from "./img/hallingdal-logo-min.png"
 import * as heroImg from "./img/hero/hallingskarvet-min.jpg"
@@ -33,6 +34,8 @@ type Frontmatter = {
   metaTitle?: string
   metaDescription?: string
   metaUrl?: string
+  teamHeader?: string
+  team?: any
 }
 
 // https://github.com/callemall/material-ui/issues/7466
@@ -51,6 +54,8 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
     metaTitle,
     metaDescription,
     metaUrl,
+    teamHeader,
+    team
   } = data.aboutPage1.childMarkdownRemark.frontmatter
   const htmlPart1 = data.aboutPage1.childMarkdownRemark.html
   const {
@@ -72,6 +77,7 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
           <RenderMdHtml className={classes.content} html={htmlPart1} />
         </Grid>
       </Grid>
+      <Team header={teamHeader} people={team} />
       <PageSection header={headerPart2} className={classes.reginalSection}>
         <div className={classes.hallingdalLogoContainer}>
           <img
@@ -144,6 +150,13 @@ export const pageQuery = graphql`
           metaTitle
           metaDescription
           metaUrl
+          teamHeader
+          team {
+            name
+            description
+            linkedinUrl
+            githubUrl
+          }
         }
       }
     }

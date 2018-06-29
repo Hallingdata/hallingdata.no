@@ -40,9 +40,13 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
             className={classes.personOuter}
           >
             <div className={classes.item}>
-              {personPhoto(person.name, classes.img)}
+              <a href={person.linkedinUrl}>
+                {personPhoto(person.name, classes.img)}
+              </a>
               <Typography type="headline" color="inherit" gutterBottom>
-                {person.name}
+                <a className={classes.name} href={person.linkedinUrl}>
+                  {person.name}
+                </a>
               </Typography>
               <Typography
                 type="body1"
@@ -68,6 +72,7 @@ type StyleClassNames = {
   header: string
   pageSection: string
   item: string
+  name: string
   icons: string
 }
 
@@ -81,7 +86,7 @@ const styles: StyleRulesCallback = theme => ({
     height: 150,
   },
   pageSection: {
-    backgroundColor: "#673ab7",
+    backgroundColor: "#2c2b2d",
     color: "#fff",
   },
   item: {
@@ -89,6 +94,10 @@ const styles: StyleRulesCallback = theme => ({
     padding: "2em",
     maxWidth: 250,
     margin: "auto",
+  },
+  name: {
+    textDecoration: "none",
+    color: "#fff",
   },
   icons: {
     fontSize: 20,
