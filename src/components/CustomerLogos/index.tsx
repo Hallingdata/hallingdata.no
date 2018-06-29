@@ -17,27 +17,27 @@ import * as statnettLogo from "./img/statnett_logo_m_tekst.png"
 import * as telenorLogo from "./img/telenor_logo_v2.png"
 import * as vgLogo from "./img/vg_logo.png"
 import * as EosPortal from "./img/EOS-portal.png"
-import { PageSection } from "../PageSection";
+import { PageSection } from "../PageSection"
 
 type Props = {
   header: string
 }
 
 const logos = [
-  EosPortal,
-  basefarmLogo,
-  eikaLogo,
-  felleskjopetLogo,
-  norgesgruppenLogo,
-  oracleLogo,
-  sporveienLogo,
-  reddBarnaLogo,
-  rikstotoLogo,
-  skattLogo,
-  statnettLogo,
-  statsKraftLogo,
-  telenorLogo,
-  vgLogo,
+  { img: EosPortal, lenk: "https://eosportal.io" },
+  { img: basefarmLogo, lenk: "https://www.basefarm.com" },
+  { img: eikaLogo, lenk: "https://www2.eika.no" },
+  { img: felleskjopetLogo, lenk: "https://www.felleskjopet.no" },
+  { img: norgesgruppenLogo, lenk: "http://www.norgesgruppen.no" },
+  { img: oracleLogo, lenk: "https://www.oracle.com" },
+  { img: sporveienLogo, lenk: "https://www.sporveien.com" },
+  { img: reddBarnaLogo, lenk: "https://www.reddbarna.no" },
+  { img: rikstotoLogo, lenk: "https://www.rikstoto.no/" },
+  { img: skattLogo, lenk: "https://www.skatteetaten.no/" },
+  { img: statnettLogo, lenk: "http://www.statnett.no" },
+  { img: statsKraftLogo, lenk: "https://www.statkraft.no" },
+  { img: telenorLogo, lenk: "https://www.telenor.no" },
+  { img: vgLogo, lenk: "https://www.vg.no" },
 ]
 
 const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
@@ -47,13 +47,15 @@ const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
   <PageSection header={header} className={classes.outer}>
     {map(
       logo => (
-        <img
-          src={logo}
-          alt="firma logo"
-          className={classes.logo}
-          key={logo}
-          height="100px"
-        />
+        <a href={logo.lenk} target="_blank">
+          <img
+            src={logo.img}
+            alt="firma logo"
+            className={classes.logo}
+            key={logo.lenk}
+            height="100px"
+          />
+        </a>
       ),
       logos
     )}
