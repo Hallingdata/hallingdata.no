@@ -47,12 +47,11 @@ const customerLogos: React.SFC<Props & { classes: StyleClassNames }> = ({
   <PageSection header={header} className={classes.outer}>
     {map(
       logo => (
-        <a href={logo.lenk} target="_blank">
+        <a href={logo.lenk} target="_blank" key={logo.lenk}>
           <img
             src={logo.img}
             alt="firma logo"
             className={classes.logo}
-            key={logo.lenk}
             height="100px"
           />
         </a>
