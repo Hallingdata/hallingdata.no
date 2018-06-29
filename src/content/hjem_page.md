@@ -5,28 +5,27 @@ metaDescription: >-
   Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder
   og gjøre hverdagen din enklere.
 metaUrl: 'https://www.hallingdata.no'
-header: 'Nettside, app og systemutvikling'
-promoText: "Vi utvikler nettsider, apper og IT systemer som hjelper deg å få flere kunder og gjør hverdagen din enklere"
+header: 'Hallingdals IT konsulenter'
+promoText: "Systemutviklere med spisskompetanse innen blockchain-, web-, database- og app utvikling"
 facebookPostsHeader: Oppdaterienger
 facebookPosts:
   - '1977838622475889'
   - '1977450709181347'
   - '1577258782533877'
 ourServices:
+  - description: Vi er eksperter på Blockchain og dApp utvikling. Spesiellt på Ethereum blokkjeden.
+    header: Blockchain
+    icon: link
+    link: blockchain
   - description: >-
-      Vi tar i bruk de mest moderne teknologiene for å skreddersy
-      hjemmesider/nettsider og nettbutikker til ditt behov.
+      Vi er eksperter på moderne web teknologier som React, Redux, TypeScript, Node.js og serverless.
     header: Web
     icon: important_devices
     link: web
-  - description: Vi utvikler applikasjoner for Android og iOS.
+  - description: Vi utvikler applikasjoner for Android og iOS, med React Native.
     header: App
     icon: phone_iphone
     link: app
-  - description: VI utvikler nye IT-løsninger.
-    header: Systemutvikling
-    icon: settings_applications
-    link: systemutvikling
 teamHeader: Team
 team:
   - description: >-

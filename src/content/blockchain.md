@@ -10,6 +10,7 @@ checklist:
 - "Rådgivning"
 - "Smart contract"
 - "dApp"
+- "Ethereum"
 - "Sikker håndtering"
 - "Fundametal Analyse"
 - "Trading"
