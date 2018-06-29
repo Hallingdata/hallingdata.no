@@ -7,7 +7,7 @@ header: "App utvikling"
 checklistHeader: ""
 checklist:
 - "Fra idé til marked"
-- "Native look and feel"
+- "React Native"
 - "iPhone"
 - "Android"
 - "Nettbrett"
@@ -25,6 +25,7 @@ ourServices:
 **Vi utvikler brukervennlige apper som kjører på både iOS og Android.**
 
 Vi tar apper fra idé til marked. Vi har høyt fokus på brukervennlighet og design.
+
 
 Alt starter med en uforpliktende samtale. [Kontakt oss](https://m.me/hallingdata) nå.
 
