@@ -40,7 +40,7 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
             className={classes.personOuter}
           >
             <div className={classes.item}>
-              <a href={person.linkedinUrl}>
+              <a href={person.linkedinUrl} target="_blank">
                 {personPhoto(person.name, classes.img)}
               </a>
               <Typography type="headline" color="inherit" gutterBottom>
