@@ -95,6 +95,10 @@ const pages = [
     link: "",
   },
   {
+    name: "Blockchain",
+    link: "blockchain/",
+  },
+  {
     name: "Web",
     link: "web/",
   },
@@ -105,10 +109,6 @@ const pages = [
   {
     name: "Systemutvikling",
     link: "systemutvikling/",
-  },
-  {
-    name: "Kryptovaluta",
-    link: "kryptovaluta/",
   },
   {
     name: "Om oss",

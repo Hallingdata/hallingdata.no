@@ -15,7 +15,7 @@ import * as style from "./index.module.css"
 
 type Props = {
   data: {
-    kryptovalutaPage: {
+    blockchainPage: {
       childMarkdownRemark: {
         frontmatter: Frontmatter
         html: any
@@ -56,8 +56,8 @@ const webpagesPage: React.SFC<Props & { classes: StyleClassNames }> = ({
     header,
     ourServices,
     checklistHeader,
-  } = data.kryptovalutaPage.childMarkdownRemark.frontmatter
-  const html = data.kryptovalutaPage.childMarkdownRemark.html
+  } = data.blockchainPage.childMarkdownRemark.frontmatter
+  const html = data.blockchainPage.childMarkdownRemark.html
   return (
     <div style={gridFix}>
       <Head title={metaTitle} description={metaDescription} url={metaUrl} />
@@ -76,8 +76,8 @@ const styles: StyleRulesCallback = theme => ({})
 export default withStyles(styles)<Props>(webpagesPage)
 
 export const pageQuery = graphql`
-  query KryptovalutaContent {
-    kryptovalutaPage: file(relativePath: { eq: "content/kryptovaluta.md" }) {
+  query BlockchainContent {
+    blockchainPage: file(relativePath: { eq: "content/blockchain.md" }) {
       childMarkdownRemark {
         html
         frontmatter {

@@ -169,12 +169,12 @@ collections:
           - label: Ikon
             name: icon
             widget: string
-  - name: kryptovaluta
-    label: Kryptovaluta
+  - name: blockchain
+    label: Blockchain
     folder: src/content
     filter:
       field: pageName
-      value: Kryptovaluta
+      value: Blockchain
     create: false
     fields:
       - label: pageName
