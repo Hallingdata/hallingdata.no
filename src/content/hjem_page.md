@@ -13,7 +13,7 @@ facebookPosts:
   - '1977450709181347'
   - '1577258782533877'
 ourServices:
-  - description: Vi er eksperter på Blockchain og dApp utvikling. Spesiellt på Ethereum blokkjeden.
+  - description: Vi er eksperter på Blockchain, kryptovaluta og dApp utvikling.
     header: Blockchain
     icon: link
     link: blockchain
