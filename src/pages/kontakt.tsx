@@ -65,8 +65,7 @@ const contactPage: React.SFC<Props & { classes: StyleClassNames }> = ({
       <Grid container spacing={0}>
         <Grid item xs={12}>
           <Typography type="display1" className={classes.promoText}>
-            Vi er Hallingdals leverandør av hjemmesider/nettsider, apper <br />og
-            annen systemutviklings kompetanse.
+            Kontakt oss for en uforpliktende prat om dine IT-behov
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
