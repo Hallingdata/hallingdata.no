@@ -26,7 +26,7 @@ ourServices:
   icon: "code"
   description: "Vi kan hjelpe til med utvikling av desentraliserte applikasjoner (dApp) og andre smarte kontrakter (smart contracts) på Ethereum."
 ---
-**Våre ansatte har erfaring med blockchain og kryptovaluta siden 2013.**
+**Våre ansatte har over 5 års erfaring med blockchain og kryptovaluta.**
 
 Vi har erfaring med dApp-utvikling, algoritmehandel, mining og strategi-utvikling innen blockchain.
 
