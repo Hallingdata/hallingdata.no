@@ -1,17 +1,17 @@
 ---
 pageName: Hjem
 metaTitle: 'IT-konsulenter: Blockchain, web, apps og database'
-metaDescription: "Systemutviklere med spisskompetanse innen blockchain-, web-, database- og app utvikling"
+metaDescription: "Systemutviklere med spisskompetanse innen blockchain-, web-, database- og app-utvikling"
 metaUrl: 'https://www.hallingdata.no'
 header: 'Hallingdals IT-konsulenter'
-promoText: "Systemutviklere med spisskompetanse innen blockchain-, web-, database- og app utvikling"
+promoText: "Systemutviklere med spisskompetanse innen blockchain-, web-, database- og app-utvikling"
 facebookPostsHeader: Oppdaterienger
 facebookPosts:
   - '1977838622475889'
   - '1977450709181347'
   - '1577258782533877'
 ourServices:
-  - description: Vi er eksperter på Blockchain, kryptovaluta og dApp utvikling.
+  - description: Vi er eksperter på Blockchain, kryptovaluta og dApp-utvikling.
     header: Blockchain
     icon: link
     link: blockchain

@@ -6,6 +6,7 @@ metaUrl: "https://www.hallingdata.no/systemutvikling"
 header: "Systemutvikling"
 checklistHeader: ""
 checklist:
+- "Skytjenester"
 - "Server"
 - "Database"
 - "Desktop applikasjon"
@@ -21,8 +22,14 @@ technologies:
 - Oracle
 - SQL
 - PL/SQL
+- Blockchain
+- Ethereum
+- Solidity
+- Bitcoin
+- Oracle Golden Gate
 - JAM stack
 - Static site generators
+- GatsbyJs
 - React
 - Redux
 - Angular 1 og 2+
@@ -46,15 +53,8 @@ technologies:
 - Amazon web services
 - Digital valuta
 - Funksjonell programmering
-- Blockchain
-- Ethereum
-- Solidity
-- Bitcoin
+- EOS
 ---
 **Vi hjelper deg og din organisasjon med alt innen systemutvikling. Vi har over 20 års erfaring og et brennende engasjement for utvikling av nye løsninger.**
 
-Vi elsker å lage nye løsninger. I it-bransjen kalles det systemutvikling.
-
-I bagasjen har vi solid utdanning fra inn- og utland. Sammen med over 20 års erfaring fra ulike roller i it-bransjen i Oslo, har vi god greie på det vi driver med.
-
-Vi kan hjelpe deg og din organisasjon med design, utvikling, testing og igangsetting av nye it-løsninger. Det er det vi har gjort i over 20 år, og det er det vi liker å jobbe med.
+Vi kan hjelpe deg og din organisasjon med design, utvikling, testing og igangsetting av nye IT-prosjekter.

@@ -19,7 +19,7 @@ team:
     linkedinUrl: 'https://www.linkedin.com/in/inger-vik-halbj%C3%B8rhus-99713939/?ppe=1'
     name: Inger Vik
 ---
-Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse. Vi har kontorer på Gol, men kommer gjerne på besøk i Hemsedal, Nesbyen, Hol, Ål, Flå og omegn. Ellers tar vi det meste over nett og telefon, men for større prosjekter tar vi turen til kunder hvor som helst i land og utland. Vi jobber i dag med kunder og partnere over hele Norge.
+Vi er leverandør av systemutviklere med spisskompetanse innen blockchain-, web-, database- og app-utvikling. Vi har kontorer på Gol, men kommer gjerne på besøk i Hemsedal, Nesbyen, Hol, Ål, Flå og omegn. Ellers tar vi det meste over nett og telefon, men for større prosjekter tar vi turen til kunder hvor som helst i land og utland. Vi jobber i dag med kunder og partnere over hele Norge.
 
 
 

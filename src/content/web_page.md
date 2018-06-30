@@ -33,7 +33,7 @@ portfolio:
 ---
 **Vi har lang erfaring med utvikling av moderne web løsninger.**
 
-Våre konsulenter tar i bruk de mest moderne web-teknologiene for å bygge responsive og mobiltilpassede web applikasjoner.
+Våre konsulenter tar i bruk de mest moderne web-teknologiene for å bygge responsive web applikasjoner.
 
 Noen av teknologien våre konsulenter jobber med til daglig er React, Redux, Angular, TypeScript, Node.js, Amazon Web Services og Serverless.
 
