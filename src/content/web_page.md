@@ -1,7 +1,7 @@
 ---
 pageName: Web
-metaTitle: "Full Stack, Front-end og Back-end utvikling"
-metaDescription: "Vi er eksperter på React, Redux, Angular, TypeScript, Node.js, Amazon Web Services og Serverless."
+metaTitle: "Full Stack, Front-end og Back-end konsulenter"
+metaDescription: "Vi er eksperter på React, Redux, Angular, TypeScript, JavaScript, Node.js, Amazon Web Services og Serverless."
 metaUrl: "https://www.hallingdata.no/web"
 header: Vi utvikler profesjonelle web løsninger
 checklistHeader: 'Kompetanse'

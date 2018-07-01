@@ -2,7 +2,7 @@
 pageName: "Om oss"
 header: "Regional utvikling i Hallingdal"
 ---
-Hallingdal som region har mange gode sider, og er et godt sted å bo. Men alt er ikke rosenrødt. Noen av Hallingdals utfordringer er blant annet:
+Hallingdal som region har mange gode sider, og er et godt sted å bo. Men Hallingdal har også sine utfordringer. Noen av Hallingdals utfordringer er blant annet:
 
 * begrenset tilgang på spesialister innenfor visse fagområder
 * begrenset mulighet for høyt utdannende mennesker til å finne interessante jobbmuligheter, enten det er hallinger som ønsker å flytte hjem, eller det er nye mennesker som ønsker å bosette seg i Hallingdal

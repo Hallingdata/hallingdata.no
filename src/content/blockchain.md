@@ -1,6 +1,6 @@
 ---
 pageName: "Blockchain"
-metaTitle: "Blockchain konsulenter: dApps, Solidity, Ethereum, smart contracts"
+metaTitle: "Blockchain konsulenter: Ethereum, dApps, Solidity og smart contracts"
 metaDescription: "Vi har erfaring med dApp-utvikling, Solidity, Ethereum, algoritmehandel, mining og strategi-utvikling innen blockchain."
 metaUrl: "https://www.hallingdata.no/blockchain"
 header: "Blockchain"

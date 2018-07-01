@@ -1,7 +1,7 @@
 ---
 pageName: "Systemutvikling"
 metaTitle: "Trenger du IT-utvikler? Vi er høyt utdannede systemutviklere"
-metaDescription: "Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse."
+metaDescription: "Vi er Hallingdals systemutviklere med spisskompetanse innen blockchain-, web-, database- og app-utvikling"
 metaUrl: "https://www.hallingdata.no/systemutvikling"
 header: "Systemutvikling"
 checklistHeader: ""
@@ -20,13 +20,13 @@ technologies:
 - JavaScript
 - TypeScript
 - Oracle
+- Oracle Golden Gate
 - SQL
 - PL/SQL
 - Blockchain
 - Ethereum
 - Solidity
 - Bitcoin
-- Oracle Golden Gate
 - JAM stack
 - Static site generators
 - GatsbyJs

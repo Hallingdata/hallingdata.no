@@ -1,7 +1,7 @@
 ---
 pageName: Om oss
 metaTitle: "Om Hallingdata"
-metaDescription: "Vi er Hallingdals leverandør av hjemmesider/nettsider, apper og annen systemutviklings kompetanse."
+metaDescription: "Vi er Hallingdals systemutviklere med spisskompetanse innen blockchain-, web-, database- og app-utvikling"
 metaUrl: "https://www.hallingdata.no/om-oss"
 header: Om Hallingdata
 teamHeader: Team

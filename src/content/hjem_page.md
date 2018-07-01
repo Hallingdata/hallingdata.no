@@ -1,6 +1,6 @@
 ---
 pageName: Hjem
-metaTitle: 'IT-konsulenter: Blockchain, web, apps og database'
+metaTitle: 'IT-konsulenter: Blockchain-, web-, app- og systemutvikling'
 metaDescription: "Systemutviklere med spisskompetanse innen blockchain-, web-, database- og app-utvikling"
 metaUrl: 'https://www.hallingdata.no'
 header: 'Hallingdals IT-konsulenter'
