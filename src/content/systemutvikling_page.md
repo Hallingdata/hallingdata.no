@@ -7,10 +7,11 @@ header: "Systemutvikling"
 checklistHeader: ""
 checklist:
 - "Skytjenester"
-- "Server"
 - "Database"
+- "Oracle"
 - "Desktop applikasjon"
 - "Web apps"
+- "Server"
 technologiesHeader: "Noen av teknologiene vi har erfaring med"
 technologies:
 - Java
@@ -55,6 +56,8 @@ technologies:
 - Funksjonell programmering
 - EOS
 ---
-**Vi hjelper deg og din organisasjon med alt innen systemutvikling. Vi har over 20 års erfaring og et brennende engasjement for utvikling av nye løsninger.**
+**Vi kan hjelpe deg og din organisasjon med det meste innen utvikling av nye IT-systemer. Vi kaller det systemutvikling. Etter mange år i it-bransjen har vi jobbet med mye forskjellig. Nedenunder har vi listet noen av teknologiområdene vi har erfaring med.**
 
-Vi kan hjelpe deg og din organisasjon med design, utvikling, testing og igangsetting av nye IT-prosjekter.
+Vi har også spesielt mye erfaring med databaser og Oracles teknologi: Vi har blant annet jobbet som kursinstruktør for Oracles egne kunder, og vi innehar flere av Oracles sertifiseringer innen databaser, SQL og PL/SQL.
+
+Vi har over 20 års erfaring som systemutviklere. Kontakt oss for å finne ut hvordan vi kan hjelpe deg og din organisasjon med IT.
