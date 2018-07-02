@@ -42,18 +42,7 @@ export class NavDrawer extends React.Component<Props, State> {
   public render() {
     const linksList = (
       <List>
-        {map(
-          link => (
-            <ListItem
-              button
-              key={link.name + "-drawer-link"}
-              onClick={() => navigateTo("/" + link.link)}
-            >
-              <ListItemText primary={link.name} />
-            </ListItem>
-          ),
-          this.state.links
-        )}
+        {map(link => navigateButton(link.name, link.link), this.state.links)}
       </List>
     )
 
@@ -84,3 +73,24 @@ export class NavDrawer extends React.Component<Props, State> {
     )
   }
 }
+
+const navigateButton = (pageName: string, url: string) =>
+  url.substr(0, 1) === "/" ? (
+    <ListItem
+      button
+      key={pageName + "-drawer-link"}
+      onClick={() => navigateTo(url)}
+    >
+      <ListItemText primary={pageName} />
+    </ListItem>
+  ) : (
+    <a
+      href={url}
+      style={{ textDecoration: "none" }}
+      key={pageName + "-drawer-link"}
+    >
+      <ListItem button>
+        <ListItemText primary={pageName} />
+      </ListItem>
+    </a>
+  )

@@ -39,21 +39,13 @@ const navBar: React.SFC<Props & { classes: StyleClassNames }> = ({
                   color="accent"
                   raised
                   key={page.name + "-navBarButton"}
-                  onClick={() => navigateTo("/" + page.link)}
+                  onClick={() => navigateTo(page.link)}
                 >
                   Kontakt
                 </Button>
               )
             } else {
-              return (
-                <Button
-                  className={classes.navButton}
-                  key={page.name + "-navBarButton"}
-                  onClick={() => navigateTo("/" + page.link)}
-                >
-                  {page.name}
-                </Button>
-              )
+              return navigateButton(page.name, page.link, classes.navButton)
             }
           }, pages)}
         </Toolbar>
@@ -89,33 +81,52 @@ const styles: StyleRulesCallback = theme => ({
 
 export const NavBar = withStyles(styles)<Props>(navBar)
 
+const navigateButton = (pageName: string, url: string, classes: string) =>
+  url.substr(0, 1) === "/" ? (
+    <Button
+      className={classes}
+      key={pageName + "-navBarButton"}
+      onClick={() => navigateTo(url)}
+    >
+      {pageName}
+    </Button>
+  ) : (
+    <Button className={classes} key={pageName + "-navBarButton"} href={url}>
+      {pageName}
+    </Button>
+  )
+
 const pages = [
   {
     name: "Hjem",
-    link: "",
+    link: "/",
   },
   {
     name: "Blockchain",
-    link: "blockchain/",
+    link: "/blockchain/",
   },
   {
     name: "Web",
-    link: "web/",
+    link: "/web/",
   },
   {
     name: "App",
-    link: "app/",
+    link: "/app/",
   },
   {
     name: "Systemutvikling",
-    link: "systemutvikling/",
+    link: "/systemutvikling/",
   },
   {
     name: "Om oss",
-    link: "om-oss/",
+    link: "/om-oss/",
+  },
+  {
+    name: "Blogg",
+    link: "https://medium.com/hallingdata",
   },
   {
     name: "Kontakt",
-    link: "kontakt/",
+    link: "/kontakt/",
   },
 ]
