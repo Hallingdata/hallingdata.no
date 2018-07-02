@@ -2,7 +2,7 @@
 pageName: "Om oss"
 header: "Regional utvikling i Hallingdal"
 ---
-Hallingdal som region har mange gode sider, og er et godt sted å bo. Men Hallingdal har også sine utfordringer. Noen de er blant annet:
+Regionen Hallingdal består av Flå, Nes, Gol, Ål, Hol og Hemsedal. Hallingdal har mange gode sider, og er et godt sted å bo. Men regionen har også sine utfordringer, som blant annet:
 
 * begrenset tilgang på spesialister innenfor visse fagområder
 * begrenset mulighet for høyt utdannende mennesker til å finne interessante jobbmuligheter, enten det er hallinger som ønsker å flytte hjem, eller det er nye mennesker som ønsker å bosette seg i Hallingdal

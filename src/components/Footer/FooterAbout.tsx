@@ -19,7 +19,7 @@ const footerAbout: React.SFC<Props & { classes: StyleClassNames }> = ({
     >
       Hallingdata hjelper bedrifter og organisasjoner med fornuftig bruk av
       informasjonsteknologi (IT). Vi er IT-eksperter som skjønner
-      forretningsdrift. Vi holder til i Hallingdal. 
+      forretningsdrift. Vi holder til i Hallingdal, en region som består av Hemsedal, Hol, Ål, Gol, Nesbyen og Flå. 
       <br/>Ta kontakt for å finne ut hvordan vi kan hjelpe deg og
       din organisasjon.
     </Typography>
