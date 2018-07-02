@@ -3,7 +3,7 @@ pageName: Web
 metaTitle: "Full Stack, Front-end og Back-end konsulenter"
 metaDescription: "Vi er eksperter på React, Redux, Angular, TypeScript, JavaScript, Node.js, Amazon Web Services og Serverless."
 metaUrl: "https://www.hallingdata.no/web"
-header: Vi utvikler profesjonelle web løsninger
+header: Vi utvikler profesjonelle web-løsninger
 checklistHeader: 'Kompetanse'
 checklist:
   - Full Stack
@@ -33,11 +33,11 @@ portfolio:
 ---
 **Vi har lang erfaring med utvikling av moderne web løsninger.**
 
-Våre konsulenter tar i bruk de mest moderne web-teknologiene for å bygge responsive web applikasjoner.
+Våre konsulenter tar i bruk de mest moderne web-teknologiene for å bygge responsive web-applikasjoner.
 
-Noen av teknologien våre konsulenter jobber med til daglig er React, Redux, Angular, TypeScript, Node.js, Amazon Web Services og Serverless.
+Noen av teknologiene våre konsulenter jobber med til daglig er React, Redux, Angular, TypeScript, Node.js, Amazon Web Services, WordPress og Serverless.
 
-I tillegg til å utvikle web applikasjoner, utvikler vi også websider.
+I tillegg til å utvikle web-applikasjoner, utvikler vi også websider.
 
 [Kontakt oss](https://m.me/hallingdata) nå for en uforpliktende prat om hvordan vi kan hjelpe deg.
 
