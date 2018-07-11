@@ -2,13 +2,10 @@ import * as React from "react"
 
 import { CustomerLogos } from "../components/CustomerLogos"
 import Head from "../components/Head"
-import { FacebookPosts } from "../components/FacebookPosts"
 import { Hero } from "../components/Hero"
 import { OurServices } from "../components/OurServices"
 import { Team } from "../components/Team"
-import PromoText from "../components/PromoText"
 import * as heroImg from "./img/hero/code3.min.jpeg" // 3 6 14 
-import * as style from "./index.module.css"
 
 type Props = {
   data: {

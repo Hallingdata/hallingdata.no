@@ -7,6 +7,9 @@ import { PageSection } from "../PageSection"
 import * as asgeirImg from "./asgeir.jpg"
 import * as eilevImg from "./eilev.jpg"
 import * as ingerImg from "./inger.jpg"
+import * as designerImg from "./designer.jpg"
+import * as developerImg from "./developer.jpg"
+
 
 type Props = {
   header: string
@@ -34,7 +37,7 @@ const team: React.SFC<Props & { classes: StyleClassNames }> = ({
           <Grid
             item
             xs={12}
-            md={3}
+            md={4}
             sm={4}
             key={person.name}
             className={classes.personOuter}
@@ -113,6 +116,10 @@ const personPhoto = (name: string, imgClassName: string) => {
     return <img src={ingerImg} alt="Ansatt" className={imgClassName} />
   } else if (test(/^Eilev/i, name)) {
     return <img src={eilevImg} alt="Ansatt" className={imgClassName} />
+  } else if (test(/^Designer/i, name)) {
+    return <img src={designerImg} alt="Designer" className={imgClassName} />
+  } else if (test(/^Programmerer/i, name)) {
+    return <img src={developerImg} alt="Developer" className={imgClassName} />
   } else {
     return (
       <img

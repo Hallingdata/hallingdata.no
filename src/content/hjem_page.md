@@ -39,6 +39,10 @@ team:
   - description: Inger er prosjektleder og administrator.
     linkedinUrl: 'https://www.linkedin.com/in/inger-vik-halbj%C3%B8rhus-99713939/?ppe=1'
     name: Inger Vik
+  - description: Vi har designere tilgjengelig.
+    name: Designer
+  - description: Vi har tilgang på kompetanse i de fleste programmeringsspråk.
+    name: Programmerer
 customerLogoHeader: Kunder og prosjekter våre medarbeidere har bistått
 ---
 
