@@ -18,7 +18,7 @@
     yarn run serve
 
 ## Style guide
-Based on [aribnb](https://github.com/airbnb/javascript/tree/master/react)
+Based on [airbnb](https://github.com/airbnb/javascript/tree/master/react)
 
 ## Commit messages
 
