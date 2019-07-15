@@ -29,7 +29,7 @@ ourServices:
     link: systemutvikling
 teamHeader: Team
 team:
-  - description: Linn er utdanned prosjektleder og jobber med design, webutvikling, sosiale medier og digital markedsføring.
+  - description: Linn er utdannet prosjektleder og jobber med design, webutvikling, sosiale medier og digital markedsføring.
     name: Linn Björnbakk
     linkedinUrl: 'https://www.linkedin.com/in/linnb1'
   - description: 'Eilev er databaseutvikler, Oracle-ekspert og daglig leder.'
