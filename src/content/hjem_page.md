@@ -29,18 +29,19 @@ ourServices:
     link: systemutvikling
 teamHeader: Team
 team:
-  - description: "Asgeir er full-stack utvikler, blockchain-entusiast og har mastergrad i programutvikling."
-    githubUrl: 'https://github.com/sogasg'
-    linkedinUrl: 'https://www.linkedin.com/in/sogasg'
-    name: Asgeir Sognefest
+  - description: Linn er utdanned prosjektleder og jobber med design, webutvikling, sosiale medier og digital markedsføring.
+    name: Linn Björnbakk
+    linkedinUrl: 'https://www.linkedin.com/in/linnb1'
   - description: 'Eilev er databaseutvikler, Oracle-ekspert og daglig leder.'
     linkedinUrl: 'https://www.linkedin.com/in/eilevhalbjorhus/'
     name: Eilev Halbjørhus
+  - description: "Asgeir er full-stack utvikler, blockchain-ekspert og har mastergrad i programutvikling."
+    githubUrl: 'https://github.com/sogasg'
+    linkedinUrl: 'https://www.linkedin.com/in/sogasg'
+    name: Asgeir Sognefest
   - description: Inger er prosjektleder og administrator.
     linkedinUrl: 'https://www.linkedin.com/in/inger-vik-halbj%C3%B8rhus-99713939/?ppe=1'
     name: Inger Vik
-  - description: Vi har designere tilgjengelig for ulike typer oppgaver.
-    name: Designer
   - description: Vi har tilgang til ekstra kompetanse innen de fleste programmeringsspråk og plattformer som vi henter inn ved behov.
     name: Programmerer
 customerLogoHeader: Kunder og prosjekter våre medarbeidere har bistått

@@ -1,13 +1,10 @@
 ## Commands
 
+Changes pushed to the `master` branch will be automatically deployed to hallingdata.no via netlify.com.
+
 **Run in develop mode**
 
     yarn run dev
-
-
-**Deploy to GitHub-Pages**
-
-    yarn run deploy
 
 **Build**
 

@@ -21,19 +21,6 @@ const footer: React.SFC<Props & { classes: StyleClassNames }> = ({
     >
       <FooterContact />
       <FooterAbout />
-      <Grid
-        item
-        md={3}
-        xs={10}
-        className={classes.gridItem}
-        style={{ overflow: "hidden" }}
-      >
-        <img
-          src="https://ratinglogo.kredittverdig.no/laurels/side/black/livelogo_912305597.png"
-          alt="kreditt rating logo"
-          className={classes.creditRatingLogo}
-        />
-      </Grid>
     </Grid>
   )
 }

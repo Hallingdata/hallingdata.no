@@ -9,7 +9,7 @@ type Props = {}
 const footerAbout: React.SFC<Props & { classes: StyleClassNames }> = ({
   classes,
 }) => (
-  <Grid item xs={10} md={3} sm={5} className={classes.gridItem}>
+  <Grid item xs={10} md={5} sm={5} className={classes.gridItem}>
     <Logo className={classes.logo} />
     <Typography
       type="body1"

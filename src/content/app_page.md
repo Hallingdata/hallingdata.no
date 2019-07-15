@@ -8,7 +8,7 @@ checklistHeader: ""
 checklist:
 - "Fra idé til marked"
 - "React Native"
-- "iPhone"
+- "iOS"
 - "Android"
 - "Nettbrett"
 ourServices:

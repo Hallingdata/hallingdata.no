@@ -6,15 +6,18 @@ metaUrl: "https://www.hallingdata.no/om-oss"
 header: Om Hallingdata
 teamHeader: Team
 team:
+  - description: Linn er utdanned prosjektleder og jobber med design, webutvikling, sosiale medier og digital markedsføring.
+    name: Linn Björnbakk
+    linkedinUrl: 'https://www.linkedin.com/in/linnb1'
+  - description: 'Eilev er databaseutvikler, Oracle-ekspert og daglig leder.'
+    linkedinUrl: 'https://www.linkedin.com/in/eilevhalbjorhus/'
+    name: Eilev Halbjørhus
   - description: >-
       Asgeir er full-stack utvikler, blockchain-entusiast og har mastergrad i
       programutvikling.
     githubUrl: 'https://github.com/sogasg'
     linkedinUrl: 'https://www.linkedin.com/in/sogasg'
     name: Asgeir Sognefest
-  - description: 'Eilev er databaseutvikler, Oracle-ekspert og daglig leder.'
-    linkedinUrl: 'https://www.linkedin.com/in/eilevhalbjorhus/'
-    name: Eilev Halbjørhus
   - description: Inger er prosjektleder og administrator.
     linkedinUrl: 'https://www.linkedin.com/in/inger-vik-halbj%C3%B8rhus-99713939/?ppe=1'
     name: Inger Vik

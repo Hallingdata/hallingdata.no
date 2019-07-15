@@ -4,6 +4,7 @@ import { map, test } from "ramda"
 import * as React from "react"
 
 import { PageSection } from "../PageSection"
+import * as linnImg from "./linn.jpg"
 import * as asgeirImg from "./asgeir.jpg"
 import * as eilevImg from "./eilev.jpg"
 import * as ingerImg from "./inger.jpg"
@@ -112,6 +113,8 @@ export const Team = withStyles(styles)<Props>(team)
 const personPhoto = (name: string, imgClassName: string) => {
   if (test(/^Asgeir/i, name)) {
     return <img src={asgeirImg} alt="Ansatt" className={imgClassName} />
+  } else if (test(/^Linn/i, name)) {
+    return <img src={linnImg} alt="Ansatt" className={imgClassName} />
   } else if (test(/^Inger/i, name)) {
     return <img src={ingerImg} alt="Ansatt" className={imgClassName} />
   } else if (test(/^Eilev/i, name)) {
